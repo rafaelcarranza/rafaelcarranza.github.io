@@ -142,7 +142,7 @@ keep_files:
   - assets/pdf/
 
 plugins:
-  - jekyll-archives
+  - jekyll-archives-v2
   - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
