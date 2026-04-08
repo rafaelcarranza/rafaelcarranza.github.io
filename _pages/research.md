@@ -31,56 +31,7 @@ nav_order: 1
 
 ### Published papers
 
-2025
-
-- Carranza, R., Prieto, J., & Sehnbruch, K. (2025). Job loss and earnings inequality: Distributional effects of formal re-employment in Chile. _Economic Analysis and Policy_.
-  [doi.org/10.1016/j.eap.2025.02.021](https://doi.org/10.1016/j.eap.2025.02.021)
-
-- Carranza, R., De Rosa, M. & Flores, I. (2025). Wealth inequality in Latin America (2000–2020): data, facts and conjectures. _Oxford Open Economics_ 4(1), pp. i36–i54.
-  [doi.org/10.1093/ooec/odae036](https://doi.org/10.1093/ooec/odae036)
-
-2024
-
-- Bavaro, M., Carranza, R., & Nolan, B. (2024). Intergenerational poverty persistence in Europe — Is there a 'Great Gatsby Curve' for poverty? _Research in Social Stratification and Mobility_ 94.
-  [doi.org/10.1016/j.rssm.2024.100991](https://doi.org/10.1016/j.rssm.2024.100991)
-
-- Carranza, R., & Nolan, B. (2024). Assessing income redistribution: what are the key analytic choices? _Fiscal Studies_ 45(4), pp. 501–519.
-  [doi.org/10.1111/1475-5890.12371](https://doi.org/10.1111/1475-5890.12371)
-
-- Carranza, R., Contreras, D., & Otero, G. (2024). What makes elites more or less egalitarian? Variations in attitudes towards inequality within the economic, political and cultural elites in Chile. _Socio-Economic Review_ 22(3).
-  [doi.org/10.1093/ser/mwae008](https://doi.org/10.1093/ser/mwae008)
-
-- Otero, G., Quentin, R., Méndez, M.L., Carranza, R., Link, F., & Ruiz-Tagle, J. (2024). The damages of stigma, the benefits of prestige: examining the consequences of perceived residential reputations on neighbourhood attachment. _Urban Studies_ 61(3).
-  [doi.org/10.1177/00420980231186141](https://doi.org/10.1177/00420980231186141)
-
-2023
-
-- Carranza, R. (2023). Upper and lower bound estimates of inequality of opportunity: A cross-national comparison for Europe. _Review of Income and Wealth_ 69(4).
-  [doi.org/10.1111/roiw.12622](https://doi.org/10.1111/roiw.12622)
-
-- Carranza, R. (2023). How much of intergenerational immobility can be attributed to differences in childhood circumstances? _Research on Economic Inequality: Mobility and Inequality Trends_, Volume 30, Chapter 3.
-  [doi.org/10.1108/S1049-258520230000030003](https://doi.org/10.1108/S1049-258520230000030003)
-
-- Otero, G., Carranza, R., & Contreras, D. (2023). Spatial divisions of poverty and wealth: Does segregation affect educational achievement? _Socio-Economic Review_ 21(1).
-  [doi.org/10.1093/ser/mwab022](https://doi.org/10.1093/ser/mwab022)
-
-2022
-
-- Sehnbruch, K., Carranza, R., & Contreras, D. (2022). Unemployment Insurance in Transition and Developing Countries: Moral Hazard vs. Liquidity Constraints in Chile. _Journal of Development Studies_ 58(10).
-  [doi.org/10.1080/00220388.2022.2096444](https://doi.org/10.1080/00220388.2022.2096444)
-
-- Carranza, R., Morgan, M., & Nolan, B. (2022). Top Income Adjustments and Inequality: An Investigation of the EU-SILC. _Review of Income and Wealth_ 69(3).
-  [doi.org/10.1111/roiw.12591](https://doi.org/10.1111/roiw.12591)
-
-2018
-
-- Sehnbruch, K., Carranza, R., & Prieto, J.J. (2018). The Political Economy of Unemployment Insurance Individual Savings Accounts. _Development and Change_ 50(4).
-  [doi.org/10.1111/dech.12457](https://doi.org/10.1111/dech.12457)
-
-2017
-
-- Otero, G., Carranza, R., & Contreras, D. (2017). Neighbourhood effects on children's educational achievement in Chile: The effects of inequality and polarization. _Environment and Planning A_ 49(11).
-  [doi.org/10.1177/0308518X17731780](https://doi.org/10.1177/0308518X17731780)
+{% bibliography %}
 
 ---
 
