@@ -33,7 +33,7 @@ Assistant Professor
 [School of Government](https://gobierno.uc.cl/)
 Edificio Interdisciplinario, piso 4
 Campus San Joaquín
-Pontificia Universidad Católica de Chile  
+Pontificia Universidad Católica de Chile
 
 Av. Vicuña Mackenna 4860, Macul
 Santiago, Chile

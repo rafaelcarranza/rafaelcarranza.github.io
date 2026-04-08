@@ -22,7 +22,7 @@ lang_toggle:
   other_label: EN
 ---
 
-<div style="text-align: justify;">
+<div style="text-align: justify;" markdown="1">
 
 Mi investigación explora las causas y consecuencias de la desigualdad económica, incluyendo la desigualdad de ingresos, salarios y riqueza, la movilidad intergeneracional, igualdad de oportunidades, elites, la redistribución y los mercados laborales.
 

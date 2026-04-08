@@ -18,7 +18,7 @@ selected_papers: false
 social: true
 ---
 
-<div style="text-align: justify;">
+<div style="text-align: justify;" markdown="1">
 
 My research studies the causes and consequences of economic inequality, including earnings, income and wealth inequality, intergenerational mobility, inequality of opportunity, elites, redistribution, and labour markets.
 
