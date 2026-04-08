@@ -1,34 +1,23 @@
----
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: >
+Assistant Professor, <a href="https://gobierno.uc.cl/" target="_blank">School of Government, PUC Chile</a>.<br>
+Fellow, <a href="https://www.inet.ox.ac.uk/" target="_blank">INET Oxford</a> ·
+<a href="https://www.lse.ac.uk/international-inequalities" target="_blank">LSE International Inequalities Institute</a> ·
+<a href="https://wid.world/" target="_blank">WID.world</a>
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
----
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+align: right
+image: prof_pic.jpg          # upload your photo to assets/img/ with this name
+image_circular: false
+more_info: >
+<p>rafael.carranza [at] uc.cl</p>
+<p>Santiago, Chile</p>
+news: true
+selected_papers: false
+social: true
+Welcome! I am an Assistant Professor at the School of Government at PUC Chile.
+My research studies the causes and consequences of economic inequality — spanning earnings and wealth inequality, intergenerational mobility, inequality of opportunity, redistribution, and labour markets — with a geographic focus on Chile and Europe.
+I hold a PhD in Social Policy from the London School of Economics and Political Science, supervised by Stephen P. Jenkins and Berkay Özcan. Prior to that, I obtained an MRes in Economics at University College London and an MSc in Economics at Universidad de Chile. Before my current position, I was a Postdoctoral Research Officer at the University of Oxford (INET Oxford and the Department of Social Policy and Intervention).
+Starting in 2025 and until 2029, I am the principal investigator of the project Wealth and Social Cohesion from a Relational Perspective (WESOREL), funded by the Volkswagen Foundation (in collaboration with the University of Munich, Oxford, and UNC Chapel Hill). 
+My CV is available here. You can also find me on Google Scholar and GitHub.
