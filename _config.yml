@@ -195,3 +195,9 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
+
+# -----------------------------------------------------------------------------
+# Third party libraries
+# -----------------------------------------------------------------------------
+
+third_party_libraries: {}
