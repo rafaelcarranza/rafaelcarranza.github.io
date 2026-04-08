@@ -7,10 +7,6 @@ nav: true
 nav_order: 1
 ---
 
-My work studies the causes and consequences of economic inequality, spanning earnings and wealth inequality, intergenerational mobility, inequality of opportunity, redistribution, and labour markets. My geographic focus is on Chile and Europe.
-
----
-
 ### Work in progress
 
 - The concentration of children over time and its consequences for income inequality and poverty
