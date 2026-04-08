@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Assistant Professor, <a href="https://gobierno.uc.cl/" target="_blank">School of Government, PUC Chile</a>.<br>
+  Assistant Professor, <a href="https://gobierno.uc.cl/" target="_blank">School of Government, UC Chile</a>.<br>
 
 profile:
   align: right
@@ -32,4 +32,4 @@ Starting in 2025 and until 2029, I am a principal investigator of the project [W
 
 </div>
 
-<div style="text-align: right; margin-bottom: 1rem;"><a href="/es/">🇪🇸 Español</a></div>
+<div style="text-align: right; margin-bottom: 1rem;"><a href="/es/">🇨🇱 Español</a></div>

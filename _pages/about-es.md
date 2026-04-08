@@ -3,7 +3,7 @@ layout: about
 title: sobre mí
 permalink: /es/
 subtitle: >
-  Profesor Asistente, <a href="https://gobierno.uc.cl/" target="_blank">Escuela de Gobierno, PUC Chile</a>.<br>
+  Profesor Asistente, <a href="https://gobierno.uc.cl/" target="_blank">Escuela de Gobierno, UC Chile</a>.<br>
 
 profile:
   align: right
