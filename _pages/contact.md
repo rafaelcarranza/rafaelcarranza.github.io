@@ -7,6 +7,8 @@ nav: true
 nav_order: 5
 ---
 
+<div class="narrow-content" markdown="1">
+
 The best way to reach me is by email:
 
 <form action="https://formspree.io/f/mgopqazy" method="POST">
@@ -41,3 +43,5 @@ Santiago, Chile
 ---
 
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6N1zOi8AAAAJ), [GitHub](https://github.com/rafaelcarranza), and [ResearchGate](https://www.researchgate.net/profile/Rafael-Carranza-4).
+
+</div>
