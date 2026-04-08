@@ -29,4 +29,4 @@ I hold a PhD in Social Policy from the [London School of Economics and Political
 
 Starting in 2025 and until 2029, I am one of four principal investigators of the project [Wealth and Social Cohesion from a Relational Perspective (WESOREL)](https://www.isi-munich.de/en/research-project/wealth-and-social-cohesion-from-a-relational-perspective), funded by the Volkswagen Foundation (in collaboration with the University of Munich, Oxford, and UNC Chapel Hill).
 
-My [CV is available here](/cv/). You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6N1zOi8AAAAJ), [ORCID](https://orcid.org/0000-0002-7466-4040), and [Research Gate](https://www.researchgate.net/profile/Rafael-Carranza).
+My [CV is available here](/assets/cv/cv.pdf). You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6N1zOi8AAAAJ), [ORCID](https://orcid.org/0000-0002-7466-4040), and [Research Gate](https://www.researchgate.net/profile/Rafael-Carranza).
