@@ -11,6 +11,12 @@ nav_order: 2
 
 ### 2026
 
+- Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry. Campus América, Universidad de La Laguna. October 19-23. Tenerife, Spain.
+
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. Workshop on Tax Data and Inequality: Methods, Histories, and Global Perspectives. June 10-11, 2026. Munich, Germany.
+
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. World Inequality Conference 2026. June 4-6, 2026. Paris, France.
+
 - Unpacking Redistribution in Europe: Decomposing the Effects of Direct and Indirect Taxes, Cash Benefits, and In-Kind Transfers. January 23, 2026. Workshop 'Actitudes ante la justicia distributiva: enfoques experimentales sobre redistribución y merecimiento'. Departamento de Sociología, Universidad de Chile.
 
 ---
