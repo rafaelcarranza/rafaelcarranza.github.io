@@ -31,7 +31,11 @@ nav_order: 1
 
 ### Published papers
 
+<div class="publications">
+
 {% bibliography %}
+
+</div>
 
 ---
 
