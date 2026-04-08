@@ -14,3 +14,4 @@ Gemfile.lock
 node_modules/
 vendor
 *.code-workspace
+CUSTOMIZE.md
