@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-The best way to reach me is by email at **rafael.carranza [at] uc.cl**.
+The best way to reach me is by email:
 
 <form action="https://formspree.io/f/mgopqazy" method="POST">
   <div class="mb-3">
@@ -30,8 +30,12 @@ The best way to reach me is by email at **rafael.carranza [at] uc.cl**.
 **Rafael Carranza**
 
 Assistant Professor  
-[School of Government](https://gobierno.uc.cl/)  
+[School of Government](https://gobierno.uc.cl/)
+Edificio Interdisciplinario, piso 4
+Campus San Joaquín
 Pontificia Universidad Católica de Chile  
+
+Av. Vicuña Mackenna 4860, Macul
 Santiago, Chile
 
 ---
