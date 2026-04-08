@@ -4,7 +4,7 @@ title: contact
 permalink: /contact/
 description:
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 The best way to reach me is by email at **rafael.carranza [at] uc.cl**.
