@@ -4,6 +4,10 @@
 @use "variables" as v;
 @use "sass:color";
 
+html {
+  font-size: 87.5%;
+}
+
 :root {
   color-scheme: light;
   --global-bg-color: #{v.$white-color};
