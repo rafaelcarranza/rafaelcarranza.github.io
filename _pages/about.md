@@ -18,6 +18,8 @@ selected_papers: false
 social: true
 ---
 
+<div style="text-align: right; margin-bottom: 1rem;"><a href="/es/">🇪🇸 Español</a></div>
+
 My research studies the causes and consequences of economic inequality, including earnings, income and wealth inequality, intergenerational mobility, inequality of opportunity, redistribution, and labour markets.
 
 I hold a PhD in Social Policy from the [London School of Economics and Political Science](https://www.lse.ac.uk/). Before my current position, I was a Postdoctoral Research Officer at the [University of Oxford](https://www.ox.ac.uk/) (INET Oxford and the Department of Social Policy and Intervention).
