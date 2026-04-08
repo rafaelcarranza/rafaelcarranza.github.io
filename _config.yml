@@ -143,7 +143,6 @@ keep_files:
 
 plugins:
   - jekyll-archives-v2
-  - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
