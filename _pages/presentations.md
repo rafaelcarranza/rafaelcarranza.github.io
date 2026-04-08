@@ -40,7 +40,7 @@ nav_order: 3
 - Social class and earnings inequality in Chile: A decomposition over the long run. Coloquios Agenda Élite, COES, October 2, 2024. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=iFU-vA_FPyw)
 
 - Inflation Inequality and its Consequences for Income Inequality and Poverty. [38th IARIW General Conference](https://iariw.org/38th-iariw-general-conference/), August 26–30, 2024. London, UK. Discussed by [David Johnson](https://scholar.google.com/citations?user=eYqjMLMAAAAJ&hl=en).
-  - *(As discussant)* Household Production Time and Inequality in Extended Income in the U.S., 1965–2018 (Authors: [Leila Gautham](https://business.leeds.ac.uk/faculty/staff/1580/dr-leila-gautham) and [Nancy Folbre](https://people.umass.edu/folbre/folbre/))
+  - _(As discussant)_ Household Production Time and Inequality in Extended Income in the U.S., 1965–2018 (Authors: [Leila Gautham](https://business.leeds.ac.uk/faculty/staff/1580/dr-leila-gautham) and [Nancy Folbre](https://people.umass.edu/folbre/folbre/))
 
 - Wealth Inequality in Latin America. [Network on Inequality and Poverty](http://www.ridge.org.uy/wp-content/uploads/2024/05/Inequality-and-Poverty-Program-2024.pdf), RIDGE May Forum, May 13–17, 2024. Santiago, Chile.
 
@@ -53,10 +53,10 @@ nav_order: 3
 - Social class and earnings inequality in Chile: A decomposition over the long run. Workshop on inequality and stratification research, Sociology Institute UC Chile, December 5, 2023. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=utof00BQIkI)
 
 - Wealth Inequality in Latin America. [X Conferencia Internacional COES](https://coes.cl/x-conferenciainternacional/), November 8–10, 2023. Santiago, Chile.
-  - *Also presenting:* Social class and earnings inequality in Chile: A decomposition over the long run.
+  - _Also presenting:_ Social class and earnings inequality in Chile: A decomposition over the long run.
 
 - Does Predistribution or Redistribution Account for Varying Income Inequality? [10th ECINEQ Meeting 2023](http://www.ecineq.org/upcoming-tenth-ecineq-meeting-2023/), July 10–12, 2023. Aix-en-Provence, France.
-  - *Also presenting:* Job loss and earnings inequality: Distributional effects from re-employment in Chile.
+  - _Also presenting:_ Job loss and earnings inequality: Distributional effects from re-employment in Chile.
 
 - Variations in elite attitudes toward inequality: Exploring the role of elite type and intergenerational experiences in contexts. Inequality and political behaviour: Voters, parties, and policies, June 20–21, 2023. Nuffield College, Oxford, UK.
 
@@ -75,8 +75,8 @@ nav_order: 3
 - Distribution of wealth in Latin America. LACIR workshop, August 30–September 3, 2022. Washington, DC, USA.
 
 - Does Predistribution or Redistribution Account for Varying Income Inequality? [37th IARIW General Conference](https://iariw.org/37th-iariw-general-conference-luxembourg-august-22-26-2022/), August 22–26, 2022. Luxembourg. Discussed by Amanda Sinclair.
-  - *(As discussant)* Distributional National Accounts for Australia, 1991–2018 (Authors: Matthew Fisher-Post, Nicolas Hérault and Roger Wilkins).
-  - *(As discussant)* Wealth Survey Calibration: Imposing Consistency with Income Tax Data (Author: Daniel Kolář).
+  - _(As discussant)_ Distributional National Accounts for Australia, 1991–2018 (Authors: Matthew Fisher-Post, Nicolas Hérault and Roger Wilkins).
+  - _(As discussant)_ Wealth Survey Calibration: Imposing Consistency with Income Tax Data (Author: Daniel Kolář).
 
 - Decomposing wealth mobility in the US: The role of education and income. [2022 ISA RC28 Spring Meeting](https://www.lse.ac.uk/social-policy/rc28), April 21–23, 2022. London, UK.
 
@@ -92,7 +92,7 @@ nav_order: 3
 
 - How much of intergenerational immobility can be attributed to differences in childhood circumstances? [9th ECINEQ Meeting](http://www.ecineq.org/ecineqlse2021/), July 8–10, 2021. Virtual conference. [[Slides]](https://drive.google.com/file/d/1n_JMiTOt6zdh_GYS49nz4XpdbCDIwDVE/view?usp=sharing)
 
-- *(Poster)* How much of intergenerational immobility can be attributed to differences in childhood circumstances? [Workshop on Social Mobility and Economic Performance](https://www.zew.de/en/events-and-professional-training/detail/social-mobility-and-economic-performance-1/3064) (ZEW), March 22–23, 2021. Virtual conference. [[Poster]](https://drive.google.com/file/d/1AkSqHX9IXYx2YqwMdOh-v-ToSS-UAwLC/view?usp=sharing)
+- _(Poster)_ How much of intergenerational immobility can be attributed to differences in childhood circumstances? [Workshop on Social Mobility and Economic Performance](https://www.zew.de/en/events-and-professional-training/detail/social-mobility-and-economic-performance-1/3064) (ZEW), March 22–23, 2021. Virtual conference. [[Poster]](https://drive.google.com/file/d/1AkSqHX9IXYx2YqwMdOh-v-ToSS-UAwLC/view?usp=sharing)
 
 ---
 
@@ -100,7 +100,7 @@ nav_order: 3
 
 - Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity. [XXVII Meeting on Public Economics](https://www.encuentroeconomiapublica.com/en/workshop.php), January 23–24, 2020. Barcelona, Spain. [[Slides]](https://drive.google.com/open?id=1D57NvPRnYmE8jgJnQdXx29tSB2UzDSwJ)
 
-- *(Poster)* Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity. [Winter School on Inequality and Social Welfare Theory](http://dse.univr.it/it/), January 13–16, 2020. Alba di Canazei, Italy. [[Poster]](https://drive.google.com/open?id=1q_EFw61oM-CXfSh8rtL66g5vw0ZRG2Zh)
+- _(Poster)_ Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity. [Winter School on Inequality and Social Welfare Theory](http://dse.univr.it/it/), January 13–16, 2020. Alba di Canazei, Italy. [[Poster]](https://drive.google.com/open?id=1q_EFw61oM-CXfSh8rtL66g5vw0ZRG2Zh)
 
 ---
 
@@ -116,7 +116,7 @@ nav_order: 3
 
 ### 2018
 
-- *(Poster)* Measuring Inequality of Opportunity trends in Europe: Lower bounds, upper bounds and the space in between. [Equal Chances: Equality of Opportunity and Social Mobility Around the World](http://www.equalchances.org/web/updates/8043/17/opportunity_mobility_program.pdf), December 14–15, 2018. Bari, Italy. [[Poster]](https://drive.google.com/file/d/1g1Y26wGBKDxERlKYttkUfp4hVnR-I7_T/view)
+- _(Poster)_ Measuring Inequality of Opportunity trends in Europe: Lower bounds, upper bounds and the space in between. [Equal Chances: Equality of Opportunity and Social Mobility Around the World](http://www.equalchances.org/web/updates/8043/17/opportunity_mobility_program.pdf), December 14–15, 2018. Bari, Italy. [[Poster]](https://drive.google.com/file/d/1g1Y26wGBKDxERlKYttkUfp4hVnR-I7_T/view)
 
 - The Political Economy of Unemployment Insurance Individual Savings Accounts. Challenges for Development in Chile: New institutions for innovations, November 15, 2018. Oxford, UK.
 
