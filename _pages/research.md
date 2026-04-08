@@ -4,7 +4,7 @@ title: research
 permalink: /research/
 description:
 nav: true
-nav_order: 2
+nav_order: 1
 ---
 
 My work studies the causes and consequences of economic inequality, spanning earnings and wealth inequality, intergenerational mobility, inequality of opportunity, redistribution, and labour markets. My geographic focus is on Chile and Europe.
