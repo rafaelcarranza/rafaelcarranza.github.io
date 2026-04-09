@@ -9,7 +9,7 @@ nav_order: 5
 
 <div class="narrow-content" markdown="1">
 
-The best way to reach me is by email:
+The best way to reach me is by email at rafael.carranza@uc.cl or through this form:
 
 <form action="https://formspree.io/f/mgopqazy" method="POST">
   <div class="mb-3">
