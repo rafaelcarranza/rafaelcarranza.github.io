@@ -29,10 +29,9 @@ The best way to reach me is by email at rafael.carranza@uc.cl or through this fo
 
 ---
 
-**Rafael Carranza**
+[**Rafael Carranza**](https://gobierno.uc.cl/profesores/rafael-carranza/)
 
-Assistant Professor  
-[School of Government](https://gobierno.uc.cl/)
+School of Government
 
 Edificio Interdisciplinario, piso 4
 Campus San Joaquín
