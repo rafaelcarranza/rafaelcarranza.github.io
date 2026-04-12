@@ -5,7 +5,7 @@ permalink: /current-projects/
 description:
 nav: true
 nav_order: 3
----
+--- 
 
 <div class="publications" style="margin-top: 0;">
   <ol class="bibliography" style="margin-top: 1rem;">
@@ -25,7 +25,7 @@ nav_order: 3
         </div>
         <div class="abstract hidden">
           <p>
-            Wealth inequality has returned to levels not seen since the early twentieth century, yet its effects on public life remain poorly understood. This project asks whether the widening gap between the very wealthy and everyone else is weakening the social bonds that democracies depend on — trust, solidarity, civic engagement. Rather than treating inequality as a single number, the project develops a relational approach: not how much people own in absolute terms, but how far the top of the distribution has moved from the middle and the bottom. By comparing countries that differ sharply in the concentration of wealth, the project examines what this distance does to how people relate to one another, to their institutions, and to the idea of a common society.
+            Wealth inequality in high-income countries has returned to levels not seen since the early twentieth century. Yet its effects on public life remain poorly understood. This project asks whether the widening gap between the very wealthy and everyone else is weakening the social bonds that democracies depend on. Rather than treating inequality as a distributional issue, the project develops a relational approach: not how much people own but how claims on economic resources shape economic life across the wealth distribution. From a comparative angle, the project examines how this distance affects how people relate to one another, to their institutions, and to the idea of a common society.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ nav_order: 3
         </div>
         <div class="abstract hidden">
           <p>
-            Across rich countries, high-income families have been having more children. This project asks what that means for the long-term structure of inequality. If wealth and social standing shape who has children — and how many — then stratification reproduces itself not just through inheritance but through demography. The project examines how fertility decisions are tied to wealth, intergenerational mobility, and the degree to which welfare states cushion economic insecurity. At stake is whether unequal societies are not just unequal today, but becoming structurally more so as advantages concentrate in the families that grow fastest.
+            Recent studies have shown a demographic reversal in the association between income and fertility. What was a robust negative gradient throughout the twentieth century has begun to turn positive in many high-income countries. This project explores what that means for the long-term structure of inequality. If wealth and social standing shape who has children, then inequality reproduces itself not just through inheritance but through demography. The project examines how fertility decisions are tied to wealth, intergenerational mobility, and the degree to which welfare states cushion economic insecurity.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@ nav_order: 3
         </div>
         <div class="abstract hidden">
           <p>
-            Chile introduced free university tuition in 2016 with the goal of reducing socioeconomic gaps in higher education enrollment. Nearly a decade on, the evidence suggests the policy has had limited impact on the composition of who goes to university. This project asks why. A key part of the answer may lie in the timing of information: students who would qualify may not know it early enough for it to shape their expectations and preparation before the application process — and that gap weighs more heavily on families with fewer resources and less familiarity with the university system. The project uses predictive models on administrative data to identify likely beneficiaries, and then tests through survey experiments whether delivering that information early changes students' educational decisions.
+            Chile introduced free university tuition in 2016, intending to reduce socioeconomic gaps in higher education enrollment. Nearly a decade on, the evidence suggests the policy has had limited impact on the composition of who goes to university. This project asks why. A key part of the answer may lie in the timing of information, as students who could potentially qualify may not know it early enough for it to shape their expectations and preparation before the application process. This gap weighs more heavily on families with fewer resources and less familiarity with the university system. The project explores these questions through different methodological approaches.
           </p>
         </div>
       </div>
