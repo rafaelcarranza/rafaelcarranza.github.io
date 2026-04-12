@@ -7,16 +7,16 @@ nav: true
 nav_order: 3
 ---
 
-<div class="publications">
-  <ol class="bibliography">
+<div class="publications" style="margin-top: 0;">
+  <ol class="bibliography" style="margin-top: 1rem;">
 
-    <li>
+    <li style="margin-bottom: 2rem;">
       <div id="wesorel" class="col-sm-10">
         <div class="title">Wealth and Social Cohesion from a Relational Perspective (WESOREL)</div>
-        <div class="author">
-          <em>Fabian Pfeffer</em>, Rafael Carranza, Manuel Schechtl, and Nhat An Trinh
+        <div class="author" style="margin-top: 0.3rem;">
+          with Fabian Pfeffer (LMU Munich), Manuel Schechtl (UNC Chapel Hill), and Nhat An Trinh (University of Oxford)
         </div>
-        <div class="author" style="margin-top: 0.25rem;">
+        <div class="author" style="margin-top: 0.3rem;">
           <strong>Funder:</strong> Volkswagen Foundation &nbsp;|&nbsp; <strong>2025–2029</strong>
         </div>
         <div class="links" style="margin-top: 0.5rem;">
@@ -31,13 +31,10 @@ nav_order: 3
       </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 2rem;">
       <div id="fondecyt2026" class="col-sm-10">
         <div class="title">The Growing Concentration of Children among High-Income Families: The Role of Wealth, Social Mobility and the Welfare State</div>
-        <div class="author">
-          <em>Rafael Carranza</em>
-        </div>
-        <div class="author" style="margin-top: 0.25rem;">
+        <div class="author" style="margin-top: 0.3rem;">
           <strong>Funder:</strong> FONDECYT Iniciación / ANID &nbsp;|&nbsp; <strong>2026–2028</strong>
         </div>
         <div class="links" style="margin-top: 0.5rem;">
@@ -51,14 +48,14 @@ nav_order: 3
       </div>
     </li>
 
-    <li>
+    <li style="margin-bottom: 2rem;">
       <div id="avanza-uc" class="col-sm-10">
         <div class="title">Free Tuition and University Choice in Chile: Differentiated Effects by Socioeconomic Context</div>
-        <div class="author">
-          Andrea Canales, <em>Rafael Carranza</em>, and Pablo Geraldo
+        <div class="author" style="margin-top: 0.3rem;">
+          with Andrea Canales (Instituto de Sociología, UC) and Pablo Geraldo (Nuffield College, University of Oxford)
         </div>
-        <div class="author" style="margin-top: 0.25rem;">
-          <strong>Funder:</strong> Avanza UC, Pontificia Universidad Católica de Chile
+        <div class="author" style="margin-top: 0.3rem;">
+          <strong>Funder:</strong> Avanza UC, Pontificia Universidad Católica de Chile &nbsp;|&nbsp; <strong>2026</strong>
         </div>
         <div class="links" style="margin-top: 0.5rem;">
           <a class="abstract btn btn-sm z-depth-0" role="button">Summary</a>
