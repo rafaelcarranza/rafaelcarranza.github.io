@@ -4,7 +4,7 @@ title: contact
 permalink: /contact/
 description:
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 <div class="narrow-content" markdown="1">
