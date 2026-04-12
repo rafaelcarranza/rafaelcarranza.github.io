@@ -14,7 +14,7 @@ nav_order: 3
       <div id="wesorel" class="col-sm-10">
         <div class="title">Wealth and Social Cohesion from a Relational Perspective (WESOREL)</div>
         <div class="author" style="margin-top: 0.3rem;">
-          with Fabian Pfeffer (LMU Munich), Manuel Schechtl (UNC Chapel Hill), and Nhat An Trinh (University of Oxford)
+          with Fabian Pfeffer (LMU Munich), Manuel Schechtl (UNC Chapel Hill), and Nhat An Trinh (WZB)
         </div>
         <div class="author" style="margin-top: 0.3rem;">
           <strong>Funder:</strong> Volkswagen Foundation &nbsp;|&nbsp; <strong>2025–2029</strong>
