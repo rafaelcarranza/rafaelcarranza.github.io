@@ -62,7 +62,7 @@ nav_order: 3
         </div>
         <div class="abstract hidden">
           <p>
-            Chile introduced free university tuition in 2016 with a clear goal: making higher education accessible to students from low-income families. Nearly a decade on, the evidence shows that the policy has not substantially changed who goes to university. This project asks why. One answer may lie in information: students who would qualify may not know it, or may not trust that they do — and that uncertainty weighs more heavily on families with fewer resources and less familiarity with the university system. If what matters is not just whether a policy exists but whether people know it is there for them, then the design of social programs is as consequential as their generosity.
+            Chile introduced free university tuition in 2016 with the goal of reducing socioeconomic gaps in higher education enrollment. Nearly a decade on, the evidence suggests the policy has had limited impact on the composition of who goes to university. This project asks why. A key part of the answer may lie in the timing of information: students who would qualify may not know it early enough for it to shape their expectations and preparation before the application process — and that gap weighs more heavily on families with fewer resources and less familiarity with the university system. The project uses predictive models on administrative data to identify likely beneficiaries, and then tests through survey experiments whether delivering that information early changes students' educational decisions.
           </p>
         </div>
       </div>
