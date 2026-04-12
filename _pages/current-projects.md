@@ -5,7 +5,7 @@ permalink: /current-projects/
 description:
 nav: true
 nav_order: 3
---- 
+---
 
 <div class="publications" style="margin-top: 0;">
   <ol class="bibliography" style="margin-top: 1rem;">
