@@ -33,7 +33,7 @@ The best way to reach me is by email at rafael.carranza@uc.cl or through this fo
 
 School of Government
 
-Edificio Interdisciplinario, piso 4
+Edificio Interdisciplinario, piso 4.
 Campus San Joaquín
 
 Pontificia Universidad Católica de Chile
