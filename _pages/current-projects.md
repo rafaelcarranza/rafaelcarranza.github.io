@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Current projects
+title: current projects
 permalink: /current-projects/
 description:
 nav: true

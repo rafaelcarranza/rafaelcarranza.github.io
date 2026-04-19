@@ -10,28 +10,42 @@ nav_order: 1
 ### Work in progress
 
 - The concentration of children over time and its consequences for income inequality and poverty
-  (with [Berkay Özcan](https://www.lse.ac.uk/social-policy/people/academic-staff/Professor-Berkay-Ozcan))
+  (with [Berkay Özcan](https://www.lse.ac.uk/social-policy/people/academic-staff/Professor-Berkay-Ozcan)) <span class="status-pill status-pill--inprogress">In progress</span>
 
 - Social class and earnings inequality in Chile: A decomposition over the long run
-  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/))
+  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
 - Intergenerational Poverty in Europe: A Latent Class Analysis
-  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) — _Submitted_
+  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--submitted">Submitted</span>
 
 - The size and progressivity of taxes and transfers when the income concept changes
-  (with [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) — _R&R_
+  (with [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - Parents' Education and Children's Household Income Across Cohorts in Europe
-  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) — _R&R_
+  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - Where Wealth Concentration is Higher, the Likelihood to Help Others is Lower
-  (part of the [WESOREL](https://www.lmu.de/en/newsroom/news-overview/news/funding-for-project-on-social-inequality.html) project) — _R&R_
+  (part of the [WESOREL](https://www.lmu.de/en/newsroom/news-overview/news/funding-for-project-on-social-inequality.html) project) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 ---
 
 ### Published papers
 
-<div class="publications">
+<nav class="year-nav" aria-label="Jump to year">
+  <a href="#y2025">2025</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2024">2024</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2023">2023</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2022">2022</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2019">2019</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2017">2017</a>
+</nav>
+
+<div class="publications research-publications">
 
 {% bibliography %}
 
@@ -80,3 +94,21 @@ Carranza, R. (2021). _Essays on inequality of opportunity: measurement, drivers 
 
 - Sehnbruch, K., & Carranza, R. (2015). Unemployment Insurance based on Individual Savings Accounts: Lessons for other Latin American and Developing Countries from Chile.
   [bit.ly/38Hh0m8](http://bit.ly/38Hh0m8)
+
+<script>
+  // Tag each year heading inside the published-papers bibliography so the
+  // "Jump to year" nav at the top can scroll to it. jekyll-scholar renders
+  // each group as a heading (h2 or h3) with class "bibliography" and the
+  // year as its text content.
+  document.addEventListener("DOMContentLoaded", function () {
+    var container = document.querySelector(".research-publications");
+    if (!container) return;
+    var headings = container.querySelectorAll("h1.bibliography, h2.bibliography, h3.bibliography");
+    headings.forEach(function (h) {
+      var year = (h.textContent || "").trim().match(/\d{4}/);
+      if (year && !h.id) {
+        h.id = "y" + year[0];
+      }
+    });
+  });
+</script>

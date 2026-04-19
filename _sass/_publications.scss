@@ -143,15 +143,14 @@
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition:
+          max-height 0.3s ease,
+          border-color 0.3s ease;
 
         p {
-          line-height: 1.4em;
-          margin: 10px;
+          line-height: 1.5em;
+          margin: 0.6rem 0 0.2rem 1rem;
+          color: var(--global-text-color-light);
         }
 
         pre {
@@ -163,11 +162,9 @@
 
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition:
+          max-height 0.3s ease,
+          border-color 0.3s ease;
       }
 
       div.abstract.hidden {
@@ -190,4 +187,141 @@
 .citation,
 .citation-number {
   color: var(--global-theme-color);
+}
+
+/*******************************************************************************
+ * Status pills (paper status: R&R / Submitted / In progress)
+ * and neutral pills used for Abstract / Summary toggle buttons.
+ * Soft background with matching text; consistent sizing.
+ ******************************************************************************/
+
+.status-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  padding: 0.28em 0.65em;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* R&R — amber/yellow */
+.status-pill--rr {
+  background-color: #fff4d6;
+  color: #8a5a00;
+  border-color: #f5e0a3;
+}
+html[data-theme="dark"] .status-pill--rr {
+  background-color: #3a2e0a;
+  color: #f2d37a;
+  border-color: #6b551a;
+}
+
+/* Submitted — blue */
+.status-pill--submitted {
+  background-color: #dfeefc;
+  color: #0b4a82;
+  border-color: #bcdcf5;
+}
+html[data-theme="dark"] .status-pill--submitted {
+  background-color: #0f2a44;
+  color: #9fc9ec;
+  border-color: #1e4873;
+}
+
+/* In progress — gray (also used as neutral pill for buttons) */
+.status-pill--inprogress,
+.status-pill--neutral {
+  background-color: #ececef;
+  color: #4a4a4f;
+  border-color: #dcdce0;
+}
+html[data-theme="dark"] .status-pill--inprogress,
+html[data-theme="dark"] .status-pill--neutral {
+  background-color: #2e3034;
+  color: #c7c7cc;
+  border-color: #44464b;
+}
+
+/*******************************************************************************
+ * Make the al-folio abstract / summary toggle buttons look like neutral pills
+ * inside .links containers. Applies to .abstract buttons across publications
+ * and current-projects pages (same pill size & feel as status pills).
+ ******************************************************************************/
+
+.publications ol.bibliography li .links a.abstract.btn,
+.publications ol.bibliography li .links a.btn.pill-toggle {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  padding: 0.35em 0.75em;
+  border-radius: 999px;
+  background-color: #ececef;
+  color: #4a4a4f;
+  border: 1px solid #dcdce0;
+  margin-right: 0.3rem;
+  text-transform: none;
+  box-shadow: none;
+
+  &:hover {
+    background-color: #dcdce0;
+    color: var(--global-theme-color);
+    border-color: #cbcbd0;
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .links a.abstract.btn,
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn.pill-toggle {
+  background-color: #2e3034;
+  color: #c7c7cc;
+  border-color: #44464b;
+
+  &:hover {
+    background-color: #3a3c41;
+    color: var(--global-theme-color);
+    border-color: #55575c;
+  }
+}
+
+/*******************************************************************************
+ * Year navigation (research page): horizontal list of year anchor links
+ ******************************************************************************/
+
+.year-nav {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.95rem;
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    padding: 0.1rem 0.25rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .year-nav__sep {
+    color: var(--global-text-color-light);
+    margin: 0 0.15rem;
+  }
+}
+
+/*******************************************************************************
+ * Research page — extra vertical spacing between published paper entries
+ ******************************************************************************/
+
+.research-publications ol.bibliography > li {
+  margin-bottom: 1.75rem;
+}
+
+/* Smooth scroll for in-page anchor navigation */
+html {
+  scroll-behavior: smooth;
 }
