@@ -221,6 +221,18 @@ html[data-theme="dark"] .status-pill--rr {
   border-color: #6b551a;
 }
 
+/* Accepted — light green */
+.status-pill--accepted {
+  background-color: #dcf5e3;
+  color: #1f6b3a;
+  border-color: #b7e3c4;
+}
+html[data-theme="dark"] .status-pill--accepted {
+  background-color: #173026;
+  color: #9ad7aa;
+  border-color: #2a5a3d;
+}
+
 /* Submitted — blue */
 .status-pill--submitted {
   background-color: #dfeefc;

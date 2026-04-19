@@ -16,7 +16,7 @@ nav_order: 1
   (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
 - Intergenerational Poverty in Europe: A Latent Class Analysis
-  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--submitted">Submitted</span>
+  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - The size and progressivity of taxes and transfers when the income concept changes
   (with [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
@@ -25,7 +25,7 @@ nav_order: 1
   (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - Where Wealth Concentration is Higher, the Likelihood to Help Others is Lower
-  (part of the [WESOREL](https://www.lmu.de/en/newsroom/news-overview/news/funding-for-project-on-social-inequality.html) project) <span class="status-pill status-pill--rr">R&amp;R</span>
+  (part of the [WESOREL](https://www.lmu.de/en/newsroom/news-overview/news/funding-for-project-on-social-inequality.html) project) <span class="status-pill status-pill--accepted">Accepted</span>
 
 ---
 
