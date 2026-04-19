@@ -253,8 +253,7 @@ html[data-theme="dark"] .status-pill--neutral {
  * and current-projects pages (same pill size & feel as status pills).
  ******************************************************************************/
 
-.publications ol.bibliography li .links a.abstract.btn,
-.publications ol.bibliography li .links a.btn.pill-toggle {
+.publications ol.bibliography li .links a.btn {
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 600;
@@ -266,6 +265,7 @@ html[data-theme="dark"] .status-pill--neutral {
   color: #4a4a4f;
   border: 1px solid #dcdce0;
   margin-right: 0.3rem;
+  margin-bottom: 0.25rem;
   text-transform: none;
   box-shadow: none;
 
@@ -276,8 +276,7 @@ html[data-theme="dark"] .status-pill--neutral {
   }
 }
 
-html[data-theme="dark"] .publications ol.bibliography li .links a.abstract.btn,
-html[data-theme="dark"] .publications ol.bibliography li .links a.btn.pill-toggle {
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn {
   background-color: #2e3034;
   color: #c7c7cc;
   border-color: #44464b;
