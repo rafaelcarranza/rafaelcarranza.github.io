@@ -19,44 +19,68 @@ nav_order: 5
 
 ### Media
 
-**In English**
+<nav class="year-nav" aria-label="Jump to year">
+  <a href="#m2026">2026</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2025">2025</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2024">2024</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2023">2023</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2022">2022</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2021">2021</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#m2019">2019</a>
+</nav>
 
-- 28/10/2024 — [Intergenerational poverty persistence in Europe and the Great Gatsby curve](https://cepr.org/voxeu/columns/intergenerational-poverty-persistence-europe-and-great-gatsby-curve). _VOX, CEPR Policy Portal_.
+#### 2026 {#m2026}
 
-- 04/09/2024 — [Wealth Inequality in Latin America](https://blogs.lse.ac.uk/inequalities/2024/09/04/wealth-inequality-in-latin-america/). _LSE International Inequalities Institute blog_.
+- 09/01/2026 — [Rafael Carranza por CASEN 2024: "Se ha hecho un buen trabajo en pobreza, pero la desigualdad sigue siendo un tema país"](https://radio13c.cl/show/cuatro-cabezas-mejores-momentos/episode/rafael-carranza-por-casen-2024-se-ha-hecho-un-buen-trabajo-en-pobreza-pero-la-desigualdad-sigue-siendo-un-tema-pais-). _Radio 13C_. _(in Spanish)_
 
-- 27/06/2023 — [Why is Latin American inequality so high?](https://www.inet.ox.ac.uk/news/why-is-latin-american-inequality-so-high/) _INET Oxford_.
+#### 2025 {#m2025}
 
-- 06/07/2022 — [Capturing top incomes and measuring inequality in Europe](https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe). _VOX, CEPR Policy Portal_.
+- 24/09/2025 — [Comentarios sobre el informe de la OCDE sobre desigualdad de oportunidades en Chile](https://www.litoralpress.cl/Archivos/S7JDCPNOVBY7JSCIKWQCLFUSAA.mp4). _Canal 24 Horas_. _(in Spanish)_
 
-**In Spanish**
+- 07/04/2025 — [Una pérdida de ingreso mayor al 40%: el primer golpe de quedarse sin trabajo](https://www.df.cl/economia-y-politica/laboral-personas/una-perdida-de-ingreso-mayor-a-40-el-primer-golpe-de-quedarse-sin-trabajo). _Diario Financiero_. _(in Spanish)_
 
-- 09/01/2026 — [Rafael Carranza por CASEN 2024: "Se ha hecho un buen trabajo en pobreza, pero la desigualdad sigue siendo un tema país"](https://radio13c.cl/show/cuatro-cabezas-mejores-momentos/episode/rafael-carranza-por-casen-2024-se-ha-hecho-un-buen-trabajo-en-pobreza-pero-la-desigualdad-sigue-siendo-un-tema-pais-). _Radio 13C_.
+#### 2024 {#m2024}
 
-- 24/09/2025 — [Comentarios sobre el informe de la OCDE sobre desigualdad de oportunidades en Chile](https://www.litoralpress.cl/Archivos/S7JDCPNOVBY7JSCIKWQCLFUSAA.mp4). _Canal 24 Horas_.
+- 10/12/2024 — [Rafael Carranza: "Es importante tener sistemas de protección social con mínimos universales y adaptables"](https://mirada.fen.uchile.cl/articulo/ver/es-importante-tener-sistemas-de-proteccion-social-con-minimos-universales-y-adaptables). _Revista Mirada FEN_. _(in Spanish)_
 
-- 07/04/2025 — [Una pérdida de ingreso mayor al 40%: el primer golpe de quedarse sin trabajo](https://www.df.cl/economia-y-politica/laboral-personas/una-perdida-de-ingreso-mayor-a-40-el-primer-golpe-de-quedarse-sin-trabajo). _Diario Financiero_.
+- 19/11/2024 — [Desigualdad de riqueza en Latinoamérica: altamente concentrada y persistente en el tiempo](https://www.ciperchile.cl/2024/11/19/desigualdad-de-riqueza-en-latinoamerica-altamente-concentrada-y-persistente-en-el-tiempo/). _CIPER Chile_. _(in Spanish)_
 
-- 10/12/2024 — [Rafael Carranza: "Es importante tener sistemas de protección social con mínimos universales y adaptables"](https://mirada.fen.uchile.cl/articulo/ver/es-importante-tener-sistemas-de-proteccion-social-con-minimos-universales-y-adaptables). _Revista Mirada FEN_.
+- 28/10/2024 — [Intergenerational poverty persistence in Europe and the Great Gatsby curve](https://cepr.org/voxeu/columns/intergenerational-poverty-persistence-europe-and-great-gatsby-curve). _VOX, CEPR Policy Portal_. _(in English)_
 
-- 19/11/2024 — [Desigualdad de riqueza en Latinoamérica: altamente concentrada y persistente en el tiempo](https://www.ciperchile.cl/2024/11/19/desigualdad-de-riqueza-en-latinoamerica-altamente-concentrada-y-persistente-en-el-tiempo/). _CIPER Chile_.
+- 04/09/2024 — [Wealth Inequality in Latin America](https://blogs.lse.ac.uk/inequalities/2024/09/04/wealth-inequality-in-latin-america/). _LSE International Inequalities Institute blog_. _(in English)_
 
-- 04/09/2024 — [Desigualdad de Riqueza en América Latina](https://blogs.lse.ac.uk/inequalities/2024/09/04/desigualdad-de-riqueza-en-america-latina/). _LSE International Inequalities Institute blog_.
+- 04/09/2024 — [Desigualdad de Riqueza en América Latina](https://blogs.lse.ac.uk/inequalities/2024/09/04/desigualdad-de-riqueza-en-america-latina/). _LSE International Inequalities Institute blog_. _(in Spanish)_
 
-- 27/07/2024 — [Comentarios sobre medición de desigualdad multidimensional](https://www.youtube.com/live/ABs3eX6RCoo?si=h2iPwkwKsIkbvlyQ&t=14859). _Cuarto Seminario Regional de Desarrollo Social, CEPAL_.
+- 27/07/2024 — [Comentarios sobre medición de desigualdad multidimensional](https://www.youtube.com/live/ABs3eX6RCoo?si=h2iPwkwKsIkbvlyQ&t=14859). _Cuarto Seminario Regional de Desarrollo Social, CEPAL_. _(in Spanish)_
 
-- 22/12/2022 — [Midiendo la desigualdad de oportunidades en Europa](https://nadaesgratis.es/admin/midiendo-la-desigualdad-de-oportunidades-en-europa). _Nada es Gratis_.
+#### 2023 {#m2023}
 
-- 02/11/2021 — [Rafael Carranza: "La principal pregunta es si el desarrollo de innovación tecnológica y precariedad, desigualdad, son un problema del capitalismo o una característica de éste"](https://pagina19.cl/nacional/entrevistas/rafael-carranza-la-principal-pregunta-es-si-el-desarrollo-de-innovacion-tecnologica-y-precariedad-desigualdad-son-un-problema-del-capitalismo-o-una-caracteristica-de-este/?amp). _Página 19_.
+- 06/11/2023 — [Schiefe Vergleiche in der Wirtschaftswissenschaft](https://www.suedwind-magazin.at/schiefe-vergleiche-in-der-wirtschaftswissenschaft/) ('Skewed comparisons in economics'). _Südwind-Magazin_ (Austria). _(in German)_
 
-- 28/10/2021 — [La desaparición de la clase media](https://open.spotify.com/episode/1CiQkjq4ciskKRygdiVLL2?si=jQSJ-tUETtal_QvBU3kEWg&nd=1). _Entre Iguales_ (podcast).
+- 27/06/2023 — [Why is Latin American inequality so high?](https://www.inet.ox.ac.uk/news/why-is-latin-american-inequality-so-high/) _INET Oxford_. _(in English)_
 
-- 01/08/2021 — [¿Influye la comuna en el rendimiento académico de estudiantes chilenos en matemáticas?](https://www.latercera.com/que-pasa/noticia/influye-la-comuna-en-el-rendimiento-academico-de-estudiantes-chilenos-en-matematicas-estudio-describe-los-efectos-de-la-segregacion-espacial-en-rm/GRYLWQEIO5GJZLAHA46TZR7I2E/). _La Tercera_.
+#### 2022 {#m2022}
 
-- 04/08/2021 — [Interview about 'Spatial divisions of poverty and wealth'](https://cooperativapodcast.cl/hablando-de?ts=20210804171204&categoria=hablando-de) (from minute 15:00). _Hablando De, Cooperativa Podcast_.
+- 22/12/2022 — [Midiendo la desigualdad de oportunidades en Europa](https://nadaesgratis.es/admin/midiendo-la-desigualdad-de-oportunidades-en-europa). _Nada es Gratis_. _(in Spanish)_
 
-- 28/07/2019 — [¿Qué podemos aprender del Seguro de Cesantía chileno?](https://coes.cl/que-podemos-aprender-del-seguro-de-cesantia-chileno/). _COES_.
+- 06/07/2022 — [Capturing top incomes and measuring inequality in Europe](https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe). _VOX, CEPR Policy Portal_. _(in English)_
 
-**Other**
+#### 2021 {#m2021}
 
-- 06/11/2023 — [Schiefe Vergleiche in der Wirtschaftswissenschaft](https://www.suedwind-magazin.at/schiefe-vergleiche-in-der-wirtschaftswissenschaft/) ('Skewed comparisons in economics'). _Südwind-Magazin_ (Austria).
+- 02/11/2021 — [Rafael Carranza: "La principal pregunta es si el desarrollo de innovación tecnológica y precariedad, desigualdad, son un problema del capitalismo o una característica de éste"](https://pagina19.cl/nacional/entrevistas/rafael-carranza-la-principal-pregunta-es-si-el-desarrollo-de-innovacion-tecnologica-y-precariedad-desigualdad-son-un-problema-del-capitalismo-o-una-caracteristica-de-este/?amp). _Página 19_. _(in Spanish)_
+
+- 28/10/2021 — [La desaparición de la clase media](https://open.spotify.com/episode/1CiQkjq4ciskKRygdiVLL2?si=jQSJ-tUETtal_QvBU3kEWg&nd=1). _Entre Iguales_ (podcast). _(in Spanish)_
+
+- 04/08/2021 — [Interview about 'Spatial divisions of poverty and wealth'](https://cooperativapodcast.cl/hablando-de?ts=20210804171204&categoria=hablando-de) (from minute 15:00). _Hablando De, Cooperativa Podcast_. _(in Spanish)_
+
+- 01/08/2021 — [¿Influye la comuna en el rendimiento académico de estudiantes chilenos en matemáticas?](https://www.latercera.com/que-pasa/noticia/influye-la-comuna-en-el-rendimiento-academico-de-estudiantes-chilenos-en-matematicas-estudio-describe-los-efectos-de-la-segregacion-espacial-en-rm/GRYLWQEIO5GJZLAHA46TZR7I2E/). _La Tercera_. _(in Spanish)_
+
+#### 2019 {#m2019}
+
+- 28/07/2019 — [¿Qué podemos aprender del Seguro de Cesantía chileno?](https://coes.cl/que-podemos-aprender-del-seguro-de-cesantia-chileno/). _COES_. _(in Spanish)_
