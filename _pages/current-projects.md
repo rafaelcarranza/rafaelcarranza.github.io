@@ -21,7 +21,7 @@ nav_order: 3
         </div>
         <div class="links" style="margin-top: 0.5rem;">
           <a class="abstract btn btn-sm z-depth-0" role="button">Summary</a>
-          <a href="https://www.isi-munich.de/en/research-project/wealth-and-social-cohesion-from-a-relational-perspective" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://wealthandcohesion.com/about/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
         </div>
         <div class="abstract hidden">
           <p>
