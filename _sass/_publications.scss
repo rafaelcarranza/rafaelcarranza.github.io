@@ -301,7 +301,24 @@ html[data-theme="dark"] .publications ol.bibliography li .links a.btn {
 }
 
 /*******************************************************************************
- * Year navigation (research page): horizontal list of year anchor links
+ * Year headings — shared style across research, media, presentations.
+ * Matches the visual language of jekyll-scholar's h2.bibliography so that
+ * year groupings look identical on every page that lists items by year.
+ ******************************************************************************/
+
+.year-heading {
+  color: var(--global-text-color);
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*******************************************************************************
+ * Year navigation (shared): horizontal list of year anchor links
  ******************************************************************************/
 
 .year-nav {

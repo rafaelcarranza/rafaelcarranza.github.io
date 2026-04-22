@@ -7,9 +7,27 @@ nav: true
 nav_order: 4
 ---
 
----
+<nav class="year-nav" aria-label="Jump to year">
+  <a href="#y2026">2026</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2025">2025</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2024">2024</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2023">2023</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2022">2022</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2021">2021</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2020">2020</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2019">2019</a>
+  <span class="year-nav__sep">·</span>
+  <a href="#y2018">2018</a>
+</nav>
 
-### 2026
+<h3 class="year-heading" id="y2026">2026</h3>
 
 - Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry. Campus América, Universidad de La Laguna. October 19-23. Tenerife, Spain.
 
@@ -19,9 +37,7 @@ nav_order: 4
 
 - Unpacking Redistribution in Europe: Decomposing the Effects of Direct and Indirect Taxes, Cash Benefits, and In-Kind Transfers. January 23, 2026. Workshop 'Actitudes ante la justicia distributiva: enfoques experimentales sobre redistribución y merecimiento'. Departamento de Sociología, Universidad de Chile.
 
----
-
-### 2025
+<h3 class="year-heading" id="y2025">2025</h3>
 
 - The concentration of children over time and its consequences for income inequality and poverty. November 2025. Workshop on inequality and stratification research, Sociology Institute UC Chile. Santiago, Chile.
 
@@ -35,9 +51,7 @@ nav_order: 4
 
 - The concentration of children over time and its consequences for income inequality and poverty. [Primera Mini Conferencia sobre Desigualdades](https://socialesehistoria.udp.cl/cms/wp-content/uploads/2025/05/a3c0a553-2c75-43e1-af8d-6e951af66a09_v-f-Programa-Primera-Mini-Conferencia-OBDE-COES-2025.pdf). June 6, 2025. Santiago, Chile.
 
----
-
-### 2024
+<h3 class="year-heading" id="y2024">2024</h3>
 
 - What makes elites more or less egalitarian? Variations in attitudes towards inequality within the economic, political and cultural elites in Chile. [1st ECINEQ - Latin America and the Caribbean Chapter (ECINEQ-LAC) Meeting](https://cee.colmex.mx/evento/colmex-ecineq-lac/call-for-papers-llamado-a-la-presentacion-de-trabajos), December 9–10, 2024. Mexico City, Mexico.
 
@@ -52,9 +66,7 @@ nav_order: 4
 
 - Social class and earnings inequality in Chile: A decomposition over the long run. [Congreso Chileno de Sociología](https://sociologiachile2024.cl/), May 2–4, 2024. Santiago, Chile.
 
----
-
-### 2023
+<h3 class="year-heading" id="y2023">2023</h3>
 
 - Social class and earnings inequality in Chile: A decomposition over the long run. Workshop on inequality and stratification research, Sociology Institute UC Chile, December 5, 2023. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=utof00BQIkI)
 
@@ -70,9 +82,7 @@ nav_order: 4
 
 - Does Predistribution or Redistribution Account for Varying Income Inequality? [III/LIS Comparative Economic Inequality Conference](https://www.lse.ac.uk/International-Inequalities/Research/Comparative-Economic-Inequality-Conference-2023), February 23–24, 2023. London, UK.
 
----
-
-### 2022
+<h3 class="year-heading" id="y2022">2022</h3>
 
 - Job loss and earnings inequality: Distributional effects from reemployment in Chile. [Sociedad Chilena de Políticas Públicas](https://www.sociedadpoliticaspublicas.cl/encuentros/14vo-encuentro-2022/), December 16, 2022. Santiago, Chile.
 
@@ -86,9 +96,7 @@ nav_order: 4
 
 - Decomposing wealth mobility in the US: The role of education and income. [2022 ISA RC28 Spring Meeting](https://www.lse.ac.uk/social-policy/rc28), April 21–23, 2022. London, UK.
 
----
-
-### 2021
+<h3 class="year-heading" id="y2021">2021</h3>
 
 - Top Income Adjustments and Inequality: An Investigation of the EU-SILC. [Second World Inequality Conference](https://world-inequality-conference-2021.org/), December 7–8, 2021. Paris, France. [[Slides]](https://drive.google.com/file/d/1SyT5N4w8Tj-PH0Pfirr6PU5HdmY1Iwcn/view?usp=sharing)
 
@@ -100,17 +108,13 @@ nav_order: 4
 
 - _(Poster)_ How much of intergenerational immobility can be attributed to differences in childhood circumstances? [Workshop on Social Mobility and Economic Performance](https://www.zew.de/en/events-and-professional-training/detail/social-mobility-and-economic-performance-1/3064) (ZEW), March 22–23, 2021. Virtual conference. [[Poster]](https://drive.google.com/file/d/1AkSqHX9IXYx2YqwMdOh-v-ToSS-UAwLC/view?usp=sharing)
 
----
-
-### 2020
+<h3 class="year-heading" id="y2020">2020</h3>
 
 - Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity. [XXVII Meeting on Public Economics](https://www.encuentroeconomiapublica.com/en/workshop.php), January 23–24, 2020. Barcelona, Spain. [[Slides]](https://drive.google.com/open?id=1D57NvPRnYmE8jgJnQdXx29tSB2UzDSwJ)
 
 - _(Poster)_ Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity. [Winter School on Inequality and Social Welfare Theory](http://dse.univr.it/it/), January 13–16, 2020. Alba di Canazei, Italy. [[Poster]](https://drive.google.com/open?id=1q_EFw61oM-CXfSh8rtL66g5vw0ZRG2Zh)
 
----
-
-### 2019
+<h3 class="year-heading" id="y2019">2019</h3>
 
 - Precarious Employment Conditions and Individual Savings Accounts: Lessons for other Developing Countries from Chile. [Sustainability and Development Conference](https://umsustdev.org/2019-conference/), October 11–14, 2019. Ann Arbor, Michigan. [[Slides]](https://drive.google.com/file/d/1r1rz-54xlIMtX_npqr-Nr1GGdygasgU5/view)
 
@@ -118,9 +122,7 @@ nav_order: 4
 
 - Upper and lower bound estimates of inequality of opportunity: A cross national comparison for Europe. [8th ECINEQ Meeting](http://ecineq.org/ecineq_paris19/general.htm), July 3–5, 2019. Paris, France. [[Slides]](https://drive.google.com/file/d/1MFBGda7daEjLCR33KQIZOZL-JNcasx7g/view)
 
----
-
-### 2018
+<h3 class="year-heading" id="y2018">2018</h3>
 
 - _(Poster)_ Measuring Inequality of Opportunity trends in Europe: Lower bounds, upper bounds and the space in between. [Equal Chances: Equality of Opportunity and Social Mobility Around the World](http://www.equalchances.org/web/updates/8043/17/opportunity_mobility_program.pdf), December 14–15, 2018. Bari, Italy. [[Poster]](https://drive.google.com/file/d/1g1Y26wGBKDxERlKYttkUfp4hVnR-I7_T/view)
 
