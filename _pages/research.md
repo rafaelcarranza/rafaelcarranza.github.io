@@ -15,6 +15,9 @@ nav_order: 1
 - Social class and earnings inequality in Chile: A decomposition over the long run
   (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
+- Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising
+  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/) and [Dante Contreras](https://fen.uchile.cl/academicos/dante-contreras/)) <span class="status-pill status-pill--submitted">Submitted</span>
+
 - Intergenerational Poverty in Europe: A Latent Class Analysis
   (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
@@ -26,9 +29,6 @@ nav_order: 1
 
 - Where Wealth Concentration is Higher, the Likelihood to Help Others is Lower
   (with the [WESOREL](https://wealthandcohesion.com/about/) team) <span class="status-pill status-pill--accepted">Accepted</span>
-
-- Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising
-  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/) and [Dante Contreras](https://fen.uchile.cl/academicos/dante-contreras/)) <span class="status-pill status-pill--submitted">Submitted</span>
 
 ---
 
