@@ -10,22 +10,22 @@ nav_order: 1
 ### Work in progress
 
 - The concentration of children over time and its consequences for income inequality and poverty
-  (with [Berkay Özcan](https://www.lse.ac.uk/social-policy/people/academic-staff/Professor-Berkay-Ozcan)) <span class="status-pill status-pill--inprogress">In progress</span>
+  (with [Berkay Özcan](https://berkayozcan.net/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
 - Social class and earnings inequality in Chile: A decomposition over the long run
-  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
+  (with [Gabriel Otero](https://icso.udp.cl/investigador/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
 - Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising
-  (with [Gabriel Otero](https://doctorado.esoc.cl/claustro-academico/gabriel-otero/) and [Dante Contreras](https://fen.uchile.cl/academicos/dante-contreras/)) <span class="status-pill status-pill--submitted">Submitted</span>
+  (with [Gabriel Otero](https://icso.udp.cl/investigador/gabriel-otero/) and [Dante Contreras](https://fen.uchile.cl/academicos/dante-contreras/)) <span class="status-pill status-pill--submitted">Submitted</span>
 
 - Intergenerational Poverty in Europe: A Latent Class Analysis
-  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
+  (with [Michele Bavaro](https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - The size and progressivity of taxes and transfers when the income concept changes
   (with [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--rr">R&amp;R</span>
 
 - Parents' Education and Children's Household Income Across Cohorts in Europe
-  (with [Michele Bavaro](https://www.spi.ox.ac.uk/people/michele-bavaro) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--accepted">Accepted</span>
+  (with [Michele Bavaro](https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--accepted">Accepted</span>
 
 - Where Wealth Concentration is Higher, the Likelihood to Help Others is Lower
   (with the [WESOREL](https://wealthandcohesion.com/about/) team) <span class="status-pill status-pill--accepted">Accepted</span>
