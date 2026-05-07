@@ -129,13 +129,3 @@ nav_order: 4
 - The Political Economy of Unemployment Insurance Individual Savings Accounts. Challenges for Development in Chile: New institutions for innovations, November 15, 2018. Oxford, UK.
 
 - The Political Economy of Unemployment Insurance Individual Savings Accounts. [The IZA World Labor Conference](https://wol.iza.org/events/world-of-labor-conference-2018), June 28–29, 2018. Berlin, Germany. [[Slides]](https://drive.google.com/file/d/1UkmPmePP8EwYxr93C9S04bh1MhEsDG1J/view)
-
----
-
-### Scientific committees
-
-- [2nd ECINEQ-LAC Conference](https://fcea.udelar.edu.uy/institucional/eventos-academicos/conferencia-ecineq-lac-2026.html), October 28–29, 2026. Montevideo, Uruguay.
-
-- [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://congresolatriada.org/), November 13–15, 2024. Santiago, Chile. _(Scientific coordinator)_
-
-- [Second World Inequality Conference](https://world-inequality-conference-2021.org/), December 7–8, 2021. Paris, France.
