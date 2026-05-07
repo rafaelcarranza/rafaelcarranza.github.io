@@ -55,7 +55,7 @@ nav_order: 4
 
 - What makes elites more or less egalitarian? Variations in attitudes towards inequality within the economic, political and cultural elites in Chile. [1st ECINEQ - Latin America and the Caribbean Chapter (ECINEQ-LAC) Meeting](https://cee.colmex.mx/evento/colmex-ecineq-lac/call-for-papers-llamado-a-la-presentacion-de-trabajos), December 9–10, 2024. Mexico City, Mexico.
 
-- _(Plenary)_ Wealth Inequality in Latin America. [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://congresolatriada.org/), November 13–15, 2024. Santiago, Chile. Session shared with María José Álvarez (Universidad de los Andes) and Cristina Giraudo (Tecnológico de Monterrey).
+- Wealth Inequality in Latin America. [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://www.uc.cl/agenda/evento/segundo-congreso-latinoamericano-de-ciencias-sociales-y-gobierno-2024), November 13–15, 2024. Santiago, Chile. Plenary session with María José Álvarez (Universidad de los Andes) and Cristina Giraudo (Tecnológico de Monterrey).
 
 - Social class and earnings inequality in Chile: A decomposition over the long run. Coloquios Agenda Élite, COES, October 2, 2024. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=iFU-vA_FPyw)
 
