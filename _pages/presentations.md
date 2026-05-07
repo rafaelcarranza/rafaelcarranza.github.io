@@ -55,7 +55,7 @@ nav_order: 4
 
 - What makes elites more or less egalitarian? Variations in attitudes towards inequality within the economic, political and cultural elites in Chile. [1st ECINEQ - Latin America and the Caribbean Chapter (ECINEQ-LAC) Meeting](https://cee.colmex.mx/evento/colmex-ecineq-lac/call-for-papers-llamado-a-la-presentacion-de-trabajos), December 9–10, 2024. Mexico City, Mexico.
 
-- Wealth Inequality in Latin America. [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://congresolatriada.org/), November 13–15, 2024. Santiago, Chile.
+- _(Plenary)_ Wealth Inequality in Latin America. [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://congresolatriada.org/), November 13–15, 2024. Santiago, Chile. Session shared with María José Álvarez (Universidad de los Andes) and Cristina Giraudo (Tecnológico de Monterrey).
 
 - Social class and earnings inequality in Chile: A decomposition over the long run. Coloquios Agenda Élite, COES, October 2, 2024. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=iFU-vA_FPyw)
 
@@ -129,3 +129,13 @@ nav_order: 4
 - The Political Economy of Unemployment Insurance Individual Savings Accounts. Challenges for Development in Chile: New institutions for innovations, November 15, 2018. Oxford, UK.
 
 - The Political Economy of Unemployment Insurance Individual Savings Accounts. [The IZA World Labor Conference](https://wol.iza.org/events/world-of-labor-conference-2018), June 28–29, 2018. Berlin, Germany. [[Slides]](https://drive.google.com/file/d/1UkmPmePP8EwYxr93C9S04bh1MhEsDG1J/view)
+
+---
+
+### Scientific committees
+
+- [2nd ECINEQ-LAC Conference](https://fcea.udelar.edu.uy/institucional/eventos-academicos/conferencia-ecineq-lac-2026.html), October 28–29, 2026. Montevideo, Uruguay.
+
+- [Segundo Congreso Latinoamericano de Ciencias Sociales y Gobierno](https://congresolatriada.org/), November 13–15, 2024. Santiago, Chile. _(Scientific coordinator)_
+
+- [Second World Inequality Conference](https://world-inequality-conference-2021.org/), December 7–8, 2021. Paris, France.
