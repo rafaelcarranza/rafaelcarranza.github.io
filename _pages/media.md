@@ -39,7 +39,7 @@ nav_order: 5
 
 - 05/05/2026 — [Economistas analizan medidas para compensar el efecto de la rebaja tributaria que propone Kast y vuelve al debate la efectividad de impuesto al patrimonio](https://www.df.cl/economia-y-politica/df-tax/economistas-analizan-medidas-para-compensar-el-efecto-de-la-rebaja). _Diario Financiero_. _(in Spanish)_
 
-- 14/01/26 - [Desafíos de la pobreza en Chile](https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&email=545915&fromemail=1). _La Segunda_. _(in Spanish)_
+- 14/01/2026 - [Desafíos de la pobreza en Chile](https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&email=545915&fromemail=1). _La Segunda_. _(in Spanish)_
 
 - 09/01/2026 — [Rafael Carranza por CASEN 2024: "Se ha hecho un buen trabajo en pobreza, pero la desigualdad sigue siendo un tema país"](https://radio13c.cl/show/cuatro-cabezas-mejores-momentos/episode/rafael-carranza-por-casen-2024-se-ha-hecho-un-buen-trabajo-en-pobreza-pero-la-desigualdad-sigue-siendo-un-tema-pais-). _Radio 13C_. _(in Spanish)_
 
