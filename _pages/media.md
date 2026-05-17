@@ -17,7 +17,7 @@ nav_order: 5
 
 ---
 
-### Media
+### Press
 
 - 05/05/2026 — [Economistas analizan medidas para compensar el efecto de la rebaja tributaria que propone Kast y vuelve al debate la efectividad de impuesto al patrimonio](https://www.df.cl/economia-y-politica/df-tax/economistas-analizan-medidas-para-compensar-el-efecto-de-la-rebaja). _Diario Financiero_.
 
@@ -43,7 +43,7 @@ nav_order: 5
 
 ---
 
-### Written media
+### Writing
 
 - 14/01/2026 — [Desafíos de la pobreza en Chile](https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&email=545915&fromemail=1). _La Segunda_.
 
