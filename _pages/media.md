@@ -29,8 +29,6 @@ nav_order: 5
 
 - 04/09/2024 — [Desigualdad de Riqueza en América Latina](https://blogs.lse.ac.uk/inequalities/2024/09/04/desigualdad-de-riqueza-en-america-latina/). _LSE International Inequalities Institute blog_.
 
-- 06/11/2023 — [Schiefe Vergleiche in der Wirtschaftswissenschaft](https://www.suedwind-magazin.at/schiefe-vergleiche-in-der-wirtschaftswissenschaft/) ('Skewed comparisons in economics'). _Südwind-Magazin_ (Austria).
-
 - 22/12/2022 — [Midiendo la desigualdad de oportunidades en Europa](https://nadaesgratis.es/admin/midiendo-la-desigualdad-de-oportunidades-en-europa). _Nada es Gratis_.
 
 - 06/07/2022 — [Capturing top incomes and measuring inequality in Europe](https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe). _VOX, CEPR Policy Portal_.
@@ -54,6 +52,8 @@ nav_order: 5
 - 27/07/2024 — [Comentarios sobre medición de desigualdad multidimensional](https://www.youtube.com/live/ABs3eX6RCoo?si=h2iPwkwKsIkbvlyQ&t=14859). _Cuarto Seminario Regional de Desarrollo Social, CEPAL_.
 
 - 27/06/2023 — [Why is Latin American inequality so high?](https://www.inet.ox.ac.uk/news/why-is-latin-american-inequality-so-high/) _INET Oxford_.
+
+- 06/11/2023 — [Schiefe Vergleiche in der Wirtschaftswissenschaft](https://www.suedwind-magazin.at/schiefe-vergleiche-in-der-wirtschaftswissenschaft/) ('Skewed comparisons in economics'). _Südwind-Magazin_ (Austria).
 
 - 02/11/2021 — [Rafael Carranza: "La principal pregunta es si el desarrollo de innovación tecnológica y precariedad, desigualdad, son un problema del capitalismo o una característica de éste"](https://pagina19.cl/nacional/entrevistas/rafael-carranza-la-principal-pregunta-es-si-el-desarrollo-de-innovacion-tecnologica-y-precariedad-desigualdad-son-un-problema-del-capitalismo-o-una-caracteristica-de-este/?amp). _Página 19_.
 
