@@ -42,7 +42,7 @@ nav_order: 3
         </div>
         <div class="abstract hidden">
           <p>
-            Recent studies have shown a demographic reversal in the association between income and fertility among high-income countries. What was a robust negative gradient throughout the twentieth century has begun to turn positive in many high-income countries. This project explores what that means for the long-term structure of inequality. If wealth and social status shape who has children (and how many), then inequality reproduces itself not just through inheritance but through demography. The project examines how fertility decisions are tied to income, wealth, intergenerational mobility, and the degree to which welfare states attenuate or reinforce these patterns.
+            Recent studies have shown a demographic reversal in the association between income and fertility. What was a robust negative gradient throughout the twentieth century has begun to turn positive in many high-income countries. This project explores what that means for the long-term structure of inequality. If wealth and social status shape who has children (and how many), then inequality reproduces itself not just through inheritance but through demography. The project examines how fertility decisions are tied to income, wealth, intergenerational mobility, and the degree to which welfare states attenuate or reinforce these patterns.
           </p>
         </div>
       </div>
