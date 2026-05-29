@@ -19,6 +19,8 @@ nav_order: 5
 
 ### Writing
 
+- 29/05/2026 — [Reproducibilidad fiscal](https://www.latercera.com/opinion/noticia/reproducibilidad-fiscal/). _La Tercera_.
+
 - 14/01/2026 — [Desafíos de la pobreza en Chile](https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&email=545915&fromemail=1). _La Segunda_.
 
 - 19/11/2024 — [Desigualdad de riqueza en Latinoamérica: altamente concentrada y persistente en el tiempo](https://www.ciperchile.cl/2024/11/19/desigualdad-de-riqueza-en-latinoamerica-altamente-concentrada-y-persistente-en-el-tiempo/). _CIPER Chile_.
