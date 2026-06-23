@@ -26,6 +26,7 @@ nav_order: 1
 
 - Parents' Education and Children's Household Income Across Cohorts in Europe
   (with [Michele Bavaro](https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--accepted">Accepted</span>
+  <br><span class="status-venue">Forthcoming in <em>European Sociological Review</em></span>
 
 ---
 

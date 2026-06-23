@@ -259,6 +259,18 @@ html[data-theme="dark"] .status-pill--neutral {
   border-color: #44464b;
 }
 
+/* Venue note — muted line under an Accepted/Forthcoming item (sits outside the pill) */
+.status-venue {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #6a6a70;
+}
+html[data-theme="dark"] .status-venue {
+  color: #9a9aa0;
+}
+
 /*******************************************************************************
  * Make the al-folio abstract / summary toggle buttons look like neutral pills
  * inside .links containers. Applies to .abstract buttons across publications
