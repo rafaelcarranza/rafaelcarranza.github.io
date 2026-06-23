@@ -29,19 +29,19 @@ nav_order: 4
 
 <h3 class="year-heading" id="y2026">2026</h3>
 
-- Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry. Campus América, Universidad de La Laguna. October 19-23. Tenerife, Spain.
+- Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry. [Campus América, Universidad de La Laguna](https://www.ull.es/portal/campusamerica/programa/). October 19-23. Tenerife, Spain.
 
-- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. Workshop on Tax Data and Inequality: Methods, Histories, and Global Perspectives. June 10-11, 2026. Munich, Germany.
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. [Global Perspectives on Tax Data: Advancing Wealth Inequality Research](https://www.isi-munich.de/en). June 10-11, 2026. Munich, Germany.
 
-- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. World Inequality Conference 2026. June 4-6, 2026. Paris, France.
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. [World Inequality Conference 2026](https://wic2026.wid.world/). June 4-6, 2026. Paris, France.
 
-- Unpacking Redistribution in Europe: Decomposing the Effects of Direct and Indirect Taxes, Cash Benefits, and In-Kind Transfers. January 23, 2026. Workshop 'Actitudes ante la justicia distributiva: enfoques experimentales sobre redistribución y merecimiento'. Departamento de Sociología, Universidad de Chile.
+- Unpacking Redistribution in Europe: Decomposing the Effects of Direct and Indirect Taxes, Cash Benefits, and In-Kind Transfers. January 23, 2026. [Workshop 'Actitudes ante la justicia distributiva: enfoques experimentales sobre redistribución y merecimiento'](https://jc-castillo.com/blog/posts/workshop-jusmer-2026/). Departamento de Sociología, Universidad de Chile.
 
 <h3 class="year-heading" id="y2025">2025</h3>
 
 - The concentration of children over time and its consequences for income inequality and poverty. November 2025. Workshop on inequality and stratification research, Sociology Institute UC Chile. Santiago, Chile.
 
-- Shifting Perceptions Among Chilean Elites Following the 2019 Social Uprising. LSE III Seminar, October 13, 2025. London, UK.
+- Shifting Perceptions Among Chilean Elites Following the 2019 Social Uprising. [LSE III SMOOTHIE seminar](https://www.lse.ac.uk/international-inequalities/research/opportunity-mobility/smoothie-seminars), October 13, 2025. London, UK.
 
 - Shifting Perceptions Among Chilean Elites Following the 2019 Social Uprising. [2025 ISI Wealth Conference](https://www.isi-munich.de/en/news/reichtum-und-verantwortung), October 9–11, 2025. Munich, Germany.
 
@@ -68,7 +68,7 @@ nav_order: 4
 
 <h3 class="year-heading" id="y2023">2023</h3>
 
-- Social class and earnings inequality in Chile: A decomposition over the long run. Workshop on inequality and stratification research, Sociology Institute UC Chile, December 5, 2023. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=utof00BQIkI)
+- Social class and earnings inequality in Chile: A decomposition over the long run. [Workshop on inequality and stratification research](https://github.com/mebucca/workshop_ineq), Sociology Institute UC Chile, December 5, 2023. Santiago, Chile. [[YouTube recording]](https://www.youtube.com/watch?v=utof00BQIkI)
 
 - Wealth Inequality in Latin America. [X Conferencia Internacional COES](https://coes.cl/x-conferenciainternacional/), November 8–10, 2023. Santiago, Chile.
   - _Also presenting:_ Social class and earnings inequality in Chile: A decomposition over the long run.
