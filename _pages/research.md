@@ -27,14 +27,13 @@ nav_order: 1
 - Parents' Education and Children's Household Income Across Cohorts in Europe
   (with [Michele Bavaro](https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it) and [Brian Nolan](https://www.spi.ox.ac.uk/people/professor-brian-nolan)) <span class="status-pill status-pill--accepted">Accepted</span>
 
-- Where Wealth Concentration is Higher, the Likelihood to Help Others is Lower
-  (with the [WESOREL](https://wealthandcohesion.com/about/) team) <span class="status-pill status-pill--accepted">Accepted</span>
-
 ---
 
 ### Published papers
 
 <nav class="year-nav" aria-label="Jump to year">
+  <a href="#y2026">2026</a>
+  <span class="year-nav__sep">·</span>
   <a href="#y2025">2025</a>
   <span class="year-nav__sep">·</span>
   <a href="#y2024">2024</a>
