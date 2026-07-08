@@ -19,6 +19,8 @@ nav_order: 5
 
 ### Writing
 
+- 03/07/2026 — [Los súper ricos, los impuestos y el futuro de la democracia](https://www.lemondediplomatique.cl/2026/07/los-super-ricos-los-impuestos-y-el-futuro-de-la-democracia.html). _Le Monde Diplomatique_ (Chile).
+
 - 29/05/2026 — [Reproducibilidad fiscal](https://www.latercera.com/opinion/noticia/reproducibilidad-fiscal/). _La Tercera_.
 
 - 14/01/2026 — [Desafíos de la pobreza en Chile](https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&email=545915&fromemail=1). _La Segunda_.
