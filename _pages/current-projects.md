@@ -7,14 +7,33 @@ nav: true
 nav_order: 3
 ---
 
-<div class="publications" style="margin-top: 0;">
+<style>
+  /* Coauthor links: quiet by default so the theme-coloured project title
+     stays the only accent on the page; underline marks them as links. */
+  .current-projects .author a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--global-divider-color);
+  }
+
+  .current-projects .author a:hover {
+    color: var(--global-hover-color);
+    text-decoration: none;
+    border-bottom-color: var(--global-hover-color);
+    border-bottom-style: solid;
+  }
+</style>
+
+<div class="publications current-projects" style="margin-top: 0;">
   <ol class="bibliography" style="margin-top: 1rem;">
 
     <li style="margin-bottom: 2rem;">
       <div id="wesorel" class="col-sm-10">
         <div class="title">Wealth and Social Cohesion from a Relational Perspective (WESOREL)</div>
         <div class="author" style="margin-top: 0.3rem;">
-          with Fabian Pfeffer (LMU Munich), Manuel Schechtl (UNC Chapel Hill), and Nhat An Trinh (WZB)
+          with <a href="https://fabianpfeffer.com/" target="_blank">Fabian Pfeffer</a> (LMU Munich),
+          <a href="https://schechtl.github.io/" target="_blank">Manuel Schechtl</a> (UNC Chapel Hill), and
+          <a href="https://natrinh.github.io/" target="_blank">Nhat An Trinh</a> (WZB)
         </div>
         <div class="author" style="margin-top: 0.3rem;">
           <strong>Funder:</strong> Volkswagen Foundation &nbsp;|&nbsp; <strong>2025–2029</strong>
@@ -52,7 +71,8 @@ nav_order: 3
       <div id="avanza-uc" class="col-sm-10">
         <div class="title">Free Tuition and University Choice in Chile: Differentiated Effects by Socioeconomic Context</div>
         <div class="author" style="margin-top: 0.3rem;">
-          with Andrea Canales (Instituto de Sociología, UC) and Pablo Geraldo (Nuffield College, University of Oxford)
+          with <a href="https://sociologia.uc.cl/academicos-as/planta-academica/andrea-canales-hernandez/" target="_blank">Andrea Canales</a> (Instituto de Sociología, UC) and
+          <a href="https://pablogeraldo.com/" target="_blank">Pablo Geraldo</a> (Nuffield College, University of Oxford)
         </div>
         <div class="author" style="margin-top: 0.3rem;">
           <strong>Funder:</strong> Avanza UC, Pontificia Universidad Católica de Chile &nbsp;|&nbsp; <strong>2026</strong>
