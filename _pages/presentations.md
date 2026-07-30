@@ -29,7 +29,13 @@ nav_order: 4
 
 <h3 class="year-heading" id="y2026">2026</h3>
 
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. Seminario del Centro de Economía Aplicada, FCFM, Universidad de Chile. November 11, 2026. Santiago, Chile.
+
 - Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry. [Campus América, Universidad de La Laguna](https://www.ull.es/portal/campusamerica/programa/). October 19-23. Tenerife, Spain.
+
+- Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. II Mini Conferencia de Desigualdades, OBDE-UDP. October 15, 2026. Santiago, Chile.
+
+- Pensar el bien común desde la pobreza y la desigualdad. Ciclo Interdisciplinar ‘Pobreza y Bien Común’, Escuela de Gobierno e Instituto de Éticas Aplicadas UC. August 11, 2026. Santiago, Chile.
 
 - Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile. [Global Perspectives on Tax Data: Advancing Wealth Inequality Research](https://www.isi-munich.de/en). June 10-11, 2026. Munich, Germany.
 
