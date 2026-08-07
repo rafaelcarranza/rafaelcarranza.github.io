@@ -15,6 +15,9 @@ nav_order: 1
 - Social class and earnings inequality in Chile: A decomposition over the long run
   (with [Gabriel Otero](https://icso.udp.cl/investigador/gabriel-otero/)) <span class="status-pill status-pill--inprogress">In progress</span>
 
+- The Persistent Socioeconomic Cost of Extreme Natural Events: Evidence from Chilean Administrative Records
+  (with [Magdalena Gil](https://gobierno.uc.cl/profesores/magdalena-gil/)) <span class="status-pill status-pill--inprogress">In progress</span>
+
 - Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising
   (with [Gabriel Otero](https://icso.udp.cl/investigador/gabriel-otero/) and [Dante Contreras](https://fen.uchile.cl/academicos/dante-contreras/)) <span class="status-pill status-pill--submitted">Submitted</span>
 
