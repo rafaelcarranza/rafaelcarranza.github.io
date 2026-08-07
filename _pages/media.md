@@ -11,7 +11,7 @@ nav_order: 5
 
 ### Policy reports
 
-- Mesa del Trabajo del Futuro. (2025). [Chile tiene futuro desde sus territorios: Oportunidades frente a los cambios en el mundo laboral](https://cfstorage.sfo3.cdn.digitaloceanspaces.com/pch2050/docs/trabajo-del-futuro.pdf). Policy Brief, Proyecta Chile 2050.
+- Mesa del Trabajo del Futuro. (2025). [Chile tiene futuro desde sus territorios: Oportunidades frente a los cambios en el mundo laboral](https://cfstorage.sfo3.cdn.digitaloceanspaces.com/pch2050/docs/trabajo-del-futuro.pdf). Policy Brief, Proyecta Chile 2050. Coordinador submesa "Movimientos: nuevas formas de empleo y protección social" junto con Mariana Huepe.
 
 - Alarcón, S., Carranza, R., Del Villar, P., Domínguez, C., Flor, A., Grau, M.O., Rodríguez, T., Santelices, P. & Telias, A. (2025). [Propuestas presidenciales en pobreza infantil: Una mirada basada en evidencia para el ciclo político 2026-2030 en Chile](https://politicaspublicas.uc.cl/publicacion/propuestas-presidenciales-en-pobreza-infantil/). Centro de Políticas Públicas UC.
 
