@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {% if page.permalink == '/' -%}
+        {{- site.first_name }}
+        {{ site.last_name -}}
+      {%- else -%}
+        {{- page.title }} · {{ site.first_name }}
+        {{ site.last_name -}}
+      {%- endif %}
+    </title>
+    {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}" />{% endif %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+    />
+    <link rel="stylesheet" href="{{ '/assets/css/carranza.css' | relative_url }}" />
+    {% if site.icon -%}
+      <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+      />
+    {%- endif %}
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header class="site-head">
+        <a class="site-name" href="{{ '/' | relative_url }}">
+          {{- site.first_name }}
+          {{ site.last_name -}}
+        </a>
+        <nav class="site-nav" aria-label="Sections">
+          {%- assign nav_pages = site.pages | where: 'nav', true | sort: 'nav_order' -%}
+          {%- for p in nav_pages -%}
+            <a
+              href="{{ p.permalink | relative_url }}"
+              {% if p.permalink == page.permalink %}
+                aria-current="page"
+              {% endif %}
+            >
+              {{- p.nav_label | default: p.title | capitalize -}}
+            </a>
+          {%- endfor -%}
+          {%- if page.lang == 'es' -%}
+            <a class="lang" href="{{ '/' | relative_url }}" title="Read this page in English"><span class="flag">&#127468;&#127463;</span> EN</a>
+          {%- else -%}
+            <a class="lang" href="{{ '/es/' | relative_url }}" title="Ver esta p&aacute;gina en espa&ntilde;ol"
+              ><span class="flag">&#127464;&#127473;</span> ES</a
+            >
+          {%- endif -%}
+        </nav>
+      </header>
+
+      <main>{{ content }}</main>
+
+      <footer class="site-foot">
+        &copy; {{ site.time | date: '%Y' }}
+        {{ site.first_name }}
+        {{ site.last_name }} &middot; Escuela de Gobierno, Pontificia Universidad Cat&oacute;lica de Chile
+      </footer>
+    </div>
+
+    <script>
+      // Abstracts open in place; nothing else on the page needs scripting.
+      document.querySelectorAll('[data-abs]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var panel = document.getElementById(btn.dataset.abs);
+          if (!panel) return;
+          var open = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+          btn.textContent = open ? 'Abstract' : 'Hide abstract';
+          panel.hidden = open;
+        });
+      });
+    </script>
+  </body>
+</html>
