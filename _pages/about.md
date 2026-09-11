@@ -1,33 +1,32 @@
 ---
-layout: about
+layout: carranza
 title: about
+nav: true
+nav_order: 0
+nav_label: About
 permalink: /
-subtitle: >
-  Assistant Professor, <a href="https://gobierno.uc.cl/" target="_blank">School of Government, UC Chile</a>.<br>
-
-profile:
-  align: right
-  image: prof_pic.jpg # upload your photo to assets/img/ with this name
-  image_circular: true
-  more_info: >
-    <p>rafael.carranza [at] uc.cl</p>
-    <p>Santiago, Chile</p>
-
-news: false
-selected_papers: false
-social: true
+description: Rafael Carranza studies economic inequality, intergenerational mobility and labour markets in Chile, Latin America and Europe.
 ---
 
-<div style="text-align: justify;" markdown="1">
+<section class="about">
+  <h1>Rafael Carranza</h1>
+  <p class="about__role">Assistant Professor, School of Government, UC Chile</p>
 
-My research studies the causes and consequences of economic inequality, including earnings, income and wealth inequality, intergenerational mobility, inequality of opportunity, elites, redistribution, and labour markets.
+  <div class="about__cols">
+    <div class="about__main">
+      <p>My research studies the causes and consequences of economic inequality, including earnings, income and wealth inequality, intergenerational mobility, inequality of opportunity, elites, redistribution, and labour markets.</p>
+      <p>I hold a PhD in Social Policy from the <a href="https://www.lse.ac.uk/">London School of Economics and Political Science</a>. Before my current position, I was a Postdoctoral Research Officer at the University of Oxford.</p>
+      <p>I am based at the School of Government, Pontificia Universidad Cat&oacute;lica de Chile, in Santiago.</p>
+      {% include actions.liquid %}
+    </div>
+    <aside class="about__side">
+      <img class="about__photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Rafael Carranza" />
+      {% include affiliations.liquid %}
+    </aside>
+  </div>
 
-I hold a PhD in Social Policy from the [London School of Economics and Political Science](https://www.lse.ac.uk/). Before my current position, I was a Postdoctoral Research Officer at the University of Oxford.
-
-I am affiliated with [INET Oxford](https://www.inet.ox.ac.uk/), the [LSE International Inequalities Institute](https://www.lse.ac.uk/international-inequalities), [WID.world](https://wid.world/), [WAPLAC](http://waplac.org/), the [Observatorio de Desigualdades UDP](https://observatoriodesigualdades.udp.cl/), and [CIGIDEN](https://nuevo.cigiden.cl/).
-
-See more about my [recent research here](https://rafaelcarranza.github.io/research/), and my [current projects here](https://rafaelcarranza.github.io/current-projects/).
-
-</div>
-
-<div style="text-align: right; margin-bottom: 1rem;"><a href="/es/">🇨🇱 Español</a></div>
+  <section class="cloud" aria-label="Concepts across the published papers">
+    {% include cloud.liquid %}
+    {% include cloud_note.liquid %}
+  </section>
+</section>

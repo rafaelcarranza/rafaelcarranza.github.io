@@ -1,0 +1,45 @@
+<div class="actions">
+  {% if site.cv_pdf %}
+    <a class="iconbtn iconbtn--cv" href="{{ site.cv_pdf | relative_url }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 2h8l6 6v14H6V2Zm7 1.5V9h5.5L13 3.5ZM8.5 12h7v1.6h-7V12Zm0 3.4h7V17h-7v-1.6Z" />
+      </svg>
+      CV</a
+    >
+    <a class="iconbtn" href="mailto:rafael.carranza@uc.cl" title="Email" aria-label="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5L12 12.2 19.8 6H4.2ZM20 8.3l-7.4 5.9a1 1 0 0 1-1.2 0L4 8.3V18h16V8.3Z"
+        />
+      </svg>
+    </a>
+  {%- endif %}
+  <a class="iconbtn" href="https://scholar.google.com/citations?user=6N1zOi8AAAAJ" title="Google Scholar" aria-label="Google Scholar">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3ZM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8Z" />
+    </svg>
+  </a>
+  <a class="iconbtn" href="https://orcid.org/0000-0002-7466-4040" title="ORCID" aria-label="ORCID">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" />
+      <text
+        x="12"
+        y="16.4"
+        text-anchor="middle"
+        font-size="11"
+        font-weight="600"
+        font-family="Public Sans, sans-serif"
+        fill="var(--paper)"
+      >
+        iD
+      </text>
+    </svg>
+  </a>
+  <a class="iconbtn" href="https://github.com/rafaelcarranza" title="GitHub" aria-label="GitHub">
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path
+        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+      />
+    </svg>
+  </a>
+</div>

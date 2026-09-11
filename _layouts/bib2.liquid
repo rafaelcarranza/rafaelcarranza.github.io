@@ -1,0 +1,88 @@
+{% comment %}
+  Bibliography entry for the redesigned site.
+
+  Title, authors, venue, then keyword pills on the left and the three links
+  on the right: Abstract (opens in place), DOI, PDF. Keywords come from the
+  `keywords` field in papers.bib, comma separated.
+
+  Used by research.md as {% bibliography --template bib2 %}.
+{% endcomment %}
+
+<li class="item">
+  <h4 class="item__title">
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+    {%- else -%}
+      {{- entry.title -}}
+    {%- endif %}
+  </h4>
+
+  <p class="item__authors">
+    {%- for a in entry.author_array -%}
+      {%- assign is_self = false -%}
+      {%- if a.last contains 'Carranza' -%}{% assign is_self = true %}{%- endif -%}
+      {%- if is_self -%}
+        <span class="self">
+          {{- a.first }}
+          {{ a.last -}}
+        </span>
+      {%- else -%}
+        {{ a.first }}
+        {{ a.last }}
+      {%- endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  </p>
+
+  <p class="item__venue">
+    {%- if entry.type == 'incollection' -%}
+      In <em>{{ entry.booktitle }}</em>
+      {%- if entry.publisher %}, {{ entry.publisher }}{% endif %}
+    {%- else -%}
+      {{ entry.journal -}}
+      {%- if entry.volume %} {{ entry.volume }}{% endif -%}
+      {%- if entry.number %}({{ entry.number }}){% endif %}
+    {%- endif -%}
+    {%- if entry.pages %}, {{ entry.pages }}{% endif -%}
+    {%- if entry.year %} &middot; {{ entry.year }}{% endif -%}
+  </p>
+
+  {% if entry.note %}
+    <p class="item__where">{{ entry.note }}</p>
+  {% endif %}
+
+  <div class="item__foot">
+    <div class="tags">
+      {%- if entry.keywords -%}
+        {%- assign kws = entry.keywords | split: ',' -%}
+        {%- for k in kws -%}
+          <span class="pill pill--tag">{{ k | strip }}</span>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    <div class="links">
+      {% if entry.abstract -%}
+        <button type="button" data-abs="abs-{{ entry.key }}" aria-expanded="false">Abstract</button>
+      {%- endif %}
+      {% if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+      {%- endif %}
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' -%}
+          <a href="{{ entry.pdf }}">PDF</a>
+        {% else -%}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
+        {%- endif %}
+      {% endif %}
+      {% if entry.replication -%}
+        <a href="{{ entry.replication }}">Replication</a>
+      {%- endif %}
+    </div>
+  </div>
+
+  {% if entry.abstract %}
+    <div class="abstract" id="abs-{{ entry.key }}" hidden>
+      <p>{{ entry.abstract }}</p>
+    </div>
+  {% endif %}
+</li>
