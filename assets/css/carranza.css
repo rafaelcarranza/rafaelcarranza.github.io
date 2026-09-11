@@ -811,34 +811,20 @@ ol.bibliography .item {
   border-color: var(--accent);
 }
 
-/* show the sun in dark mode, the moon in light mode */
-.theme-toggle__sun {
+/* The icon shows the mode you are in, not the one you would switch to.
+   data-theme-mode is set before first paint, so there is no flicker. */
+.theme-toggle svg {
   display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle__sun {
-    display: block;
-  }
-
-  :root:not([data-theme="light"]) .theme-toggle__moon {
-    display: none;
-  }
-}
-
-:root[data-theme="dark"] .theme-toggle__sun {
+:root[data-theme-mode="light"] .theme-toggle__sun,
+:root[data-theme-mode="dark"] .theme-toggle__moon,
+:root[data-theme-mode="system"] .theme-toggle__auto {
   display: block;
 }
 
-:root[data-theme="dark"] .theme-toggle__moon {
-  display: none;
-}
-
-:root[data-theme="light"] .theme-toggle__sun {
-  display: none;
-}
-
-:root[data-theme="light"] .theme-toggle__moon {
+/* before the script runs, and if it never does, show the system icon */
+:root:not([data-theme-mode]) .theme-toggle__auto {
   display: block;
 }
 
