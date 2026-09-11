@@ -23,9 +23,9 @@ setwd(Sys.getenv("CLOUD_DIR"))
 
 # **** 1. Parameters ********************************************************
 
-W       <- 16          # canvas width, inches
-H       <- 3.4         # canvas height, inches  (4.7:1 banner)
-SIZE_MM <- c(4.4, 10)  # smallest and largest label
+W       <- 22          # canvas width, inches
+H       <- 4.4         # canvas height, inches  (5:1 banner)
+SIZE_MM <- c(6.1, 13)  # smallest and largest label
 MARGIN  <- 1           # padding between labels, grid units
 SEED    <- 20260911
 

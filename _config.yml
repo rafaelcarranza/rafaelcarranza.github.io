@@ -12,7 +12,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
-cv_pdf: # e.g. /assets/pdf/carranza-cv.pdf - the CV button appears once this is set
+cv_pdf: /assets/cv/cv.pdf # the CV button on the about page links here
 icon: 📊 # emoji as favicon
 
 url: https://rafaelcarranza.github.io

@@ -20,7 +20,10 @@ jobs:
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
       - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        # npm ci installs exactly what package-lock.json pins, so CI and the
+        # pre-commit hook run the same formatter. Installing "latest" here
+        # silently diverged from the lockfile and broke the check for months.
+        run: npm ci
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
