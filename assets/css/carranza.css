@@ -673,11 +673,8 @@ footer.site-foot {
   h1 {
     font-size: 1.8rem;
   }
-  .about__cols {
-    grid-template-columns: minmax(0, 1fr);
-  }
   .about__photo {
-    width: 9rem;
+    width: 9.5rem;
   }
   .item__foot {
     align-items: flex-start;
@@ -783,5 +780,170 @@ ol.bibliography .item {
 
   .contact-block dt {
     margin-top: 0.9rem;
+  }
+}
+
+/* ---------- theme toggle ---------- */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+  display: block;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* show the sun in dark mode, the moon in light mode */
+.theme-toggle__sun {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle__sun {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle__moon {
+    display: none;
+  }
+}
+
+:root[data-theme="dark"] .theme-toggle__sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle__sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle__moon {
+  display: block;
+}
+
+/* ---------- collapsible menu, narrow screens only ---------- */
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.45rem;
+  margin-inline-start: auto;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  display: block;
+  width: 0.85rem;
+  height: 1.5px;
+  background: currentColor;
+  content: "";
+}
+
+.nav-toggle__bars {
+  position: relative;
+}
+
+.nav-toggle__bars::before {
+  position: absolute;
+  top: -4px;
+}
+
+.nav-toggle__bars::after {
+  position: absolute;
+  top: 4px;
+}
+
+@media (max-width: 46rem) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    margin: 0.75rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .site-head.is-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav a,
+  .site-nav button {
+    padding-block: 0.45rem;
+    font-size: 1rem;
+  }
+
+  .site-nav .lang {
+    margin-top: 0.4rem;
+  }
+
+  .theme-toggle {
+    margin-top: 0.5rem;
+  }
+}
+
+/* ---------- about page on narrow screens ---------- */
+
+@media (max-width: 46rem) {
+  .about__cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  /* let the portrait and the affiliations sit either side of the bio */
+  .about__side {
+    display: contents;
+  }
+
+  .about__photo {
+    order: -1;
+    width: 11rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .about__main {
+    order: 0;
+  }
+
+  .about__affil {
+    order: 1;
+    margin-top: 0;
   }
 }

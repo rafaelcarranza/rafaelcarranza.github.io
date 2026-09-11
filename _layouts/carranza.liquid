@@ -27,6 +27,15 @@
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
       />
     {%- endif %}
+    <script>
+      // Set the theme before first paint. Falls back to the OS setting.
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
   </head>
 
   <body>
@@ -36,7 +45,10 @@
           {{- site.first_name }}
           {{ site.last_name -}}
         </a>
-        <nav class="site-nav" aria-label="Sections">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bars" aria-hidden="true"></span> Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Sections">
           {%- assign nav_pages = site.pages | where: 'nav', true | sort: 'nav_order' -%}
           {%- for p in nav_pages -%}
             <a
@@ -55,6 +67,14 @@
               ><span class="flag">&#127464;&#127473;</span> Espa&ntilde;ol</a
             >
           {%- endif -%}
+          <button class="theme-toggle" type="button" title="Switch between light and dark" aria-label="Switch between light and dark">
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13.5a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 19a1 1 0 0 1-1-1V20a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1ZM3.5 13H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 0 2Zm18.5 0h-1.5a1 1 0 1 1 0-2H22a1 1 0 1 1 0 2ZM5.6 6.99 4.55 5.93a1 1 0 1 1 1.41-1.41L7.02 5.58A1 1 0 0 1 5.6 6.99Zm12.8 12.8-1.06-1.06a1 1 0 0 1 1.41-1.41l1.06 1.05a1 1 0 0 1-1.41 1.42ZM4.55 19.79a1 1 0 0 1 0-1.42l1.05-1.05A1 1 0 0 1 7.02 18.7l-1.06 1.06a1 1 0 0 1-1.41 0ZM17.34 7a1 1 0 0 1-.7-1.71l1.05-1.06a1 1 0 1 1 1.42 1.41L18.05 6.7a1 1 0 0 1-.71.29Z"/>
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21.1 14.6A9 9 0 0 1 9.4 2.9a9 9 0 1 0 11.7 11.7Z"/>
+            </svg>
+          </button>
         </nav>
       </header>
 
@@ -68,6 +88,33 @@
     </div>
 
     <script>
+      // Menu, on narrow screens only.
+      var navBtn = document.querySelector('.nav-toggle');
+      if (navBtn) {
+        navBtn.addEventListener('click', function () {
+          var open = navBtn.getAttribute('aria-expanded') === 'true';
+          navBtn.setAttribute('aria-expanded', open ? 'false' : 'true');
+          document.querySelector('.site-head').classList.toggle('is-open', !open);
+        });
+      }
+
+      // Light and dark, remembered between visits.
+      var themeBtn = document.querySelector('.theme-toggle');
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function () {
+          var root = document.documentElement;
+          var now = root.getAttribute('data-theme');
+          if (!now) {
+            now = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          var next = now === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try {
+            localStorage.setItem('theme', next);
+          } catch (e) {}
+        });
+      }
+
       // Abstracts open in place; nothing else on the page needs scripting.
       document.querySelectorAll('[data-abs]').forEach(function (btn) {
         btn.addEventListener('click', function () {
