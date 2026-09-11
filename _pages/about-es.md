@@ -13,7 +13,7 @@ profile:
     <p>rafael.carranza [at] uc.cl</p>
     <p>Santiago, Chile</p>
 
-news: true
+news: false
 selected_papers: false
 social: true
 lang_toggle:

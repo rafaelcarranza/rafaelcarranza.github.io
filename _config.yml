@@ -118,6 +118,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin/
+  - "old files 2026/"
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
