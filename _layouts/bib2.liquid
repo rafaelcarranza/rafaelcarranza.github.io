@@ -8,7 +8,7 @@
   Used by research.md as {% bibliography --template bib2 %}.
 {% endcomment %}
 
-<li class="item">
+<div class="item">
   <h4 class="item__title">
     {% if entry.doi -%}
       <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
@@ -85,4 +85,4 @@
       <p>{{ entry.abstract }}</p>
     </div>
   {% endif %}
-</li>
+</div>

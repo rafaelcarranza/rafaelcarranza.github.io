@@ -714,3 +714,74 @@ main h1:first-child {
 .lede {
   margin-bottom: 1.5rem;
 }
+
+/* ---------- bibliography, as jekyll-scholar emits it ---------- */
+
+ol.bibliography {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2.bibliography {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  margin: 2rem 0 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+ol.bibliography > li {
+  padding-block: 0.95rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+ol.bibliography > li:last-child {
+  border-bottom: 0;
+}
+
+ol.bibliography .item {
+  padding-block: 0;
+  border-bottom: 0;
+}
+
+/* ---------- contact ---------- */
+
+.contact-block {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1.1rem 1.5rem;
+  margin: 0;
+  max-width: 34rem;
+}
+
+.contact-block dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  padding-top: 0.15rem;
+}
+
+.contact-block dd {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+}
+
+@media (max-width: 34rem) {
+  .contact-block {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.3rem;
+  }
+
+  .contact-block dt {
+    margin-top: 0.9rem;
+  }
+}

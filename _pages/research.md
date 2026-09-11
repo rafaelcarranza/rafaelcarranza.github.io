@@ -44,9 +44,7 @@ description: Work in progress, published papers, thesis and working papers.
 </ol>
 
 <h2 class="section">Published papers</h2>
-<ol class="list">
 {% bibliography --template bib2 %}
-</ol>
 
 <h2 class="section">PhD thesis</h2>
 <ul class="plain">

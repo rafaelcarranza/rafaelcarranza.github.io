@@ -1,12 +1,18 @@
+{%- assign es = page.lang == 'es' -%}
 <div class="actions">
   {% if site.cv_pdf %}
-    <a class="iconbtn iconbtn--cv" href="{{ site.cv_pdf | relative_url }}">
+    <a class="iconbtn iconbtn--cv" href="{{ site.cv_pdf | relative_url }}" title="{% if es %}Curr&iacute;culum{% else %}Curriculum vitae{% endif %}">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M6 2h8l6 6v14H6V2Zm7 1.5V9h5.5L13 3.5ZM8.5 12h7v1.6h-7V12Zm0 3.4h7V17h-7v-1.6Z" />
       </svg>
       CV</a
     >
-    <a class="iconbtn" href="mailto:rafael.carranza@uc.cl" title="Email" aria-label="Email">
+    <a
+      class="iconbtn"
+      href="mailto:rafael.carranza@uc.cl"
+      title="{% if es %}Correo{% else %}Email{% endif %}"
+      aria-label="{% if es %}Correo{% else %}Email{% endif %}"
+    >
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
           d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5L12 12.2 19.8 6H4.2ZM20 8.3l-7.4 5.9a1 1 0 0 1-1.2 0L4 8.3V18h16V8.3Z"
