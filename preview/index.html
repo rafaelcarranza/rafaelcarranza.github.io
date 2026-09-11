@@ -1,0 +1,2565 @@
+---
+layout: none
+permalink: /preview/
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Rafael Carranza — design preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+    />
+  </head>
+  <body>
+    <style>
+      :root {
+        color-scheme: light;
+
+        --paper: #fbf9f5;
+        --paper-sunk: #f2eee6;
+        --ink: #1b2131;
+        --ink-soft: #58607a;
+        --ink-faint: #8a91a4;
+        --rule: #e3ddd2;
+        --rule-soft: #eee9e0;
+        --accent: #9c2a2a;
+        --accent-deep: #7a1f1f;
+        --on-accent: #fbf9f5;
+
+        /* status tints, ordinal: further along the process, stronger the fill */
+        --pill-1: #ece7dd;
+        --pill-2: #e0cfc2;
+        --pill-3: #c99a90;
+        --pill-4: var(--accent);
+
+        --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+        --sans: "Public Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+
+        --measure: 52rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          color-scheme: dark;
+          --paper: #15171e;
+          --paper-sunk: #1d202a;
+          --ink: #e9e5dd;
+          --ink-soft: #a4aab8;
+          --ink-faint: #757c8c;
+          --rule: #2c303c;
+          --rule-soft: #23262f;
+          --accent: #e08279;
+          --accent-deep: #efa79f;
+          --on-accent: #15171e;
+          --pill-1: #262a35;
+          --pill-2: #3d3a42;
+          --pill-3: #8a5750;
+          --pill-4: var(--accent);
+        }
+      }
+
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --paper: #15171e;
+        --paper-sunk: #1d202a;
+        --ink: #e9e5dd;
+        --ink-soft: #a4aab8;
+        --ink-faint: #757c8c;
+        --rule: #2c303c;
+        --rule-soft: #23262f;
+        --accent: #e08279;
+        --accent-deep: #efa79f;
+        --on-accent: #15171e;
+        --pill-1: #262a35;
+        --pill-2: #3d3a42;
+        --pill-3: #8a5750;
+        --pill-4: var(--accent);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-size: 15.5px;
+        line-height: 1.6;
+        padding-inline: 1.5rem;
+        padding-block: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .wrap {
+        max-width: var(--measure);
+        margin-inline: auto;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+      }
+      a:hover {
+        color: var(--accent-deep);
+      }
+
+      :where(a, button):focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      /* ---------- header ---------- */
+
+      .site-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem 2rem;
+        padding-block: 2rem 1rem;
+      }
+
+      .site-name {
+        font-family: var(--serif);
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.15rem;
+      }
+
+      .site-nav button,
+      .site-nav a {
+        background: none;
+        border: 0;
+        padding: 0;
+        font: inherit;
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .site-nav button:hover,
+      .site-nav a:hover {
+        color: var(--accent);
+      }
+
+      .site-nav [aria-current="page"] {
+        color: var(--ink);
+        font-weight: 500;
+        box-shadow: inset 0 -2px 0 var(--accent);
+      }
+
+      .pane[hidden] {
+        display: none;
+      }
+
+      /* ---------- headings ---------- */
+
+      h1 {
+        font-family: var(--serif);
+        font-optical-sizing: auto;
+        font-size: 1.85rem;
+        font-weight: 600;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.5rem;
+        text-wrap: balance;
+      }
+
+      h2.section {
+        font-family: var(--serif);
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin: 2.75rem 0 0.25rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      h3.year {
+        font-family: var(--sans);
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--ink-faint);
+        margin: 2rem 0 0;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      /* ---------- about ---------- */
+
+      .about {
+        padding-block: 1rem 0.5rem;
+      }
+
+      .about__role {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 1.05rem;
+        color: var(--ink-soft);
+        margin: 0 0 1.5rem;
+      }
+
+      .about__cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 16rem;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .about p {
+        margin: 0 0 1.05rem;
+      }
+      .about__main > p:last-of-type {
+        margin-bottom: 1.4rem;
+      }
+
+      .about__photo {
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        margin-bottom: 1.25rem;
+      }
+
+      .about__affil {
+        font-size: 0.8rem;
+        line-height: 1.65;
+        color: var(--ink-soft);
+        padding-top: 1rem;
+        border-top: 1px solid var(--rule);
+      }
+
+      .about__affil h2 {
+        font-family: var(--sans);
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 0 0 0.45rem;
+      }
+
+      .about__affil ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem 0.45rem;
+      }
+
+      .about__affil li {
+        margin: 0;
+      }
+      .about__affil li:not(:last-child)::after {
+        content: " \00b7";
+        color: var(--ink-faint);
+      }
+      .about__affil .affil-gap {
+        margin-top: 0;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+      }
+
+      .actions {
+        gap: 0.65rem;
+        align-items: center;
+      }
+
+      .iconbtn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 1px solid var(--rule);
+        border-radius: 50%;
+        color: var(--ink-soft);
+        background: var(--paper);
+        text-decoration: none;
+      }
+
+      .iconbtn svg {
+        width: 1.05rem;
+        height: 1.05rem;
+        fill: currentColor;
+        display: block;
+      }
+      .iconbtn:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+        background: var(--paper-sunk);
+      }
+
+      .iconbtn--cv {
+        width: auto;
+        border-radius: 999px;
+        gap: 0.4rem;
+        padding-inline: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--on-accent);
+      }
+
+      .iconbtn--cv:hover {
+        background: var(--accent-deep);
+        border-color: var(--accent-deep);
+        color: var(--on-accent);
+      }
+
+      /* language switch, not a content link */
+      .lang {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        background: none;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        padding: 0.2rem 0.55rem;
+        font: inherit;
+        font-size: 0.82rem;
+        color: var(--ink-soft);
+        cursor: pointer;
+      }
+
+      .lang:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .lang .flag {
+        font-size: 0.95rem;
+        line-height: 1;
+      }
+
+      /* ---------- concept banner ---------- */
+
+      .cloud {
+        margin-top: 2rem;
+        padding-top: 1.4rem;
+        border-top: 1px solid var(--rule);
+      }
+
+      .cloudsvg {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .cloud__note {
+        margin: 0.7rem 0 0;
+        text-align: center;
+        font-size: 0.7rem;
+        line-height: 1.4;
+        color: var(--ink-faint);
+      }
+
+      .cloud__note a {
+        color: inherit;
+        text-decoration-color: var(--rule);
+      }
+      .cloud__note a:hover {
+        color: var(--accent);
+      }
+
+      .k {
+        font-weight: 600;
+      }
+      .k--topic {
+        color: var(--cw-topic-2);
+      }
+      .k--method {
+        color: var(--cw-method-1);
+      }
+      .k--data {
+        color: var(--cw-data-1);
+      }
+      .k--place {
+        color: var(--cw-place-1);
+      }
+
+      /* banner palette: hue = kind of concept, depth = frequency */
+      :root {
+        --cw-topic-0: #7fb3af;
+        --cw-topic-1: #3e8c87;
+        --cw-topic-2: #12514d;
+        --cw-method-0: #d8b277;
+        --cw-method-1: #b0762a;
+        --cw-method-2: #7a4e12;
+        --cw-data-0: #93a8c8;
+        --cw-data-1: #4e6c9b;
+        --cw-data-2: #2a4166;
+        --cw-place-0: #cf8b86;
+        --cw-place-1: #a8413c;
+        --cw-place-2: #761515;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --cw-topic-0: #2f6f6b;
+          --cw-topic-1: #57ada7;
+          --cw-topic-2: #8fd2cc;
+          --cw-method-0: #8a5f24;
+          --cw-method-1: #c89250;
+          --cw-method-2: #e5be86;
+          --cw-data-0: #42597f;
+          --cw-data-1: #7590bc;
+          --cw-data-2: #a9bedc;
+          --cw-place-0: #8e3733;
+          --cw-place-1: #c86a63;
+          --cw-place-2: #e6a29b;
+        }
+      }
+      :root[data-theme="dark"] {
+        --cw-topic-0: #2f6f6b;
+        --cw-topic-1: #57ada7;
+        --cw-topic-2: #8fd2cc;
+        --cw-method-0: #8a5f24;
+        --cw-method-1: #c89250;
+        --cw-method-2: #e5be86;
+        --cw-data-0: #42597f;
+        --cw-data-1: #7590bc;
+        --cw-data-2: #a9bedc;
+        --cw-place-0: #8e3733;
+        --cw-place-1: #c86a63;
+        --cw-place-2: #e6a29b;
+      }
+
+      /* ---------- entries ---------- */
+
+      .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .item {
+        padding-block: 0.95rem;
+        border-bottom: 1px solid var(--rule-soft);
+      }
+      .item:last-child {
+        border-bottom: 0;
+      }
+
+      .item__title {
+        font-family: var(--serif);
+        font-optical-sizing: auto;
+        font-size: 1.08rem;
+        font-weight: 600;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
+        margin: 0 0 0.3rem;
+        text-wrap: pretty;
+      }
+
+      .item__title a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+      .item__title a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      .item__authors {
+        margin: 0 0 0.15rem;
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+      }
+      .item__authors .self {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .item__venue {
+        margin: 0;
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--ink-soft);
+      }
+
+      /* the one line that used to be the margin note */
+      .item__finding {
+        margin: 0.55rem 0 0;
+        font-size: 0.97rem;
+        line-height: 1.5;
+        color: var(--ink);
+        padding-left: 0.8rem;
+        border-left: 2px solid var(--pill-2);
+      }
+
+      .item__finding .where {
+        color: var(--ink-soft);
+      }
+
+      .item__foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.6rem 1rem;
+        margin-top: 0.7rem;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        font-size: 0.9rem;
+      }
+
+      .links button,
+      .links a {
+        background: none;
+        border: 0;
+        padding: 0;
+        font: inherit;
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        cursor: pointer;
+      }
+
+      .links button:hover,
+      .links a:hover {
+        color: var(--accent-deep);
+      }
+
+      .abstract {
+        margin-top: 0.85rem;
+        padding: 0.9rem 1.1rem;
+        background: var(--paper-sunk);
+        border-radius: 4px;
+        font-size: 0.97rem;
+        line-height: 1.6;
+        color: var(--ink-soft);
+      }
+
+      .abstract p {
+        margin: 0;
+      }
+
+      /* ---------- pills ---------- */
+
+      .pill {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1;
+        padding: 0.34rem 0.66rem;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      .pill--tag {
+        background: var(--pill-1);
+        color: var(--ink-soft);
+        font-weight: 400;
+      }
+      .pill--inprogress {
+        background: var(--pill-1);
+        color: var(--ink-soft);
+      }
+      .pill--submitted {
+        background: var(--pill-2);
+        color: #3a2420;
+      }
+      .pill--rr {
+        background: var(--pill-3);
+        color: #2b1412;
+      }
+      .pill--accepted {
+        background: var(--pill-4);
+        color: var(--on-accent);
+      }
+
+      .item--wip {
+        padding-block: 0.55rem;
+      }
+      .item--wip .item__title {
+        font-size: 0.93rem;
+        font-weight: 600;
+        margin-bottom: 0.08rem;
+        color: var(--ink-soft);
+      }
+      .item--wip .item__authors {
+        margin: 0;
+        font-size: 0.82rem;
+      }
+
+      .pill--sm {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.48rem;
+        margin-left: 0.4rem;
+        vertical-align: 1px;
+      }
+
+      .item__forthcoming {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--accent);
+      }
+
+      /* ---------- talks and media ---------- */
+
+      .item--line {
+        padding-block: 0.95rem;
+      }
+
+      .item--line .item__title {
+        font-size: 1.08rem;
+        font-weight: 400;
+        margin-bottom: 0.15rem;
+      }
+
+      .item__where {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+      }
+      .item__where .sep {
+        color: var(--ink-faint);
+        padding-inline: 0.35rem;
+      }
+
+      /* ---------- plain lists ---------- */
+
+      .plain {
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+      }
+      .plain li {
+        margin-bottom: 1rem;
+        font-size: 0.97rem;
+        line-height: 1.55;
+        color: var(--ink-soft);
+      }
+      .plain .t {
+        color: var(--ink);
+      }
+
+      .lede {
+        color: var(--ink-soft);
+        margin: 0 0 0.5rem;
+      }
+
+      footer.site-foot {
+        margin-top: 3rem;
+        padding-block: 1.5rem 3rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.9rem;
+        color: var(--ink-faint);
+      }
+
+      @media (max-width: 34rem) {
+        body {
+          font-size: 16px;
+          padding-inline: 1.15rem;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+        .about__cols {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .about__photo {
+          width: 9rem;
+        }
+        .item__foot {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <div class="wrap">
+      <header class="site-head">
+        <button class="site-name" type="button" data-goto="about">Rafael Carranza</button>
+        <nav class="site-nav" aria-label="Sections">
+          <button type="button" data-goto="about" aria-current="page">About</button>
+          <button type="button" data-goto="research">Research</button>
+          <button type="button" data-goto="projects">Projects</button>
+          <button type="button" data-goto="talks">Talks</button>
+          <button type="button" data-goto="media">Media</button>
+          <a href="#">Contact</a>
+          <button class="lang" type="button" title="Ver en espa&ntilde;ol"><span class="flag">&#127464;&#127473;</span> ES</button>
+        </nav>
+      </header>
+
+      <!-- ================= ABOUT ================= -->
+      <main class="pane" id="pane-about">
+        <section class="about">
+          <h1>Rafael Carranza</h1>
+          <p class="about__role">Assistant Professor, School of Government, UC Chile</p>
+          <div class="about__cols">
+            <div class="about__main">
+              <p>
+                My research studies the causes and consequences of economic inequality, including earnings, income and wealth inequality,
+                intergenerational mobility, inequality of opportunity, elites, redistribution, and labour markets.
+              </p>
+              <p>
+                I hold a PhD in Social Policy from the <a href="https://www.lse.ac.uk/">London School of Economics and Political Science</a>. Before
+                my current position, I was a Postdoctoral Research Officer at the University of Oxford.
+              </p>
+              <p>I am based at the School of Government, Pontificia Universidad Cat&oacute;lica de Chile, in Santiago.</p>
+              <div class="actions">
+                <a class="iconbtn iconbtn--cv" href="#"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h8l6 6v14H6V2Zm7 1.5V9h5.5L13 3.5ZM8.5 12h7v1.6h-7V12Zm0 3.4h7V17h-7v-1.6Z" />
+                  </svg>
+                  CV</a
+                >
+                <a class="iconbtn" href="mailto:rafael.carranza@uc.cl" title="Email" aria-label="Email"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5L12 12.2 19.8 6H4.2ZM20 8.3l-7.4 5.9a1 1 0 0 1-1.2 0L4 8.3V18h16V8.3Z"
+                    /></svg
+                ></a>
+                <a class="iconbtn" href="https://scholar.google.com/citations?user=6N1zOi8AAAAJ" title="Google Scholar" aria-label="Google Scholar"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3ZM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8Z" /></svg
+                ></a>
+                <a class="iconbtn" href="https://orcid.org/0000-0002-7466-4040" title="ORCID" aria-label="ORCID"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="11" />
+                    <text
+                      x="12"
+                      y="16.4"
+                      text-anchor="middle"
+                      font-size="11"
+                      font-weight="600"
+                      font-family="Public Sans, sans-serif"
+                      fill="var(--paper)"
+                    >
+                      iD
+                    </text>
+                  </svg></a
+                >
+                <a class="iconbtn" href="https://github.com/rafaelcarranza" title="GitHub" aria-label="GitHub"
+                  ><svg viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+            <aside class="about__side">
+              <img class="about__photo" src="/assets/img/prof_pic.jpg" alt="Rafael Carranza" />
+              <div class="about__affil">
+                <h2>Affiliations</h2>
+                <ul>
+                  <li><a href="https://gobierno.uc.cl/">Escuela de Gobierno UC</a></li>
+                  <li class="affil-gap"><a href="https://nuevo.cigiden.cl/">CIGIDEN R+</a></li>
+                  <li><a href="https://www.inet.ox.ac.uk/">INET Oxford</a></li>
+                  <li><a href="https://www.lse.ac.uk/international-inequalities">LSE III</a></li>
+                  <li><a href="https://observatoriodesigualdades.udp.cl/">OBDE UDP</a></li>
+                  <li><a href="http://waplac.org/">WAPLAC</a></li>
+                  <li><a href="https://wid.world/">WID.world</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <section class="cloud" aria-label="Concepts across the published papers">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="cloudsvg"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 1152.00 244.80"
+            >
+              <g class="svglite">
+                <defs>
+                  <style type="text/css">
+                    <![CDATA[
+                                    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+                                      fill: none;
+                                      stroke: #000000;
+                                      stroke-linecap: round;
+                                      stroke-linejoin: round;
+                                      stroke-miterlimit: 10.00;
+                                    }
+                                    .svglite text {
+                                      white-space: pre;
+                                    }
+                                    .svglite g.glyphgroup path {
+                                      fill: inherit;
+                                      stroke: none;
+                                    }
+                                  ]]>
+                  </style>
+                </defs>
+                <defs>
+                  <clipPath id="cpMC4wMHwxMTUyLjAwfDAuMDB8MjQ0Ljgw">
+                    <rect x="0.00" y="0.00" width="1152.00" height="244.80" />
+                  </clipPath>
+                </defs>
+                <g clip-path="url(#cpMC4wMHwxMTUyLjAwfDAuMDB8MjQ0Ljgw)">
+                  <text
+                    x="509.62"
+                    y="129.59"
+                    style="font-size: 28.45px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="132.75px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="556.93"
+                    y="100.30"
+                    style="font-size: 27.23px; font-weight: bold; fill: var(--cw-place-2); font-family: &quot;Arial&quot;"
+                    textLength="66.55px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    Chile
+                  </text>
+                  <text
+                    x="509.26"
+                    y="154.56"
+                    style="font-size: 27.22px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="98.25px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    poverty
+                  </text>
+                  <text
+                    x="404.17"
+                    y="181.98"
+                    style="font-size: 26.71px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="127.56px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    childhood
+                  </text>
+                  <text
+                    x="539.15"
+                    y="181.98"
+                    style="font-size: 26.71px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="186.98px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    circumstances
+                  </text>
+                  <text
+                    x="551.80"
+                    y="77.76"
+                    style="font-size: 26.54px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="67.83px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    elites
+                  </text>
+                  <text
+                    x="516.03"
+                    y="51.24"
+                    style="font-size: 25.09px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="48.75px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    Gini
+                  </text>
+                  <text
+                    x="571.74"
+                    y="51.24"
+                    style="font-size: 25.09px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="125.41px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    coefficient
+                  </text>
+                  <text
+                    x="416.32"
+                    y="203.93"
+                    style="font-size: 24.81px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="176.45px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    unemployment
+                  </text>
+                  <text
+                    x="599.66"
+                    y="203.93"
+                    style="font-size: 24.81px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="117.20px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    insurance
+                  </text>
+                  <text
+                    x="475.78"
+                    y="234.42"
+                    style="font-size: 23.8px; font-weight: bold; fill: var(--cw-topic-2); font-family: &quot;Arial&quot;"
+                    textLength="153.27px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    redistribution
+                  </text>
+                  <text
+                    x="450.66"
+                    y="78.50"
+                    style="font-size: 22.98px; font-weight: bold; fill: var(--cw-data-1); font-family: &quot;Arial&quot;"
+                    textLength="91.88px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    EU-SILC
+                  </text>
+                  <text
+                    x="635.07"
+                    y="95.87"
+                    style="font-size: 22.83px; font-weight: bold; fill: var(--cw-place-1); font-family: &quot;Arial&quot;"
+                    textLength="78.62px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    Europe
+                  </text>
+                  <text
+                    x="512.99"
+                    y="23.86"
+                    style="font-size: 22.77px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="34.14px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    job
+                  </text>
+                  <text
+                    x="553.46"
+                    y="23.86"
+                    style="font-size: 22.77px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="45.55px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    loss
+                  </text>
+                  <text
+                    x="646.05"
+                    y="144.96"
+                    style="font-size: 22.45px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="87.30px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    parental
+                  </text>
+                  <text
+                    x="739.58"
+                    y="144.96"
+                    style="font-size: 22.45px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="128.41px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    background
+                  </text>
+                  <text
+                    x="605.10"
+                    y="19.64"
+                    style="font-size: 22.31px; font-weight: bold; fill: var(--cw-data-1); font-family: &quot;Arial&quot;"
+                    textLength="151.30px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    administrative
+                  </text>
+                  <text
+                    x="762.60"
+                    y="19.64"
+                    style="font-size: 22.31px; font-weight: bold; fill: var(--cw-data-1); font-family: &quot;Arial&quot;"
+                    textLength="81.84px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    records
+                  </text>
+                  <text
+                    x="214.15"
+                    y="101.90"
+                    style="font-size: 21.83px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="138.20px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    distributional
+                  </text>
+                  <text
+                    x="358.41"
+                    y="101.90"
+                    style="font-size: 21.83px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="83.66px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    national
+                  </text>
+                  <text
+                    x="448.13"
+                    y="101.90"
+                    style="font-size: 21.83px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="95.81px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    accounts
+                  </text>
+                  <text
+                    x="321.07"
+                    y="131.31"
+                    style="font-size: 21.31px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="74.62px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    income
+                  </text>
+                  <text
+                    x="401.62"
+                    y="131.31"
+                    style="font-size: 21.31px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="99.48px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="352.53"
+                    y="44.36"
+                    style="font-size: 21.12px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="150.06px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    decomposition
+                  </text>
+                  <text
+                    x="647.67"
+                    y="122.04"
+                    style="font-size: 20.97px; font-weight: bold; fill: var(--cw-place-1); font-family: &quot;Arial&quot;"
+                    textLength="50.09px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    Latin
+                  </text>
+                  <text
+                    x="703.59"
+                    y="122.04"
+                    style="font-size: 20.97px; font-weight: bold; fill: var(--cw-place-1); font-family: &quot;Arial&quot;"
+                    textLength="82.73px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    America
+                  </text>
+                  <text
+                    x="636.53"
+                    y="234.72"
+                    style="font-size: 20.92px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="63.88px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    labour
+                  </text>
+                  <text
+                    x="706.22"
+                    y="234.72"
+                    style="font-size: 20.92px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="80.20px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    markets
+                  </text>
+                  <text
+                    x="385.86"
+                    y="17.23"
+                    style="font-size: 20.71px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="117.33px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    segregation
+                  </text>
+                  <text
+                    x="377.68"
+                    y="154.20"
+                    style="font-size: 20.54px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="31.94px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    top
+                  </text>
+                  <text
+                    x="415.32"
+                    y="154.20"
+                    style="font-size: 20.54px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="83.31px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    incomes
+                  </text>
+                  <text
+                    x="339.54"
+                    y="225.29"
+                    style="font-size: 20.42px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="55.56px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    moral
+                  </text>
+                  <text
+                    x="400.77"
+                    y="225.29"
+                    style="font-size: 20.42px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="65.77px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    hazard
+                  </text>
+                  <text
+                    x="653.50"
+                    y="71.90"
+                    style="font-size: 20.36px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="140.17px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    counterfactual
+                  </text>
+                  <text
+                    x="714.43"
+                    y="45.56"
+                    style="font-size: 20.17px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="62.70px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    wealth
+                  </text>
+                  <text
+                    x="782.72"
+                    y="45.56"
+                    style="font-size: 20.17px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="133.25px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    concentration
+                  </text>
+                  <text
+                    x="722.10"
+                    y="96.14"
+                    style="font-size: 20.17px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="52.62px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    panel
+                  </text>
+                  <text
+                    x="780.32"
+                    y="96.14"
+                    style="font-size: 20.17px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="41.44px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    data
+                  </text>
+                  <text
+                    x="721.04"
+                    y="203.77"
+                    style="font-size: 20.1px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="88.22px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    pensions
+                  </text>
+                  <text
+                    x="266.64"
+                    y="78.11"
+                    style="font-size: 19.76px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="61.45px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    wealth
+                  </text>
+                  <text
+                    x="333.58"
+                    y="78.11"
+                    style="font-size: 19.76px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="92.17px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="140.16"
+                    y="170.88"
+                    style="font-size: 19.46px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="108.05px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    educational
+                  </text>
+                  <text
+                    x="253.61"
+                    y="170.88"
+                    style="font-size: 19.46px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="117.81px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    achievement
+                  </text>
+                  <text
+                    x="340.22"
+                    y="196.95"
+                    style="font-size: 19.46px; font-weight: bold; fill: var(--cw-data-1); font-family: &quot;Arial&quot;"
+                    textLength="61.59px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    SIMCE
+                  </text>
+                  <text
+                    x="756.82"
+                    y="168.97"
+                    style="font-size: 19.21px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="69.39px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    poverty
+                  </text>
+                  <text
+                    x="831.54"
+                    y="168.97"
+                    style="font-size: 19.21px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="106.78px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    persistence
+                  </text>
+                  <text
+                    x="799.03"
+                    y="230.25"
+                    style="font-size: 19.12px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="79.61px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    attitudes
+                  </text>
+                  <text
+                    x="883.95"
+                    y="230.25"
+                    style="font-size: 19.12px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="18.03px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    to
+                  </text>
+                  <text
+                    x="907.30"
+                    y="230.25"
+                    style="font-size: 19.12px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="89.19px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="156.22"
+                    y="26.02"
+                    style="font-size: 19.04px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="72.92px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    liquidity
+                  </text>
+                  <text
+                    x="234.42"
+                    y="26.02"
+                    style="font-size: 19.04px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="102.56px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    constraints
+                  </text>
+                  <text
+                    x="829.35"
+                    y="89.79"
+                    style="font-size: 18.45px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="86.11px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="920.58"
+                    y="89.79"
+                    style="font-size: 18.45px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="17.41px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    of
+                  </text>
+                  <text
+                    x="943.11"
+                    y="89.79"
+                    style="font-size: 18.45px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="102.45px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    opportunity
+                  </text>
+                  <text
+                    x="792.74"
+                    y="115.11"
+                    style="font-size: 18.12px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="69.44px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    quantile
+                  </text>
+                  <text
+                    x="867.21"
+                    y="115.11"
+                    style="font-size: 18.12px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="92.62px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    regression
+                  </text>
+                  <text
+                    x="192.66"
+                    y="47.55"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="58.06px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    survey
+                  </text>
+                  <text
+                    x="255.72"
+                    y="47.55"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="88.05px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    correction
+                  </text>
+                  <text
+                    x="208.51"
+                    y="146.04"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="62.05px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    welfare
+                  </text>
+                  <text
+                    x="275.56"
+                    y="146.04"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-topic-1); font-family: &quot;Arial&quot;"
+                    textLength="42.05px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    state
+                  </text>
+                  <text
+                    x="182.25"
+                    y="194.49"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="73.05px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    machine
+                  </text>
+                  <text
+                    x="260.29"
+                    y="194.49"
+                    style="font-size: 18px; font-weight: bold; fill: var(--cw-method-1); font-family: &quot;Arial&quot;"
+                    textLength="70.03px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    learning
+                  </text>
+                  <text
+                    x="823.29"
+                    y="191.96"
+                    style="font-size: 17.62px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="49.92px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    social
+                  </text>
+                  <text
+                    x="878.10"
+                    y="191.96"
+                    style="font-size: 17.62px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="77.28px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    cohesion
+                  </text>
+                  <text
+                    x="214.82"
+                    y="216.93"
+                    style="font-size: 17.49px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="49.56px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    social
+                  </text>
+                  <text
+                    x="269.25"
+                    y="216.93"
+                    style="font-size: 17.49px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="43.73px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    class
+                  </text>
+                  <text
+                    x="810.98"
+                    y="66.34"
+                    style="font-size: 17.35px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="140.67px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    intergenerational
+                  </text>
+                  <text
+                    x="956.47"
+                    y="66.34"
+                    style="font-size: 17.35px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="66.47px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    mobility
+                  </text>
+                  <text
+                    x="118.40"
+                    y="118.91"
+                    style="font-size: 17.2px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="126.03px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    neighbourhood
+                  </text>
+                  <text
+                    x="249.21"
+                    y="118.91"
+                    style="font-size: 17.2px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="55.41px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    effects
+                  </text>
+                  <text
+                    x="880.70"
+                    y="147.90"
+                    style="font-size: 17.04px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="33.11px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    WID
+                  </text>
+                  <text
+                    x="331.84"
+                    y="149.48"
+                    style="font-size: 16.88px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="39.38px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    PSID
+                  </text>
+                  <text
+                    x="99.90"
+                    y="77.26"
+                    style="font-size: 16.53px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="68.88px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    earnings
+                  </text>
+                  <text
+                    x="173.37"
+                    y="77.26"
+                    style="font-size: 16.53px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="77.12px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    inequality
+                  </text>
+                  <text
+                    x="214.91"
+                    y="240.93"
+                    style="font-size: 16.34px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="41.81px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    taxes
+                  </text>
+                  <text
+                    x="261.27"
+                    y="240.93"
+                    style="font-size: 16.34px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="29.06px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    and
+                  </text>
+                  <text
+                    x="294.88"
+                    y="240.93"
+                    style="font-size: 16.34px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="69.95px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    transfers
+                  </text>
+                  <text
+                    x="916.29"
+                    y="31.49"
+                    style="font-size: 16.34px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="83.56px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    informality
+                  </text>
+                  <text
+                    x="960.44"
+                    y="177.88"
+                    style="font-size: 15.93px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="99.97px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    concentrated
+                  </text>
+                  <text
+                    x="1064.83"
+                    y="177.88"
+                    style="font-size: 15.93px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="69.89px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    affluence
+                  </text>
+                  <text
+                    x="927.94"
+                    y="140.64"
+                    style="font-size: 15.21px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="52.38px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    census
+                  </text>
+                  <text
+                    x="984.53"
+                    y="140.64"
+                    style="font-size: 15.21px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="31.25px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    data
+                  </text>
+                  <text
+                    x="83.71"
+                    y="236.32"
+                    style="font-size: 13.93px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="65.77px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    mediation
+                  </text>
+                  <text
+                    x="153.35"
+                    y="236.32"
+                    style="font-size: 13.93px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="55.00px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    analysis
+                  </text>
+                  <text
+                    x="848.21"
+                    y="11.52"
+                    style="font-size: 13.93px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="48.70px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    CASEN
+                  </text>
+                  <text
+                    x="963.11"
+                    y="201.98"
+                    style="font-size: 13.06px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="66.69px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    regression
+                  </text>
+                  <text
+                    x="1033.42"
+                    y="201.98"
+                    style="font-size: 13.06px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="81.16px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    discontinuity
+                  </text>
+                  <text
+                    x="105.08"
+                    y="213.17"
+                    style="font-size: 12.52px; font-weight: bold; fill: var(--cw-topic-0); font-family: &quot;Arial&quot;"
+                    textLength="78.58px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    progressivity
+                  </text>
+                  <text
+                    x="850.13"
+                    y="209.97"
+                    style="font-size: 12.52px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="57.73px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    multilevel
+                  </text>
+                  <text
+                    x="911.35"
+                    y="209.97"
+                    style="font-size: 12.52px; font-weight: bold; fill: var(--cw-method-0); font-family: &quot;Arial&quot;"
+                    textLength="43.80px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    models
+                  </text>
+                  <text
+                    x="912.67"
+                    y="13.23"
+                    style="font-size: 12.52px; font-weight: bold; fill: var(--cw-data-0); font-family: &quot;Arial&quot;"
+                    textLength="43.09px"
+                    lengthAdjust="spacingAndGlyphs"
+                  >
+                    ELSOC
+                  </text>
+                </g>
+              </g>
+            </svg>
+            <p class="cloud__note">
+              Concepts across the full text of all published papers, sized and shaded by how often each appears, and coloured by kind:
+              <span class="k k--topic">topic</span>, <span class="k k--method">method</span>, <span class="k k--data">data source</span>,
+              <span class="k k--place">place</span>. Made in R with <a href="https://lepennec.github.io/ggwordcloud/">ggwordcloud</a>.
+            </p>
+          </section>
+        </section>
+      </main>
+
+      <!-- ================= RESEARCH ================= -->
+      <main class="pane" id="pane-research" hidden>
+        <h1>Research</h1>
+        <p class="lede">Work in progress and published papers. Each published entry gives its headline result and data in one line.</p>
+
+        <h2 class="section">Work in progress</h2>
+        <ol class="list">
+          <li class="item item--wip">
+            <h4 class="item__title">Parents&rsquo; Education and Children&rsquo;s Household Income Across Cohorts in Europe</h4>
+            <p class="item__authors">
+              with <a href="https://scholar.google.com/citations?user=TPLZEzQAAAAJ&amp;hl=it">Michele Bavaro</a> and
+              <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a
+              ><span class="pill pill--sm pill--accepted">Accepted</span> <span class="item__forthcoming">European Sociological Review</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">Intergenerational Poverty in Europe: A Latent Class Analysis</h4>
+            <p class="item__authors">
+              with <a href="https://scholar.google.com/citations?user=TPLZEzQAAAAJ&amp;hl=it">Michele Bavaro</a> and
+              <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a><span class="pill pill--sm pill--rr">R&amp;R</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">The Size and Progressivity of Taxes and Transfers When the Income Concept Changes</h4>
+            <p class="item__authors">
+              with <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a><span class="pill pill--sm pill--rr">R&amp;R</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">Elites in Times of Social Crisis: Attitudes toward Inequality during Chile&rsquo;s 2019 Uprising</h4>
+            <p class="item__authors">
+              with <a href="https://icso.udp.cl/investigador/gabriel-otero/">Gabriel Otero</a> and
+              <a href="https://fen.uchile.cl/academicos/dante-contreras/">Dante Contreras</a><span class="pill pill--sm pill--rr">R&amp;R</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">The Concentration of Children over Time and Its Consequences for Income Inequality and Poverty</h4>
+            <p class="item__authors">
+              with <a href="https://berkayozcan.net/">Berkay &Ouml;zcan</a><span class="pill pill--sm pill--inprogress">In progress</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">Social Class and Earnings Inequality in Chile: A Decomposition over the Long Run</h4>
+            <p class="item__authors">
+              with <a href="https://icso.udp.cl/investigador/gabriel-otero/">Gabriel Otero</a
+              ><span class="pill pill--sm pill--inprogress">In progress</span>
+            </p>
+          </li>
+          <li class="item item--wip">
+            <h4 class="item__title">The Persistent Socioeconomic Cost of Extreme Natural Events: Evidence from Chilean Administrative Records</h4>
+            <p class="item__authors">
+              with <a href="https://gobierno.uc.cl/profesores/magdalena-gil/">Magdalena Gil</a
+              ><span class="pill pill--sm pill--inprogress">In progress</span>
+            </p>
+          </li>
+        </ol>
+
+        <h2 class="section">Published papers</h2>
+        <h3 class="year">2026</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1177/15365042261442494">Wealth Concentration and Prosocial Behavior in Everyday Life</a>
+            </h4>
+            <p class="item__authors">Manuel Schechtl, Nhat An Trinh, <span class="self">Rafael Carranza</span>, Fabian Pfeffer</p>
+            <p class="item__venue">Contexts 25(2), 80&ndash;82</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">wealth concentration</span><span class="pill pill--tag">prosocial behaviour</span
+                ><span class="pill pill--tag">volunteering</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-schechtl" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1177/15365042261442494">DOI</a>
+                <a href="#">PDF</a>
+                <a href="https://osf.io/rf42m/overview">Replication</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-schechtl" hidden>
+              <p>
+                As wealth concentrates at the top echelons of society, social science researchers have attempted to calculate the increasingly unequal
+                distribution of financial assets around the globe. However, they know much less about what this shift means for everyday interactions
+                among individuals. We take a first step by examining how wealth concentration impacts basic forms of prosocial engagement. Rather than
+                focusing on highly dramatic acts of generosity, we instead consider more commonplace indicators of social obligation: whether people
+                feel a responsibility to help those beyond their immediate family and whether they volunteer. Across countries and within the United
+                States, the same relationship appears: in places of concentrated wealth, individuals&rsquo; willingness to help others and engage in
+                volunteerism tends to decrease.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2025</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1093/ooec/odae036">Wealth Inequality in Latin America (2000&ndash;2020): Data, Facts and Conjectures</a>
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span>, Mauricio De Rosa, Ignacio Flores</p>
+            <p class="item__venue">Oxford Open Economics 4(S1), i36&ndash;i54</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">wealth inequality</span><span class="pill pill--tag">national accounts</span
+                ><span class="pill pill--tag">data quality</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-wealth" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1093/ooec/odae036">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-wealth" hidden>
+              <p>
+                How has wealth accumulated in Latin America and how is it distributed across households? Despite the region being widely recognized
+                for its extreme income inequality, data on wealth are scarce, partial and often contradictory. We estimate wealth aggregates based on
+                macroeconomic data and wealth inequality based on recently available surveys and on administrative data. We contrast our results with
+                those in the literature, with a handful of estimates from administrative sources, and with estimates from Credit Suisse and wid.world.
+                In considering all the evidence, we distinguish reliable facts from what can only be conjectured or speculated.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1016/j.eap.2025.02.021"
+                >Job Loss and Earnings Inequality: Distributional Effects of Formal Re-employment in Chile</a
+              >
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span>, Joaqu&iacute;n Prieto, Kirsten Sehnbruch</p>
+            <p class="item__venue">Economic Analysis and Policy 86, 1020&ndash;1036</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">job loss</span><span class="pill pill--tag">earnings inequality</span
+                ><span class="pill pill--tag">quantile regression</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-jobloss" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1016/j.eap.2025.02.021">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-jobloss" hidden>
+              <p>
+                This paper examines the impact of job losses on the subsequent earnings of formal workers in Chile using administrative data. It
+                contributes to the literature by examining the impact of job losses across the earnings distribution using unconditional quantile
+                regression analysis. The paper thus provides evidence on the costs of losing a formal job in an emerging economy that is now
+                considered &lsquo;high-income&rsquo; but still suffers from high earnings inequality and other issues that characterise labour markets
+                in developing countries, such as high job rotation.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2024</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1016/j.rssm.2024.100991"
+                >Intergenerational Poverty Persistence in Europe &mdash; Is There a &lsquo;Great Gatsby Curve&rsquo; for Poverty?</a
+              >
+            </h4>
+            <p class="item__authors">Michele Bavaro, <span class="self">Rafael Carranza</span>, Brian Nolan</p>
+            <p class="item__venue">Research in Social Stratification and Mobility 94, 100991</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">poverty persistence</span><span class="pill pill--tag">mobility</span
+                ><span class="pill pill--tag">EU-SILC</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-bavaro" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1016/j.rssm.2024.100991">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-bavaro" hidden>
+              <p>
+                While the influence of poverty in childhood on adulthood outcomes has been extensively studied, little is known about how the strength
+                of intergenerational persistence in poverty itself varies across countries. Here we examine the intergenerational persistence of
+                poverty in a comparative analysis of 30 European countries using data from the 2019 ad hoc module of the EU-SILC dataset. We construct
+                proxy measures of poverty in the parental household employing information on the inability to meet basic needs and financial hardship
+                when growing up, together with parental education and occupational social class. The cross-country variation in poverty persistence is
+                probed concerning its relationship with the current and past extent of poverty. Mediation analysis highlights the role of own
+                education as well as occupation.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1111/1475-5890.12371">Assessing Income Redistribution: What Are the Key Analytic Choices?</a>
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span>, Brian Nolan</p>
+            <p class="item__venue">Fiscal Studies 45(4), 501&ndash;519</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">redistribution</span><span class="pill pill--tag">taxes and transfers</span
+                ><span class="pill pill--tag">measurement</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-redist" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1111/1475-5890.12371">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-redist" hidden>
+              <p>
+                We present the extent of divergence in the literature on the stylised facts about income redistribution in rich countries. Analytical
+                choices that underpin this divergence are then identified and investigated empirically using microdata for 30 European countries. In
+                terms of direct redistribution via cash transfers and direct taxes, whether social insurance pensions are treated as redistribution
+                &mdash; the conventional approach &mdash; or as market income &mdash; as in some recent studies &mdash; is seen to be critical. When
+                the analysis is extended to include indirect taxes and non-cash benefits from state spending, they work in opposite directions and
+                generally have only a limited net redistributive impact.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1093/ser/mwae008"
+                >What Makes Elites More or Less Egalitarian? Variations in Attitudes towards Inequality within the Economic, Political and Cultural
+                Elites in Chile</a
+              >
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span>, Dante Contreras, Gabriel Otero</p>
+            <p class="item__venue">Socio-Economic Review 22(3), 1141&ndash;1167</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">elites</span><span class="pill pill--tag">attitudes</span><span class="pill pill--tag">Chile</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-elites" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1093/ser/mwae008">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-elites" hidden>
+              <p>
+                This article investigates how the type of elite to which a person belongs and their intergenerational contextual experiences are
+                associated with attitudes towards inequality among elite individuals. Using unique survey data collected in 2018 from a sample of 416
+                individuals belonging to Chile&rsquo;s economic, political and cultural elites, we construct an additive score to measure attitudes
+                towards inequality. Results of our regression analyses indicate that individuals belonging to the economic and political elite are
+                more tolerant of inequality than members of the cultural elite. Moreover, intergenerational experiences at both private schools and
+                higher education business schools significantly contribute to the formation of attitudes that favour inequality.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1177/00420980231186141"
+                >The Damages of Stigma, the Benefits of Prestige: Perceived Residential Reputations and Neighbourhood Attachment</a
+              >
+            </h4>
+            <p class="item__authors">
+              Gabriel Otero, Quentin Ramond, Mar&iacute;a Luisa M&eacute;ndez, <span class="self">Rafael Carranza</span>, Felipe Link, Javier
+              Ruiz-Tagle
+            </p>
+            <p class="item__venue">Urban Studies 61(3), 462&ndash;494</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">segregation</span><span class="pill pill--tag">neighbourhood</span
+                ><span class="pill pill--tag">stigma</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-stigma" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1177/00420980231186141">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-stigma" hidden>
+              <p>
+                This study examines how perceived residential reputations &mdash; that is, how people think non-residents assess the reputation of
+                their neighbourhood &mdash; affect neighbourhood attachment. We focus on Santiago, the capital city of Chile: a highly segregated
+                context. We use data from the Chilean Longitudinal Social Survey (ELSOC, 2016&ndash;2019) and information on neighbourhood
+                characteristics. Perceived stigma reduces residents&rsquo; neighbourhood identification, physical rootedness, trust and sociability
+                with neighbours, while positive perceived reputations improve these components, although to a lesser extent.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2023</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1111/roiw.12622"
+                >Upper and Lower Bound Estimates of Inequality of Opportunity: A Cross-National Comparison for Europe</a
+              >
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span></p>
+            <p class="item__venue">Review of Income and Wealth 69(4), 838&ndash;860</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">inequality of opportunity</span><span class="pill pill--tag">bounds</span
+                ><span class="pill pill--tag">machine learning</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-bounds" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1111/roiw.12622">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-bounds" hidden>
+              <p>
+                I provide lower and upper bound estimates of inequality of opportunity (IOp) for 32 European countries, between 2005 and 2019. Lower
+                bound estimates use machine learning methods to address sampling variability. Upper bound estimates use longitudinal data to capture
+                all time-invariant factors. On average, upper bound IOp saw a slight decrease in the aftermath of the Great Recession, recovering and
+                stabilizing at around 80 percent of total inequality in the second half of the 2010s. My findings suggest that lower and upper bound
+                estimates complement each other, corroborating information and compensating each other&rsquo;s weaknesses.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1111/roiw.12591">Top Income Adjustments and Inequality: An Investigation of the EU-SILC</a>
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span>, Marc Morgan, Brian Nolan</p>
+            <p class="item__venue">Review of Income and Wealth 69(3), 725&ndash;754</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">top incomes</span><span class="pill pill--tag">survey correction</span
+                ><span class="pill pill--tag">DINA</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-top" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1111/roiw.12591">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-top" hidden>
+              <p>
+                This paper provides a novel assessment of how the World Inequality Database (WID) top income adjustment applied by Blanchet, Chancel,
+                and Gethin (2021) to EU-SILC data for 26 countries over 2003&ndash;2017 affects inequality in equivalized gross and disposable
+                household income. On average, the Gini is increased by around 2.4 points for both gross and disposable income, with notable
+                differences across countries but limited impact on trends. EU-SILC countries that rely on administrative register data see relatively
+                small effects on inequality.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1108/S1049-258520230000030003"
+                >How Much of Intergenerational Immobility Can Be Attributed to Differences in Childhood Circumstances?</a
+              >
+            </h4>
+            <p class="item__authors"><span class="self">Rafael Carranza</span></p>
+            <p class="item__venue">
+              In S. Bandyopadhyay &amp; J. G. Rodr&iacute;guez (eds), <em>Mobility and Inequality Trends</em>, Emerald, 65&ndash;108
+            </p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">intergenerational mobility</span><span class="pill pill--tag">circumstances</span
+                ><span class="pill pill--tag">decomposition</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-ige" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1108/S1049-258520230000030003">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-ige" hidden>
+              <p>
+                Can an estimate of the intergenerational elasticity (IGE) be interpreted as a measure of inequality of opportunity (IOp)? If parental
+                income is the only childhood circumstance, then the answer is yes. However, parental income is one of many potential circumstances. I
+                develop a model to decompose the interaction between childhood circumstances, parental income and offspring income. Using the Panel
+                Study of Income Dynamics, I find that childhood circumstances account for 55% of the IGE for individual earnings and 53% for family
+                income, with parental education explaining over a third of those shares.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1093/ser/mwab022"
+                >Spatial Divisions of Poverty and Wealth: Does Segregation Affect Educational Achievement?</a
+              >
+            </h4>
+            <p class="item__authors">Gabriel Otero, <span class="self">Rafael Carranza</span>, Dante Contreras</p>
+            <p class="item__venue">Socio-Economic Review 21(1), 617&ndash;641</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">segregation</span><span class="pill pill--tag">education</span><span class="pill pill--tag">Chile</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-spatial" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1093/ser/mwab022">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-spatial" hidden>
+              <p>
+                We examine how different spatial compositions affect the educational achievement in mathematics of 16-year-old students in Chile.
+                Conceptually, we complement the literature on &lsquo;neighbourhood effects&rsquo;, which typically addresses the influence of
+                concentrated disadvantage, by focusing on concentrated advantage. We construct a panel with all school students who took a national
+                standardized mathematics test in 2010, 2014 and 2016 in the Metropolitan Region of Santiago. Our different identification strategies
+                consistently show that concentrated poverty and affluence are both relevant above and beyond individual and school characteristics.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2022</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1080/00220388.2022.2096444"
+                >Unemployment Insurance in Transition and Developing Countries: Moral Hazard vs. Liquidity Constraints in Chile</a
+              >
+            </h4>
+            <p class="item__authors">Kirsten Sehnbruch, <span class="self">Rafael Carranza</span>, Dante Contreras</p>
+            <p class="item__venue">The Journal of Development Studies 58(10), 2089&ndash;2109</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">unemployment insurance</span><span class="pill pill--tag">moral hazard</span
+                ><span class="pill pill--tag">policy design</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-moral" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1080/00220388.2022.2096444">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-moral" hidden>
+              <p>
+                One of the most complex policy issues that developing countries will face as a result of the employment crisis caused by the Covid
+                crisis is how they can better protect the unemployed. This paper applies Chetty&rsquo;s 2008 landmark work on UI to a transition
+                economy (Chile) and shows that the moral hazard effects expected by policy makers are minimal, while liquidity effects were entirely
+                neglected. It demonstrates that it is not enough merely to quantify effects such as moral hazard, but to understand their causes. By
+                means of an RDD, this paper analyses the Chilean UI system using a large sample of administrative data.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2019</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1111/dech.12457"
+                >The Political Economy of Unemployment Insurance Based on Individual Savings Accounts: Lessons from Chile</a
+              >
+            </h4>
+            <p class="item__authors">Kirsten Sehnbruch, <span class="self">Rafael Carranza</span>, Joaqu&iacute;n Prieto</p>
+            <p class="item__venue">Development and Change 50(4), 948&ndash;975</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">unemployment insurance</span><span class="pill pill--tag">savings accounts</span
+                ><span class="pill pill--tag">Chile</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-uisa" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1111/dech.12457">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-uisa" hidden>
+              <p>
+                In recent years, unemployment protection systems based on individual savings have been instituted in several developing countries.
+                Chile was one of the first to establish such a system, which at the time was widely cited as a model for other countries. This article
+                discusses the particular political context in which the Chilean system was created before examining how it works in terms of coverage
+                and levels of benefits received by unemployed workers. The authors conclude that the insurance covers only a small proportion of the
+                unemployed, as most workers generally had precarious jobs that did not allow them to contribute to the system consistently.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <h3 class="year">2017</h3>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://doi.org/10.1177/0308518X17731780"
+                >&lsquo;Neighbourhood Effects&rsquo; on Children&rsquo;s Educational Achievement in Chile: The Effects of Inequality and
+                Polarization</a
+              >
+            </h4>
+            <p class="item__authors">Gabriel Otero, <span class="self">Rafael Carranza</span>, Dante Contreras</p>
+            <p class="item__venue">Environment and Planning A 49(11), 2595&ndash;2618</p>
+            <div class="item__foot">
+              <div class="tags">
+                <span class="pill pill--tag">neighbourhood effects</span><span class="pill pill--tag">polarization</span
+                ><span class="pill pill--tag">education</span>
+              </div>
+              <div class="links">
+                <button type="button" data-abs="a-neigh" aria-expanded="false">Abstract</button>
+                <a href="https://doi.org/10.1177/0308518X17731780">DOI</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+            <div class="abstract" id="a-neigh" hidden>
+              <p>
+                This article studies the effects of the neighborhood in which a school is located on children&rsquo;s mathematics achievement in
+                Chile, using data from a sample of 127,020 sixth grade students measured by the National Education Quality Measurement System. The
+                incorporation of a measurement of socioeconomic polarization of the geographic environment, which is innovative in urban studies,
+                allows us to qualify some critical aspects suggested in the academic discussion. Using multilevel linear regressions, the results show
+                that socio-economic polarization has a negative and significant impact on the educational achievement of sixth graders.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <h2 class="section">PhD thesis</h2>
+        <ul class="plain">
+          <li>
+            Carranza, R. (2021). <span class="t"><em>Essays on inequality of opportunity: measurement, drivers and consequences</em></span
+            >. London School of Economics and Political Science. <a href="http://etheses.lse.ac.uk/4270">etheses.lse.ac.uk/4270</a>
+          </li>
+        </ul>
+
+        <h2 class="section">Working papers</h2>
+        <ul class="plain">
+          <li>
+            Carranza, R. (2020).
+            <span class="t">Upper and lower bound estimates of inequality of opportunity: A cross-national comparison for Europe.</span>
+            <a href="http://bit.ly/2Nyza0r">Link</a>
+          </li>
+          <li>
+            Otero, G., Carranza, R., &amp; Contreras, D. (2020).
+            <span class="t">Living in wealthy areas: How much does it matter for educational achievement?</span>
+            <a href="https://bit.ly/2MOnKWP">Link</a>
+          </li>
+          <li>
+            Carranza, R., &amp; Hojman, D. (2016).
+            <span class="t">Inequality of Opportunity in Health and Cognitive Abilities: The Case of Chile.</span>
+            <a href="http://bit.ly/2TYtfp5">Link</a>
+          </li>
+          <li>
+            Sehnbruch, K., &amp; Carranza, R. (2015).
+            <span class="t"
+              >Unemployment Insurance based on Individual Savings Accounts: Lessons for other Latin American and Developing Countries from
+              Chile.</span
+            >
+            <a href="http://bit.ly/38Hh0m8">Link</a>
+          </li>
+        </ul>
+      </main>
+
+      <!-- ================= PROJECTS ================= -->
+      <main class="pane" id="pane-projects" hidden>
+        <h1>Current projects</h1>
+        <p class="lede">Funded research programmes, as distinct from individual papers.</p>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">Wealth and Social Cohesion from a Relational Perspective (WESOREL)</h4>
+            <p class="item__authors">
+              with <a href="https://fabianpfeffer.com/">Fabian Pfeffer</a> (LMU Munich),
+              <a href="https://schechtl.github.io/">Manuel Schechtl</a> (UNC Chapel Hill), and
+              <a href="https://natrinh.github.io/">Nhat An Trinh</a> (WZB)
+            </p>
+            <p class="item__venue">Volkswagen Foundation &middot; 2025&ndash;2029</p>
+            <div class="item__foot">
+              <div class="tags"></div>
+              <div class="links">
+                <button type="button" data-abs="p-wesorel" aria-expanded="false">Summary</button>
+                <a href="https://wealthandcohesion.com/about/">Website</a>
+              </div>
+            </div>
+            <div class="abstract" id="p-wesorel" hidden>
+              <p>
+                Wealth inequality in high-income countries has returned to levels not seen since the early twentieth century. Yet its effects on
+                public life remain poorly understood. This project asks whether the widening gap between the very wealthy and everyone else is
+                weakening the social bonds that democracies depend on. Rather than treating inequality as a distributional issue, the project develops
+                a relational approach: not how much people own but how claims on economic resources shape economic life across the wealth
+                distribution. From a comparative angle, the project examines how this distance affects how people relate to one another, to their
+                institutions, and to the idea of a common society.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <h4 class="item__title">
+              The Growing Concentration of Children among High-Income Families: The Role of Wealth, Social Mobility and the Welfare State
+            </h4>
+            <p class="item__venue">FONDECYT Iniciaci&oacute;n / ANID &middot; 2026&ndash;2028</p>
+            <div class="item__foot">
+              <div class="tags"></div>
+              <div class="links">
+                <button type="button" data-abs="p-fondecyt2026" aria-expanded="false">Summary</button>
+              </div>
+            </div>
+            <div class="abstract" id="p-fondecyt2026" hidden>
+              <p>
+                Recent studies have shown a demographic reversal in the association between income and fertility. What was a robust negative gradient
+                throughout the twentieth century has begun to turn positive in many high-income countries. This project explores what that means for
+                the long-term structure of inequality. If wealth and social status shape who has children (and how many), then inequality reproduces
+                itself not just through inheritance but through demography. The project provides new measurement tools to examine how fertility
+                decisions are tied to income, wealth, intergenerational mobility, and the degree to which welfare states attenuate or reinforce these
+                patterns.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <h4 class="item__title">Free Tuition and University Choice in Chile: Differentiated Effects by Socioeconomic Context</h4>
+            <p class="item__authors">
+              with <a href="https://sociologia.uc.cl/academicos-as/planta-academica/andrea-canales-hernandez/">Andrea Canales</a> (Instituto de
+              Sociolog&iacute;a, UC) and <a href="https://pablogeraldo.com/">Pablo Geraldo</a> (Nuffield College, University of Oxford)
+            </p>
+            <p class="item__venue">Avanza UC, Pontificia Universidad Cat&oacute;lica de Chile &middot; 2026</p>
+            <div class="item__foot">
+              <div class="tags"></div>
+              <div class="links">
+                <button type="button" data-abs="p-avanza-uc" aria-expanded="false">Summary</button>
+              </div>
+            </div>
+            <div class="abstract" id="p-avanza-uc" hidden>
+              <p>
+                Chile introduced free university tuition in 2016, intending to reduce socioeconomic gaps in higher education enrollment. Nearly a
+                decade on, the evidence suggests the policy has had limited impact on the composition of who goes to university. This project asks
+                why. A key part of the answer may lie in the timing of information, as students who could potentially qualify may not know it early
+                enough for it to shape their expectations and preparation before the application process. This gap weighs more heavily on families
+                with fewer resources and less familiarity with the university system. The project explores these questions through different
+                methodological approaches.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </main>
+
+      <!-- ================= TALKS ================= -->
+      <main class="pane" id="pane-talks" hidden>
+        <h1>Talks</h1>
+        <p class="lede">Seminars, conferences and invited lectures. Showing 2025 and 2026; the full list runs to 43 talks since 2018.</p>
+        <h3 class="year">2026</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile</h4>
+            <p class="item__where">
+              Seminario del Centro de Econom&iacute;a Aplicada, FCFM, Universidad de Chile<span class="sep">&middot;</span>11 November 2026<span
+                class="sep"
+                >&middot;</span
+              >Santiago
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Disasters and Social Vulnerability: Effects on Chile&rsquo;s Household Social Registry</h4>
+            <p class="item__where">
+              <a href="https://www.ull.es/portal/campusamerica/programa/">Campus Am&eacute;rica</a>, Universidad de La Laguna<span class="sep"
+                >&middot;</span
+              >19&ndash;23 October 2026<span class="sep">&middot;</span>Tenerife
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile</h4>
+            <p class="item__where">
+              II Mini Conferencia de Desigualdades, OBDE-UDP<span class="sep">&middot;</span>15 October 2026<span class="sep">&middot;</span>Santiago
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Pensar el bien com&uacute;n desde la pobreza y la desigualdad</h4>
+            <p class="item__where">
+              Ciclo Interdisciplinar &lsquo;Pobreza y Bien Com&uacute;n&rsquo;, Escuela de Gobierno e Instituto de &Eacute;ticas Aplicadas UC<span
+                class="sep"
+                >&middot;</span
+              >11 August 2026<span class="sep">&middot;</span>Santiago
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile</h4>
+            <p class="item__where">
+              <a href="https://www.isi-munich.de/en">Global Perspectives on Tax Data</a><span class="sep">&middot;</span>10&ndash;11 June 2026<span
+                class="sep"
+                >&middot;</span
+              >Munich
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Redistribution, Taxes, and Gender Gaps: Evidence from Top Income Adjustments in Chile</h4>
+            <p class="item__where">
+              <a href="https://wic2026.wid.world/">World Inequality Conference</a><span class="sep">&middot;</span>4&ndash;6 June 2026<span
+                class="sep"
+                >&middot;</span
+              >Paris
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              Unpacking Redistribution in Europe: Decomposing the Effects of Direct and Indirect Taxes, Cash Benefits, and In-Kind Transfers
+            </h4>
+            <p class="item__where">
+              <a href="https://jc-castillo.com/blog/posts/workshop-jusmer-2026/">Workshop on distributive justice</a>, Departamento de
+              Sociolog&iacute;a, Universidad de Chile<span class="sep">&middot;</span>23 January 2026<span class="sep">&middot;</span>Santiago
+            </p>
+          </li>
+        </ol>
+        <h3 class="year">2025</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">The concentration of children over time and its consequences for income inequality and poverty</h4>
+            <p class="item__where">
+              Workshop on inequality and stratification research, Sociology Institute UC Chile<span class="sep">&middot;</span>November 2025<span
+                class="sep"
+                >&middot;</span
+              >Santiago
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Shifting Perceptions Among Chilean Elites Following the 2019 Social Uprising</h4>
+            <p class="item__where">
+              <a href="https://www.lse.ac.uk/international-inequalities/research/opportunity-mobility/smoothie-seminars">LSE III SMOOTHIE seminar</a
+              ><span class="sep">&middot;</span>13 October 2025<span class="sep">&middot;</span>London
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Shifting Perceptions Among Chilean Elites Following the 2019 Social Uprising</h4>
+            <p class="item__where">
+              <a href="https://www.isi-munich.de/en/news/reichtum-und-verantwortung">ISI Wealth Conference</a
+              ><span class="sep">&middot;</span>9&ndash;11 October 2025<span class="sep">&middot;</span>Munich
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Economic Inequality: Measurement, causes and consequences <em>(invited lecture)</em></h4>
+            <p class="item__where">
+              <a
+                href="https://observatoriodesigualdades.udp.cl/con-exito-se-realizo-primera-escuela-para-investigadoras-es-jovenes-en-desigualdad-y-cohesion-social/"
+                >Escuela para Investigadoras/es J&oacute;venes en Desigualdad y Cohesi&oacute;n Social</a
+              ><span class="sep">&middot;</span>21 August 2025<span class="sep">&middot;</span>Santiago
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">Inflation Inequality and its Consequences for Income Inequality and Poverty: The case of Chile</h4>
+            <p class="item__where">
+              <a href="https://www.ecineq.org/eleventh-ecineq-conference-washington-dc-2025/">11th ECINEQ Meeting</a
+              ><span class="sep">&middot;</span>9&ndash;11 July 2025<span class="sep">&middot;</span>Washington, DC
+            </p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">The concentration of children over time and its consequences for income inequality and poverty</h4>
+            <p class="item__where">
+              <a
+                href="https://socialesehistoria.udp.cl/cms/wp-content/uploads/2025/05/a3c0a553-2c75-43e1-af8d-6e951af66a09_v-f-Programa-Primera-Mini-Conferencia-OBDE-COES-2025.pdf"
+                >Primera Mini Conferencia sobre Desigualdades</a
+              ><span class="sep">&middot;</span>6 June 2025<span class="sep">&middot;</span>Santiago
+            </p>
+          </li>
+        </ol>
+      </main>
+
+      <!-- ================= MEDIA ================= -->
+      <main class="pane" id="pane-media" hidden>
+        <h1>Media &amp; outreach</h1>
+        <p class="lede">Policy reports and writing for a general audience.</p>
+
+        <h2 class="section">Policy reports</h2>
+        <ol class="list">
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://cfstorage.sfo3.cdn.digitaloceanspaces.com/pch2050/docs/trabajo-del-futuro.pdf"
+                >Chile tiene futuro desde sus territorios: Oportunidades frente a los cambios en el mundo laboral</a
+              >
+            </h4>
+            <p class="item__authors">Mesa del Trabajo del Futuro &middot; Policy Brief, Proyecta Chile 2050 &middot; 2025</p>
+            <p class="item__where">
+              Coordinador, submesa &ldquo;Movimientos: nuevas formas de empleo y protecci&oacute;n social&rdquo;, with Mariana Huepe
+            </p>
+          </li>
+          <li class="item">
+            <h4 class="item__title">
+              <a href="https://politicaspublicas.uc.cl/publicacion/propuestas-presidenciales-en-pobreza-infantil/"
+                >Propuestas presidenciales en pobreza infantil: Una mirada basada en evidencia para el ciclo pol&iacute;tico 2026&ndash;2030 en
+                Chile</a
+              >
+            </h4>
+            <p class="item__authors">
+              Alarc&oacute;n, Carranza, Del Villar, Dom&iacute;nguez, Flor, Grau, Rodr&iacute;guez, Santelices &amp; Telias &middot; Centro de
+              Pol&iacute;ticas P&uacute;blicas UC &middot; 2025
+            </p>
+          </li>
+        </ol>
+
+        <h2 class="section">Writing</h2>
+        <h3 class="year">2026</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://www.lemondediplomatique.cl/2026/07/los-super-ricos-los-impuestos-y-el-futuro-de-la-democracia.html"
+                >Los s&uacute;per ricos, los impuestos y el futuro de la democracia</a
+              >
+            </h4>
+            <p class="item__where">Le Monde Diplomatique (Chile)<span class="sep">&middot;</span>3 July 2026</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title"><a href="https://www.latercera.com/opinion/noticia/reproducibilidad-fiscal/">Reproducibilidad fiscal</a></h4>
+            <p class="item__where">La Tercera<span class="sep">&middot;</span>29 May 2026</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://map.conectamedia.cl/index.php/clippingNews/view?id=51870301&amp;email=545915&amp;fromemail=1"
+                >Desaf&iacute;os de la pobreza en Chile</a
+              >
+            </h4>
+            <p class="item__where">La Segunda<span class="sep">&middot;</span>14 January 2026</p>
+          </li>
+        </ol>
+        <h3 class="year">2024</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://www.ciperchile.cl/2024/11/19/desigualdad-de-riqueza-en-latinoamerica-altamente-concentrada-y-persistente-en-el-tiempo/"
+                >Desigualdad de riqueza en Latinoam&eacute;rica: altamente concentrada y persistente en el tiempo</a
+              >
+            </h4>
+            <p class="item__where">CIPER Chile<span class="sep">&middot;</span>19 November 2024</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://cepr.org/voxeu/columns/intergenerational-poverty-persistence-europe-and-great-gatsby-curve"
+                >Intergenerational poverty persistence in Europe and the Great Gatsby curve</a
+              >
+            </h4>
+            <p class="item__where">VoxEU, CEPR<span class="sep">&middot;</span>28 October 2024</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://blogs.lse.ac.uk/inequalities/2024/09/04/wealth-inequality-in-latin-america/">Wealth Inequality in Latin America</a>
+            </h4>
+            <p class="item__where">LSE III blog<span class="sep">&middot;</span>4 September 2024</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://blogs.lse.ac.uk/inequalities/2024/09/04/desigualdad-de-riqueza-en-america-latina/"
+                >Desigualdad de Riqueza en Am&eacute;rica Latina</a
+              >
+            </h4>
+            <p class="item__where">LSE III blog<span class="sep">&middot;</span>4 September 2024</p>
+          </li>
+        </ol>
+        <h3 class="year">2022</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://nadaesgratis.es/admin/midiendo-la-desigualdad-de-oportunidades-en-europa"
+                >Midiendo la desigualdad de oportunidades en Europa</a
+              >
+            </h4>
+            <p class="item__where">Nada es Gratis<span class="sep">&middot;</span>22 December 2022</p>
+          </li>
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://cepr.org/voxeu/columns/capturing-top-incomes-and-measuring-inequality-europe"
+                >Capturing top incomes and measuring inequality in Europe</a
+              >
+            </h4>
+            <p class="item__where">VoxEU, CEPR<span class="sep">&middot;</span>6 July 2022</p>
+          </li>
+        </ol>
+        <h3 class="year">2019</h3>
+        <ol class="list">
+          <li class="item item--line">
+            <h4 class="item__title">
+              <a href="https://coes.cl/que-podemos-aprender-del-seguro-de-cesantia-chileno/"
+                >&iquest;Qu&eacute; podemos aprender del Seguro de Cesant&iacute;a chileno?</a
+              >
+            </h4>
+            <p class="item__where">COES<span class="sep">&middot;</span>28 July 2019</p>
+          </li>
+        </ol>
+      </main>
+
+      <footer class="site-foot">Prototype for rafaelcarranza.github.io &middot; content from the live site and <code>papers.bib</code></footer>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+        function show(name) {
+          document.querySelectorAll(".pane").forEach(function (p) {
+            p.hidden = p.id !== "pane-" + name;
+          });
+          document.querySelectorAll(".site-nav [data-goto]").forEach(function (b) {
+            if (b.dataset.goto === name) b.setAttribute("aria-current", "page");
+            else b.removeAttribute("aria-current");
+          });
+          window.scrollTo(0, 0);
+        }
+        document.querySelectorAll("[data-goto]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            show(b.dataset.goto);
+          });
+        });
+        document.querySelectorAll("[data-abs]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var panel = document.getElementById(btn.dataset.abs);
+            var open = btn.getAttribute("aria-expanded") === "true";
+            btn.setAttribute("aria-expanded", open ? "false" : "true");
+            btn.textContent = open ? "Abstract" : "Hide abstract";
+            panel.hidden = open;
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

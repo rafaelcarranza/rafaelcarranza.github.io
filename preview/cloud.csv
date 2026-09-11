@@ -1,0 +1,54 @@
+term,freq,df,cat
+inequality,583,13,topic
+Chile,410,10,place
+poverty,409,3,topic
+childhood circumstances,353,4,topic
+elites,337,1,topic
+Gini coefficient,222,5,topic
+unemployment insurance,205,3,topic
+redistribution,153,3,topic
+EU-SILC,121,4,data
+Europe,116,7,place
+job loss,114,3,topic
+parental background,104,3,topic
+administrative records,100,7,data
+distributional national accounts,87,3,topic
+income inequality,75,7,topic
+decomposition,71,2,method
+Latin America,68,7,place
+labour markets,67,4,topic
+segregation,63,3,topic
+top incomes,60,2,topic
+moral hazard,58,2,topic
+counterfactual,57,2,method
+wealth concentration,54,3,topic
+panel data,54,6,method
+pensions,53,5,topic
+wealth inequality,48,1,topic
+educational achievement,44,2,topic
+SIMCE,44,2,data
+poverty persistence,41,1,topic
+attitudes to inequality,40,1,topic
+liquidity constraints,39,1,topic
+inequality of opportunity,33,3,topic
+quantile regression,30,1,method
+survey correction,29,2,method
+welfare state,29,5,topic
+machine learning,29,2,method
+social cohesion,26,2,topic
+social class,25,1,topic
+intergenerational mobility,24,2,topic
+neighbourhood effects,23,2,topic
+WID,22,2,data
+PSID,21,1,data
+earnings inequality,19,1,topic
+taxes and transfers,18,2,topic
+informality,18,3,topic
+concentrated affluence,16,2,topic
+census data,13,2,data
+mediation analysis,9,1,method
+CASEN,9,2,data
+regression discontinuity,7,1,method
+progressivity,6,1,topic
+multilevel models,6,1,method
+ELSOC,6,1,data
