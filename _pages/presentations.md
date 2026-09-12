@@ -86,7 +86,7 @@ description: Seminars, conferences and invited lectures.
   <li class="item item--line">
     <h4 class="item__title">Inflation Inequality and its Consequences for Income Inequality and Poverty</h4>
     <p class="item__where"><a href="https://iariw.org/38th-iariw-general-conference/">38th IARIW General Conference</a>, August 26–30, 2024. London, UK. Discussed by <a href="https://scholar.google.com/citations?user=eYqjMLMAAAAJ&hl=en">David Johnson</a>.</p>
-    <p class="item__where">_(As discussant)_ Household Production Time and Inequality in Extended Income in the U.S., 1965–2018 (Authors: <a href="https://business.leeds.ac.uk/faculty/staff/1580/dr-leila-gautham">Leila Gautham</a> and <a href="https://people.umass.edu/folbre/folbre/">Nancy Folbre</a>)</p>
+    <p class="item__where"><em>(As discussant)</em> Household Production Time and Inequality in Extended Income in the U.S., 1965–2018 (Authors: <a href="https://business.leeds.ac.uk/faculty/staff/1580/dr-leila-gautham">Leila Gautham</a> and <a href="https://people.umass.edu/folbre/folbre/">Nancy Folbre</a>)</p>
   </li>
   <li class="item item--line">
     <h4 class="item__title">Wealth Inequality in Latin America</h4>
@@ -106,12 +106,12 @@ description: Seminars, conferences and invited lectures.
   <li class="item item--line">
     <h4 class="item__title">Wealth Inequality in Latin America</h4>
     <p class="item__where"><a href="https://coes.cl/x-conferenciainternacional/">X Conferencia Internacional COES</a>, November 8–10, 2023. Santiago, Chile.</p>
-    <p class="item__where">_Also presenting:_ Social class and earnings inequality in Chile: A decomposition over the long run.</p>
+    <p class="item__where"><em>Also presenting:</em> Social class and earnings inequality in Chile: A decomposition over the long run.</p>
   </li>
   <li class="item item--line">
     <h4 class="item__title">Does Predistribution or Redistribution Account for Varying Income Inequality? <a href="http://www.ecineq.org/upcoming-tenth-ecineq-meeting-2023/">10th ECINEQ Meeting 2023</a>, July 10–12, 2023</h4>
     <p class="item__where">Aix-en-Provence, France.</p>
-    <p class="item__where">_Also presenting:_ Job loss and earnings inequality: Distributional effects from re-employment in Chile.</p>
+    <p class="item__where"><em>Also presenting:</em> Job loss and earnings inequality: Distributional effects from re-employment in Chile.</p>
   </li>
   <li class="item item--line">
     <h4 class="item__title">Variations in elite attitudes toward inequality: Exploring the role of elite type and intergenerational experiences in contexts</h4>
@@ -143,8 +143,8 @@ description: Seminars, conferences and invited lectures.
   <li class="item item--line">
     <h4 class="item__title">Does Predistribution or Redistribution Account for Varying Income Inequality? <a href="https://iariw.org/37th-iariw-general-conference-luxembourg-august-22-26-2022/">37th IARIW General Conference</a>, August 22–26, 2022</h4>
     <p class="item__where">Luxembourg. Discussed by Amanda Sinclair.</p>
-    <p class="item__where">_(As discussant)_ Distributional National Accounts for Australia, 1991–2018 (Authors: Matthew Fisher-Post, Nicolas Hérault and Roger Wilkins).</p>
-    <p class="item__where">_(As discussant)_ Wealth Survey Calibration: Imposing Consistency with Income Tax Data (Author: Daniel Kolář).</p>
+    <p class="item__where"><em>(As discussant)</em> Distributional National Accounts for Australia, 1991–2018 (Authors: Matthew Fisher-Post, Nicolas Hérault and Roger Wilkins).</p>
+    <p class="item__where"><em>(As discussant)</em> Wealth Survey Calibration: Imposing Consistency with Income Tax Data (Author: Daniel Kolář).</p>
   </li>
   <li class="item item--line">
     <h4 class="item__title">Decomposing wealth mobility in the US: The role of education and income</h4>
@@ -170,7 +170,7 @@ description: Seminars, conferences and invited lectures.
     <p class="item__where">Virtual conference. [[Slides]](https://drive.google.com/file/d/1n_JMiTOt6zdh_GYS49nz4XpdbCDIwDVE/view?usp=sharing)</p>
   </li>
   <li class="item item--line">
-    <h4 class="item__title">_(Poster)_ How much of intergenerational immobility can be attributed to differences in childhood circumstances? <a href="https://www.zew.de/en/events-and-professional-training/detail/social-mobility-and-economic-performance-1/3064">Workshop on Social Mobility and Economic Performance</a> (ZEW), March 22–23, 2021</h4>
+    <h4 class="item__title"><em>(Poster)</em> How much of intergenerational immobility can be attributed to differences in childhood circumstances? <a href="https://www.zew.de/en/events-and-professional-training/detail/social-mobility-and-economic-performance-1/3064">Workshop on Social Mobility and Economic Performance</a> (ZEW), March 22–23, 2021</h4>
     <p class="item__where">Virtual conference. [[Poster]](https://drive.google.com/file/d/1AkSqHX9IXYx2YqwMdOh-v-ToSS-UAwLC/view?usp=sharing)</p>
   </li>
 </ol>
@@ -181,7 +181,7 @@ description: Seminars, conferences and invited lectures.
     <p class="item__where"><a href="https://www.encuentroeconomiapublica.com/en/workshop.php">XXVII Meeting on Public Economics</a>, January 23–24, 2020. Barcelona, Spain. [[Slides]](https://drive.google.com/open?id=1D57NvPRnYmE8jgJnQdXx29tSB2UzDSwJ)</p>
   </li>
   <li class="item item--line">
-    <h4 class="item__title">_(Poster)_ Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity</h4>
+    <h4 class="item__title"><em>(Poster)</em> Inequality and Economic Growth: New Evidence using Upper Bounds Estimates of Inequality of Opportunity</h4>
     <p class="item__where"><a href="http://dse.univr.it/it/">Winter School on Inequality and Social Welfare Theory</a>, January 13–16, 2020. Alba di Canazei, Italy. [[Poster]](https://drive.google.com/open?id=1q_EFw61oM-CXfSh8rtL66g5vw0ZRG2Zh)</p>
   </li>
 </ol>
@@ -203,7 +203,7 @@ description: Seminars, conferences and invited lectures.
 <h3 class="year">2018</h3>
 <ol class="list">
   <li class="item item--line">
-    <h4 class="item__title">_(Poster)_ Measuring Inequality of Opportunity trends in Europe: Lower bounds, upper bounds and the space in between</h4>
+    <h4 class="item__title"><em>(Poster)</em> Measuring Inequality of Opportunity trends in Europe: Lower bounds, upper bounds and the space in between</h4>
     <p class="item__where"><a href="http://www.equalchances.org/web/updates/8043/17/opportunity_mobility_program.pdf">Equal Chances: Equality of Opportunity and Social Mobility Around the World</a>, December 14–15, 2018. Bari, Italy. [[Poster]](https://drive.google.com/file/d/1g1Y26wGBKDxERlKYttkUfp4hVnR-I7_T/view)</p>
   </li>
   <li class="item item--line">
