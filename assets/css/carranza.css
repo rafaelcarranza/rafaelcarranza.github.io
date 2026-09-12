@@ -942,10 +942,6 @@ ol.bibliography .item {
   touch-action: none;
 }
 
-.cloud__live:empty {
-  display: none;
-}
-
 .cloud .cw {
   position: absolute;
   transform: translate(0, 0);

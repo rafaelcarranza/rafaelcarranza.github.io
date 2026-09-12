@@ -160,7 +160,8 @@
   }
 
   function build() {
-    var width = host.clientWidth;
+    // Fall back to the parent if the container itself reports nothing.
+    var width = host.clientWidth || (host.parentNode && host.parentNode.clientWidth) || 0;
     if (!width) return;
     var plan = planFor(width);
 
