@@ -2,7 +2,9 @@
 # Purpose:   Banner word cloud of concepts across Rafael Carranza's papers
 # Input:     cloud.csv (term, freq, df, cat) - counts from the full text
 #            of the published PDFs, each concept tagged by kind
-# Output:    cloud.svg        vector banner for the top of the about page
+# Output:    cloud.svg        static fallback only - the live page packs the
+#                             cloud in the browser (assets/js/cloud.js), and
+#                             this SVG is shown only when scripting is off
 #            cloud_check.png  raster copy for eyeballing the layout
 # Structure: 1. Parameters  2. Read and scale  3. Draw  4. Write  5. Guard
 #
