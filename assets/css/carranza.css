@@ -933,3 +933,83 @@ ol.bibliography .item {
     margin-top: 0;
   }
 }
+
+/* ---------- interactive concept cloud ---------- */
+
+.cloud__live {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+}
+
+.cloud__live:empty {
+  display: none;
+}
+
+.cloud .cw {
+  position: absolute;
+  transform: translate(0, 0);
+  translate: -50% -50%;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: grab;
+  transition: transform 620ms cubic-bezier(0.18, 1.5, 0.4, 1);
+}
+
+.cloud .cw.is-held {
+  cursor: grabbing;
+  z-index: 2;
+}
+
+.cloud .cw:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.cloud .cw--topic[data-depth="0"] {
+  color: var(--cw-topic-0);
+}
+.cloud .cw--topic[data-depth="1"] {
+  color: var(--cw-topic-1);
+}
+.cloud .cw--topic[data-depth="2"] {
+  color: var(--cw-topic-2);
+}
+.cloud .cw--method[data-depth="0"] {
+  color: var(--cw-method-0);
+}
+.cloud .cw--method[data-depth="1"] {
+  color: var(--cw-method-1);
+}
+.cloud .cw--method[data-depth="2"] {
+  color: var(--cw-method-2);
+}
+.cloud .cw--data[data-depth="0"] {
+  color: var(--cw-data-0);
+}
+.cloud .cw--data[data-depth="1"] {
+  color: var(--cw-data-1);
+}
+.cloud .cw--data[data-depth="2"] {
+  color: var(--cw-data-2);
+}
+.cloud .cw--place[data-depth="0"] {
+  color: var(--cw-place-0);
+}
+.cloud .cw--place[data-depth="1"] {
+  color: var(--cw-place-1);
+}
+.cloud .cw--place[data-depth="2"] {
+  color: var(--cw-place-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud .cw {
+    transition: transform 120ms linear;
+  }
+}
