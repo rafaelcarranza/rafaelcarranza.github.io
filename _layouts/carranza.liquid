@@ -142,15 +142,33 @@
         });
       }
 
-      // Abstracts open in place; nothing else on the page needs scripting.
+      // Abstracts open in place, sliding down and back up. The height comes
+      // from the CSS (a 0fr -> 1fr grid row); the script only flips classes
+      // and puts the hidden attribute back once the panel has finished
+      // closing, so screen readers still skip a closed panel.
+      var ABS_MS = 200;
       document.querySelectorAll('[data-abs]').forEach(function (btn) {
+        var panel = document.getElementById(btn.dataset.abs);
+        if (!panel) return;
+        var label = btn.textContent.trim();
+        var timer = null;
         btn.addEventListener('click', function () {
-          var panel = document.getElementById(btn.dataset.abs);
-          if (!panel) return;
           var open = btn.getAttribute('aria-expanded') === 'true';
           btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-          btn.textContent = open ? 'Abstract' : 'Hide abstract';
-          panel.hidden = open;
+          btn.textContent = open ? label : 'Hide ' + label.toLowerCase();
+          clearTimeout(timer);
+          if (open) {
+            panel.classList.remove('is-open');
+            timer = setTimeout(function () {
+              panel.hidden = true;
+            }, ABS_MS);
+          } else {
+            panel.hidden = false;
+            // Read the layout so the open state starts from the closed one
+            // rather than being collapsed into a single style change.
+            void panel.offsetHeight;
+            panel.classList.add('is-open');
+          }
         });
       });
     </script>

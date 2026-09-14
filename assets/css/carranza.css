@@ -538,18 +538,55 @@ h3.year {
   color: var(--accent-deep);
 }
 
+/* Abstracts and project summaries open like a drawer. The grid row goes
+   0fr -> 1fr, which animates to whatever height the text needs without
+   measuring it in JS; the child clips itself as the row grows. The box
+   styling is on the child so its padding is clipped too. */
 .abstract {
+  display: grid;
+  grid-template-rows: 0fr;
+  margin-top: 0;
+  opacity: 0;
+  transition:
+    grid-template-rows 200ms ease,
+    margin-top 200ms ease,
+    opacity 140ms ease;
+}
+
+/* Author styles outrank the browser's [hidden] rule, so restate it. */
+.abstract[hidden] {
+  display: none;
+}
+
+.abstract.is-open {
+  grid-template-rows: 1fr;
   margin-top: 0.85rem;
+  opacity: 1;
+}
+
+.abstract > p {
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
   padding: 0.9rem 1.1rem;
   background: var(--paper-sunk);
   border-radius: 4px;
   font-size: 0.97rem;
   line-height: 1.6;
   color: var(--ink-soft);
+  transform: translateY(-4px);
+  transition: transform 200ms ease;
 }
 
-.abstract p {
-  margin: 0;
+.abstract.is-open > p {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .abstract,
+  .abstract > p {
+    transition-duration: 1ms;
+  }
 }
 
 /* ---------- pills ---------- */
