@@ -635,6 +635,28 @@ h3.year {
   padding-inline: 0.35rem;
 }
 
+/* talks: the date is a fixed column to the left of the entry */
+.item--dated {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  column-gap: 1.1rem;
+  align-items: baseline;
+}
+
+.item__date {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.item__body {
+  min-width: 0;
+}
+
 /* ---------- plain lists ---------- */
 
 .plain {
@@ -679,6 +701,10 @@ footer.site-foot {
   .item__foot {
     align-items: flex-start;
     flex-direction: column;
+  }
+  .item--dated {
+    grid-template-columns: 1fr;
+    row-gap: 0.2rem;
   }
 }
 
