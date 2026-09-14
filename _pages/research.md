@@ -30,6 +30,10 @@ description: Work in progress, published papers, thesis and working papers.
     <p class="item__authors">with <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a> <span class="pill pill--sm pill--rr">R&amp;R</span></p>
   </li>
   <li class="item item--wip">
+    <h4 class="item__title">Housing wealth and social cohesion in Chile</h4>
+    <p class="item__authors">with <a href="https://icso.udp.cl/investigador/gabriel-otero/">Gabriel Otero</a> and <a href="https://andreas-lafferte.github.io/alaffert-website/">Andreas Laffert</a> <span class="pill pill--sm pill--submitted">Submitted</span></p>
+  </li>
+  <li class="item item--wip">
     <h4 class="item__title">The concentration of children over time and its consequences for income inequality and poverty</h4>
     <p class="item__authors">with <a href="https://berkayozcan.net/">Berkay Özcan</a> <span class="pill pill--sm pill--inprogress">In progress</span></p>
   </li>

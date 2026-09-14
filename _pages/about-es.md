@@ -18,7 +18,10 @@ description: Rafael Carranza investiga la desigualdad económica, la movilidad i
       {% include actions.liquid %}
     </div>
     <aside class="about__side">
-      <img class="about__photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Rafael Carranza" />
+      <div class="about__portrait">
+        <img class="about__photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Rafael Carranza" />
+        <p class="about__email">rafael.carranza[at]uc.cl</p>
+      </div>
       {% include affiliations.liquid %}
     </aside>
   </div>

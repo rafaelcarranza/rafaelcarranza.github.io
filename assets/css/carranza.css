@@ -19,6 +19,8 @@
   --pill-2: #e0cfc2;
   --pill-3: #c99a90;
   --pill-4: var(--accent);
+  /* the submitted tint inverts between themes, so its text is a token too */
+  --pill-2-ink: #3a2420;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Public Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -43,6 +45,7 @@
     --pill-2: #3d3a42;
     --pill-3: #8a5750;
     --pill-4: var(--accent);
+    --pill-2-ink: #e9e5dd;
   }
 }
 
@@ -62,6 +65,7 @@
   --pill-2: #3d3a42;
   --pill-3: #8a5750;
   --pill-4: var(--accent);
+  --pill-2-ink: #e9e5dd;
 }
 
 * {
@@ -215,11 +219,22 @@ h3.year {
   margin-bottom: 1.4rem;
 }
 
+.about__portrait {
+  margin-bottom: 1.25rem;
+}
+
 .about__photo {
   display: block;
   width: 100%;
   border-radius: 3px;
-  margin-bottom: 1.25rem;
+}
+
+.about__email {
+  margin: 0.55rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  overflow-wrap: break-word;
 }
 
 .about__affil {
@@ -564,7 +579,10 @@ h3.year {
   opacity: 1;
 }
 
-.abstract > p {
+/* One child only, so the row can collapse: a single paragraph, or an
+   .abstract__body wrapping several. */
+.abstract > p,
+.abstract > .abstract__body {
   min-height: 0;
   overflow: hidden;
   margin: 0;
@@ -578,13 +596,22 @@ h3.year {
   transition: transform 200ms ease;
 }
 
-.abstract.is-open > p {
+.abstract.is-open > p,
+.abstract.is-open > .abstract__body {
   transform: none;
+}
+
+.abstract__body p {
+  margin: 0 0 0.7rem;
+}
+.abstract__body p:last-child {
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .abstract,
-  .abstract > p {
+  .abstract > p,
+  .abstract > .abstract__body {
     transition-duration: 1ms;
   }
 }
@@ -612,7 +639,7 @@ h3.year {
 }
 .pill--submitted {
   background: var(--pill-2);
-  color: #3a2420;
+  color: var(--pill-2-ink);
 }
 .pill--rr {
   background: var(--pill-3);
@@ -732,7 +759,7 @@ footer.site-foot {
   h1 {
     font-size: 1.8rem;
   }
-  .about__photo {
+  .about__portrait {
     width: 9.5rem;
   }
   .item__foot {
@@ -981,7 +1008,7 @@ ol.bibliography .item {
     display: contents;
   }
 
-  .about__photo {
+  .about__portrait {
     order: -1;
     width: 11rem;
     margin: 0 0 0.25rem;
