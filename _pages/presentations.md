@@ -21,6 +21,13 @@ description: Seminars, conferences and invited lectures.
     </div>
   </li>
   <li class="item item--line item--dated">
+    <p class="item__date">Oct 28–29</p>
+    <div class="item__body">
+      <h4 class="item__title">Social class and earnings inequality in Chile, 1957–2022</h4>
+      <p class="item__where"><a href="https://www.ecineq.org/2026/06/13/second-conference-ecineq-latin-american-and-caribbean-meeting/">2nd ECINEQ - Latin America and the Caribbean Chapter (ECINEQ-LAC) Meeting</a>. Montevideo, Uruguay.</p>
+    </div>
+  </li>
+  <li class="item item--line item--dated">
     <p class="item__date">Oct 19–23</p>
     <div class="item__body">
       <h4 class="item__title">Disasters and Social Vulnerability: Effects on Chile’s Household Social Registry</h4>
