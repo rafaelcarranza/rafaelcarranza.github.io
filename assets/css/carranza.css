@@ -212,6 +212,34 @@ h3.year {
   align-items: start;
 }
 
+/* on wide screens the sidebar starts level with the name, not the bio:
+   name, role and bio share the left column; the sidebar spans them all,
+   and any height it has to spare goes to the last row, not between lines */
+@media (min-width: 46.01rem) {
+  .about {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 2rem;
+    align-items: start;
+  }
+  .about__cols {
+    display: contents;
+  }
+  .about > h1,
+  .about__role,
+  .about__main {
+    grid-column: 1;
+  }
+  .about__side {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+  .about > .cloud {
+    grid-column: 1 / -1;
+  }
+}
+
 .about p {
   margin: 0 0 1.05rem;
 }
