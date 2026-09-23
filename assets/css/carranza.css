@@ -233,7 +233,7 @@ h3.year {
   }
   .about__side {
     grid-column: 2;
-    grid-row: 1 / span 3;
+    grid-row: 2 / span 2;
   }
   .about > .cloud {
     grid-column: 1 / -1;
