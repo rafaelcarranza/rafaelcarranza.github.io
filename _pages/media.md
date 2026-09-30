@@ -55,6 +55,13 @@ description: Policy reports and writing for a general audience.
 <h2 class="section">Writing</h2>
 <ol class="list">
   <li class="item item--line item--dated">
+    <p class="item__date">30 Sep 2026</p>
+    <div class="item__body">
+      <h4 class="item__title"><a href="https://map.conectamedia.cl/index.php/clippingNews/view?id=56231341&email=583907&fromemail=1">La desigualdad económica en la agenda global</a></h4>
+      <p class="item__venue">Diario Financiero</p>
+    </div>
+  </li>
+  <li class="item item--line item--dated">
     <p class="item__date">3 Jul 2026</p>
     <div class="item__body">
       <h4 class="item__title"><a href="https://www.lemondediplomatique.cl/2026/07/los-super-ricos-los-impuestos-y-el-futuro-de-la-democracia.html">Los súper ricos, los impuestos y el futuro de la democracia</a></h4>
