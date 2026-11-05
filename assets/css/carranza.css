@@ -1,26 +1,26 @@
-/* Site design: single column, warm-white ground, navy text, brick accent.
+/* Site design: single column, white ground, neutral grey ink, brick accent.
    Light, dark and system themes are all defined at token level. */
 :root {
   color-scheme: light;
 
-  --paper: #fbf9f5;
-  --paper-sunk: #f2eee6;
-  --ink: #1b2131;
-  --ink-soft: #58607a;
-  --ink-faint: #8a91a4;
-  --rule: #e3ddd2;
-  --rule-soft: #eee9e0;
+  --paper: #ffffff;
+  --paper-sunk: #f3f3f3;
+  --ink: #1a1a1a;
+  --ink-soft: #555555;
+  --ink-faint: #8a8a8a;
+  --rule: #e2e2e2;
+  --rule-soft: #eeeeee;
   --accent: #9c2a2a;
   --accent-deep: #7a1f1f;
-  --on-accent: #fbf9f5;
+  --on-accent: #ffffff;
 
-  /* status tints, ordinal: further along the process, stronger the fill */
-  --pill-1: #ece7dd;
-  --pill-2: #e0cfc2;
-  --pill-3: #c99a90;
+  /* status tints, ordinal: grey, then tints of the accent, then the accent */
+  --pill-1: #ededed;
+  --pill-2: #ead3d0;
+  --pill-3: #cf8f88;
   --pill-4: var(--accent);
   /* the submitted tint inverts between themes, so its text is a token too */
-  --pill-2-ink: #3a2420;
+  --pill-2-ink: #3a1f1c;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Public Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -31,52 +31,56 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --paper: #15171e;
-    --paper-sunk: #1d202a;
-    --ink: #e9e5dd;
-    --ink-soft: #a4aab8;
-    --ink-faint: #757c8c;
-    --rule: #2c303c;
-    --rule-soft: #23262f;
+    --paper: #161616;
+    --paper-sunk: #212121;
+    --ink: #e8e8e8;
+    --ink-soft: #ababab;
+    --ink-faint: #7c7c7c;
+    --rule: #333333;
+    --rule-soft: #262626;
     --accent: #e08279;
     --accent-deep: #efa79f;
-    --on-accent: #15171e;
-    --pill-1: #262a35;
-    --pill-2: #3d3a42;
+    --on-accent: #161616;
+    --pill-1: #2a2a2a;
+    --pill-2: #3e3434;
     --pill-3: #8a5750;
     --pill-4: var(--accent);
-    --pill-2-ink: #e9e5dd;
+    --pill-2-ink: #e8e8e8;
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #15171e;
-  --paper-sunk: #1d202a;
-  --ink: #e9e5dd;
-  --ink-soft: #a4aab8;
-  --ink-faint: #757c8c;
-  --rule: #2c303c;
-  --rule-soft: #23262f;
+  --paper: #161616;
+  --paper-sunk: #212121;
+  --ink: #e8e8e8;
+  --ink-soft: #ababab;
+  --ink-faint: #7c7c7c;
+  --rule: #333333;
+  --rule-soft: #262626;
   --accent: #e08279;
   --accent-deep: #efa79f;
-  --on-accent: #15171e;
-  --pill-1: #262a35;
-  --pill-2: #3d3a42;
+  --on-accent: #161616;
+  --pill-1: #2a2a2a;
+  --pill-2: #3e3434;
   --pill-3: #8a5750;
   --pill-4: var(--accent);
-  --pill-2-ink: #e9e5dd;
+  --pill-2-ink: #e8e8e8;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 15.5px;
+  font-size: 15px;
   line-height: 1.6;
   padding-inline: 1.5rem;
   padding-block: 0;
@@ -781,7 +785,7 @@ footer.site-foot {
 
 @media (max-width: 34rem) {
   body {
-    font-size: 16px;
+    font-size: 15.5px;
     padding-inline: 1.15rem;
   }
   h1 {
