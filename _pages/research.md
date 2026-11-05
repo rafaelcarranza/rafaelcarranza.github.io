@@ -18,12 +18,12 @@ description: Work in progress, published papers, thesis and working papers.
     <p class="item__authors">with <a href="https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it">Michele Bavaro</a> and <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a> <span class="pill pill--sm pill--accepted">Accepted</span> <span class="item__forthcoming">European Sociological Review</span></p>
   </li>
   <li class="item item--wip">
-    <h4 class="item__title">Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising</h4>
-    <p class="item__authors">with <a href="https://icso.udp.cl/investigador/gabriel-otero/">Gabriel Otero</a> and <a href="https://fen.uchile.cl/academicos/dante-contreras/">Dante Contreras</a> <span class="pill pill--sm pill--rr">R&amp;R</span></p>
+    <h4 class="item__title">The Intergenerational Transmission of Disadvantage in Europe: A Latent Class Analysis</h4>
+    <p class="item__authors">with <a href="https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it">Michele Bavaro</a> and <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a> <span class="pill pill--sm pill--accepted">Accepted</span> <span class="item__forthcoming">Social Indicators Research</span></p>
   </li>
   <li class="item item--wip">
-    <h4 class="item__title">Intergenerational Poverty in Europe: A Latent Class Analysis</h4>
-    <p class="item__authors">with <a href="https://scholar.google.com/citations?user=TPLZEzQAAAAJ&hl=it">Michele Bavaro</a> and <a href="https://www.spi.ox.ac.uk/people/professor-brian-nolan">Brian Nolan</a> <span class="pill pill--sm pill--rr">R&amp;R</span></p>
+    <h4 class="item__title">Elites in times of social crisis: Attitudes toward inequality during Chile's 2019 uprising</h4>
+    <p class="item__authors">with <a href="https://icso.udp.cl/investigador/gabriel-otero/">Gabriel Otero</a> and <a href="https://fen.uchile.cl/academicos/dante-contreras/">Dante Contreras</a> <span class="pill pill--sm pill--rr">R&amp;R</span></p>
   </li>
   <li class="item item--wip">
     <h4 class="item__title">The size and progressivity of taxes and transfers when the income concept changes</h4>
