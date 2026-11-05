@@ -9,7 +9,7 @@ description: Funded research programmes and collaborations.
 ---
 
 <h1>Current projects</h1>
-<p class="lede">Funded research programmes, as distinct from individual papers.</p>
+<p class="lede">Funded research projects.</p>
 
 <ol class="list">
   <li class="item">
