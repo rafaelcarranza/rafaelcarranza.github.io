@@ -1148,6 +1148,11 @@ ol.bibliography .item {
 .cloud__live .cw.is-focus {
   z-index: 1;
 }
+.cloud__live.is-pinned .cw.is-focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
 .cloud__links {
   position: absolute;
   inset: 0;

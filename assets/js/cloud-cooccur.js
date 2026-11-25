@@ -1,9 +1,9 @@
 /* Concept cloud laid out by shared papers.
  *
  * Successor to cloud.js (kept for rollback). Words that are used together in
- * the same papers sit close to each other. Hovering a word (tapping it on a
- * touch screen) fades the rest and draws lines to the concepts it shares
- * papers with.
+ * the same papers sit close to each other. Hovering a word fades the rest and
+ * draws lines to the concepts it shares papers with; a click or tap keeps that
+ * view until the word is clicked again or the click lands on empty space.
  *
  * Link rule. A paper counts for a concept when the concept appears in it 3 or
  * more times. Two concepts are linked by the Jaccard index of their paper
@@ -350,7 +350,7 @@
 
     host.textContent = "";
     focused = null;
-    pinned = false;
+    setPinned(false);
     host.classList.remove("has-focus");
     svg = document.createElementNS(SVGNS, "svg");
     svg.setAttribute("class", "cloud__links");
@@ -477,6 +477,11 @@
     drawLines();
   }
 
+  function setPinned(v) {
+    pinned = v;
+    host.classList.toggle("is-pinned", v);
+  }
+
   function entryOf(el) {
     return el ? shown[+el.dataset.i] : null;
   }
@@ -499,12 +504,14 @@
     var el = ev.target.closest(".cw");
     if (!el) {
       // tap on empty space clears a pinned focus
-      pinned = false;
+      setPinned(false);
       clearFocus();
       return;
     }
     ev.preventDefault();
-    el.setPointerCapture(ev.pointerId);
+    try {
+      el.setPointerCapture(ev.pointerId);
+    } catch (e) {}
     el.classList.add("is-held");
     el.style.transition = "none";
     dragging = { el: el, x: ev.clientX, y: ev.clientY, moved: false, type: ev.pointerType };
@@ -526,14 +533,15 @@
     d.el.classList.remove("is-held");
     d.el.style.transition = reduceMotion ? "transform 120ms linear" : "";
     d.el.style.transform = "";
-    if (!d.moved && d.type !== "mouse") {
-      // a tap toggles the focus on touch screens
-      if (focused && focused.el === d.el) {
-        pinned = false;
+    if (!d.moved) {
+      // a click or tap keeps the focus; a second one on the same word,
+      // or one on empty space, lets it go
+      if (pinned && focused && focused.el === d.el) {
+        setPinned(false);
         clearFocus();
       } else {
-        pinned = true;
-        focusOn(entryOf(d.el));
+        if (!focused || focused.el !== d.el) focusOn(entryOf(d.el));
+        setPinned(true);
       }
     }
     if (focused) track(700);
