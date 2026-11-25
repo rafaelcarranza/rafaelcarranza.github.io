@@ -192,7 +192,7 @@
       el.style.fontSize = item.size * fit + "px";
       el.style.left = (item.x - box.x1) * fit + "px";
       el.style.top = (item.y - box.y1) * fit + "px";
-      el.title = item.d.term + " \u2014 " + item.d.freq + " mentions in " + item.d.df + " of 14 papers";
+      el.title = item.d.term + " \u2014 " + item.d.freq + " mentions in " + item.d.df + " of 16 papers";
       frag.appendChild(el);
     });
 

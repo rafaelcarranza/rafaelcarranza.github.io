@@ -54,3 +54,31 @@ CLOUD_DIR="$PWD" Rscript wordcloud.R
 | ----------------- | -------------------------------------------------------------- |
 | `cloud.csv`       | term, freq (total mentions), df (papers with ≥3 mentions), cat |
 | `_data/cloud.csv` | identical copy, read by `_includes/cloud.liquid`               |
+
+## recount.py: full recount (25 November 2026)
+
+`recount.py` rebuilds every total from the PDFs in `Mis papers` with the
+patterns in `add_papers.py`, instead of adding new papers to old totals. It
+writes `cloud.csv`, `_data/cloud.csv` and `recount_by_paper.csv` (paper, year,
+term, n). Terms with no match in any paper are dropped.
+
+```bash
+python3 -I recount.py
+CLOUD_DIR="$PWD" Rscript wordcloud.R
+```
+
+- First run: 16 papers, 55 terms. "survey correction" was dropped (0 matches
+  in the full text of all 16 PDFs). The counts before the recount are in
+  `old versions/cloud_2026-11-24_before-recount.csv`.
+- Terms that moved by more than 15%: counterfactual 57 to 2, quantile
+  regression 30 to 2, taxes and transfers 18 to 1, WID 22 to 126,
+  administrative records 105 to 170, among others. The September counts for
+  these could not have come from these PDFs under these patterns.
+- `wordcloud.R` needed `SIZE_MM[2]` lowered from 12.5 to 12 to place all 55
+  labels.
+- `recount.py` also writes `_data/cloud_papers.csv` (term, paper, n for every
+  pair with 3+ mentions). `assets/js/cloud-cooccur.js` uses it to place
+  concepts that share papers close together and to draw the hover links
+  (Jaccard index of the two concepts' paper sets). `add_papers.py` does not
+  update this file, so after adding papers run `recount.py` instead. The
+  paper count in the tooltip is `N_PAPERS` at the top of the script.

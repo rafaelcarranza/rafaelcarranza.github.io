@@ -1,0 +1,180 @@
+term,paper,n
+inequality,2017 Otero et al Neighbourhood,44
+inequality,2022 Sehnbruch et al Moral Hazard,3
+inequality,2023 Carranza Bounds,89
+inequality,2023 Carranza IGE,15
+inequality,2023 Carranza et al Top Incomes,94
+inequality,2023 Otero et al Spatial Divisions,24
+inequality,2024 Bavaro et al Poverty,9
+inequality,2024 Carranza and Nolan Redistribution,55
+inequality,2024 Carranza et al Elites,92
+inequality,2024 Otero et al Stigma,5
+inequality,2025 Carranza et al Job Loss,55
+inequality,2025 Carranza et al Wealth,85
+inequality,2026 Bavaro et al Education,11
+inequality,2026 Bavaro et al Latent Class,4
+inequality,2026 Schechtl et al Prosocial,13
+poverty,2019 Sehnbruch et al Unemployment,3
+poverty,2023 Otero et al Spatial Divisions,29
+poverty,2024 Bavaro et al Poverty,370
+poverty,2026 Bavaro et al Education,3
+poverty,2026 Bavaro et al Latent Class,21
+Chile,2017 Otero et al Neighbourhood,29
+Chile,2019 Sehnbruch et al Unemployment,88
+Chile,2022 Sehnbruch et al Moral Hazard,64
+Chile,2023 Carranza et al Top Incomes,28
+Chile,2023 Otero et al Spatial Divisions,19
+Chile,2024 Carranza and Nolan Redistribution,17
+Chile,2024 Carranza et al Elites,42
+Chile,2024 Otero et al Stigma,27
+Chile,2025 Carranza et al Job Loss,40
+Chile,2025 Carranza et al Wealth,49
+childhood circumstances,2019 Sehnbruch et al Unemployment,3
+childhood circumstances,2023 Carranza Bounds,102
+childhood circumstances,2023 Carranza IGE,240
+childhood circumstances,2024 Bavaro et al Poverty,7
+childhood circumstances,2026 Bavaro et al Education,5
+childhood circumstances,2026 Bavaro et al Latent Class,9
+elites,2024 Carranza et al Elites,336
+parental background,2023 Carranza IGE,93
+parental background,2024 Bavaro et al Poverty,25
+parental background,2024 Carranza et al Elites,9
+parental background,2026 Bavaro et al Education,93
+parental background,2026 Bavaro et al Latent Class,3
+Gini coefficient,2017 Otero et al Neighbourhood,8
+Gini coefficient,2023 Carranza et al Top Incomes,115
+Gini coefficient,2024 Carranza and Nolan Redistribution,66
+Gini coefficient,2025 Carranza et al Job Loss,22
+Gini coefficient,2025 Carranza et al Wealth,10
+unemployment insurance,2019 Sehnbruch et al Unemployment,154
+unemployment insurance,2022 Sehnbruch et al Moral Hazard,28
+unemployment insurance,2025 Carranza et al Job Loss,22
+EU-SILC,2023 Carranza Bounds,7
+EU-SILC,2023 Carranza et al Top Incomes,55
+EU-SILC,2024 Bavaro et al Poverty,51
+EU-SILC,2024 Carranza and Nolan Redistribution,8
+EU-SILC,2026 Bavaro et al Education,16
+EU-SILC,2026 Bavaro et al Latent Class,36
+administrative records,2019 Sehnbruch et al Unemployment,16
+administrative records,2022 Sehnbruch et al Moral Hazard,12
+administrative records,2023 Carranza Bounds,4
+administrative records,2023 Carranza et al Top Incomes,72
+administrative records,2024 Bavaro et al Poverty,12
+administrative records,2025 Carranza et al Job Loss,18
+administrative records,2025 Carranza et al Wealth,27
+administrative records,2026 Bavaro et al Latent Class,3
+Europe,2017 Otero et al Neighbourhood,3
+Europe,2019 Sehnbruch et al Unemployment,6
+Europe,2023 Carranza Bounds,41
+Europe,2023 Carranza et al Top Incomes,9
+Europe,2024 Bavaro et al Poverty,32
+Europe,2024 Carranza and Nolan Redistribution,11
+Europe,2025 Carranza et al Wealth,6
+Europe,2026 Bavaro et al Education,11
+Europe,2026 Bavaro et al Latent Class,41
+redistribution,2022 Sehnbruch et al Moral Hazard,4
+redistribution,2024 Carranza and Nolan Redistribution,138
+redistribution,2024 Carranza et al Elites,7
+WID,2023 Carranza et al Top Incomes,100
+WID,2025 Carranza et al Wealth,22
+distributional national accounts,2023 Carranza et al Top Incomes,25
+distributional national accounts,2024 Carranza and Nolan Redistribution,54
+distributional national accounts,2025 Carranza et al Wealth,17
+birth cohorts,2025 Carranza et al Job Loss,3
+birth cohorts,2026 Bavaro et al Education,85
+birth cohorts,2026 Bavaro et al Latent Class,4
+latent class analysis,2026 Bavaro et al Latent Class,82
+income inequality,2023 Carranza Bounds,27
+income inequality,2023 Carranza IGE,3
+income inequality,2023 Carranza et al Top Incomes,5
+income inequality,2024 Bavaro et al Poverty,6
+income inequality,2024 Carranza and Nolan Redistribution,18
+income inequality,2025 Carranza et al Job Loss,3
+income inequality,2025 Carranza et al Wealth,12
+income inequality,2026 Bavaro et al Education,4
+job loss,2019 Sehnbruch et al Unemployment,3
+job loss,2025 Carranza et al Job Loss,75
+decomposition,2023 Carranza IGE,65
+decomposition,2025 Carranza et al Wealth,3
+labour markets,2019 Sehnbruch et al Unemployment,24
+labour markets,2022 Sehnbruch et al Moral Hazard,11
+labour markets,2023 Carranza IGE,5
+labour markets,2025 Carranza et al Job Loss,22
+labour markets,2026 Bavaro et al Education,5
+social class,2024 Bavaro et al Poverty,21
+social class,2026 Bavaro et al Education,7
+social class,2026 Bavaro et al Latent Class,41
+Latin America,2017 Otero et al Neighbourhood,3
+Latin America,2019 Sehnbruch et al Unemployment,18
+Latin America,2022 Sehnbruch et al Moral Hazard,4
+Latin America,2023 Otero et al Spatial Divisions,4
+Latin America,2024 Otero et al Stigma,3
+Latin America,2025 Carranza et al Job Loss,6
+Latin America,2025 Carranza et al Wealth,28
+segregation,2017 Otero et al Neighbourhood,15
+segregation,2023 Otero et al Spatial Divisions,28
+segregation,2024 Otero et al Stigma,17
+top incomes,2023 Carranza et al Top Incomes,47
+top incomes,2024 Carranza and Nolan Redistribution,12
+moral hazard,2019 Sehnbruch et al Unemployment,15
+moral hazard,2022 Sehnbruch et al Moral Hazard,43
+panel data,2017 Otero et al Neighbourhood,5
+panel data,2022 Sehnbruch et al Moral Hazard,5
+panel data,2023 Carranza Bounds,19
+panel data,2023 Carranza IGE,3
+panel data,2024 Bavaro et al Poverty,5
+panel data,2024 Otero et al Stigma,11
+panel data,2025 Carranza et al Job Loss,4
+pensions,2019 Sehnbruch et al Unemployment,6
+pensions,2022 Sehnbruch et al Moral Hazard,3
+pensions,2023 Carranza et al Top Incomes,4
+pensions,2024 Carranza and Nolan Redistribution,27
+pensions,2025 Carranza et al Wealth,6
+wealth inequality,2025 Carranza et al Wealth,43
+SIMCE,2017 Otero et al Neighbourhood,22
+SIMCE,2023 Otero et al Spatial Divisions,22
+poverty persistence,2024 Bavaro et al Poverty,41
+poverty persistence,2026 Bavaro et al Latent Class,3
+intergenerational mobility,2023 Carranza IGE,5
+intergenerational mobility,2024 Bavaro et al Poverty,11
+intergenerational mobility,2026 Bavaro et al Education,4
+intergenerational mobility,2026 Bavaro et al Latent Class,16
+educational achievement,2017 Otero et al Neighbourhood,12
+educational achievement,2023 Otero et al Spatial Divisions,28
+welfare state,2022 Sehnbruch et al Moral Hazard,9
+welfare state,2023 Carranza IGE,3
+welfare state,2024 Bavaro et al Poverty,6
+welfare state,2024 Carranza and Nolan Redistribution,3
+welfare state,2024 Carranza et al Elites,5
+welfare state,2026 Bavaro et al Education,4
+welfare state,2026 Bavaro et al Latent Class,4
+informality,2019 Sehnbruch et al Unemployment,12
+informality,2022 Sehnbruch et al Moral Hazard,9
+informality,2025 Carranza et al Job Loss,9
+attitudes to inequality,2024 Carranza et al Elites,33
+inequality of opportunity,2023 Carranza Bounds,10
+inequality of opportunity,2023 Carranza IGE,7
+inequality of opportunity,2026 Bavaro et al Education,6
+wealth concentration,2024 Carranza et al Elites,3
+wealth concentration,2025 Carranza et al Wealth,11
+wealth concentration,2026 Schechtl et al Prosocial,10
+neighbourhood effects,2017 Otero et al Neighbourhood,3
+neighbourhood effects,2023 Otero et al Spatial Divisions,20
+material deprivation,2024 Bavaro et al Poverty,6
+material deprivation,2026 Bavaro et al Latent Class,15
+liquidity constraints,2022 Sehnbruch et al Moral Hazard,20
+PSID,2023 Carranza IGE,18
+social cohesion,2017 Otero et al Neighbourhood,12
+census data,2024 Otero et al Stigma,6
+census data,2025 Carranza et al Wealth,3
+machine learning,2023 Carranza Bounds,7
+machine learning,2025 Carranza et al Wealth,4
+earnings inequality,2025 Carranza et al Job Loss,12
+CASEN,2017 Otero et al Neighbourhood,5
+CASEN,2023 Otero et al Spatial Divisions,3
+mediation analysis,2024 Bavaro et al Poverty,7
+progressivity,2024 Carranza and Nolan Redistribution,3
+ELSOC,2024 Otero et al Stigma,6
+concentrated affluence,2023 Otero et al Spatial Divisions,4
+multilevel models,2017 Otero et al Neighbourhood,4
+regression discontinuity,2022 Sehnbruch et al Moral Hazard,3
